@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="images/essie.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Essie Tasha</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="homepage">
+            <div class="nav">
+                <nav>
+                    <div class="flex">
+                        <div class="navFlex" id="nametag">
+                            <div class="img"><img class="logo" src="images/essie.jpg" alt=""></div>
+                            <h2><a href="index.html">Essie</a></h2>
+                        </div>
+                        <div class="navFlex links" id="navDivEl">
+                            <a href="#about" >ABOUT</a>
+                            <a href="projects.html">PROJECTS</a>
+                            <a href="resume.html" target="_blank">RESUME</a>
+                            <a href="#contact">CONTACT</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+            <section class="intro">
+                <div class="selfIntro">
+                    <h1 class="introName">ESSIE OLUKOYA</h1>
+                    <div class="hrFlex">
+                        <hr>
+                        <p>Hi, I'm Essie. I am a front end developer; passionate about designing and implementing solutions to problems with a focus on responsive design and accessibility. Skillful in building user-friendly digital experiences and writing clear, concise code that is easy to maintain. </p>
+                    </div>
+                    <div class="socials">
+                        <div class="social"> <a href="https://twitter.com/Olukoyaessie" target="_blank"><i class="fa-brands fa-twitter"></i></a> </div>
+                        <div class="social"> <a href="https://github.com/Essietasha" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                        <div class="social"> <a href="https://www.instagram.com/Essietasha1" target="_blank"><i class="fa-brands fa-instagram"></i></a> </div>
+                        <div class="social"> <a href="http://linkedin.com/in/esther-olukoya-74b63624b" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </div>
+                    </div>      
+
+                    <div class="navDownArrow">
+                        <div class="navCircle">
+                            <a href="#projectsPage"><i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="projects" id="projectsPage">
+                        <div class="projectsGrid" id="parentDiv">
+                            <div class="project active" id="react">REACT PROJECTS</div>
+                            <div class="project" id="javascript">JAVASCRIPT PROJECTS</div>
+                        </div>
+
+                        <div class="jsReactFlex">
+                            <div class="ReactProjects box">
+                                <h2 class="desgn">Design</h2>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                                <p class="design">I design. I'm Immersed in stylesheets, tweaking font sizes and contemplating layouts. Also, I'm committed to creating fluent user experiences while staying fashionable.</p>
+                                
+                                <div class="viewAllBtn">
+                                    <button class="viewAllProjectBtn"><a href="projects.html">CLICK HERE TO VIEW ALL PROJECTS</a></button>
+                                </div>
+
+                                <div class="reactProjectGrid">                                    
+                                    <div class="ProjectReact">
+                                        <h3>Netflix Clone</h3>
+                                        <div class="slides">
+                                            <div class="slideII">
+                                                <img src="images/netflix1.png" alt="">
+                                            </div>
+                                            <div class="slideII">
+                                                <img src="images/netflix2.png" alt="">
+                                            </div>
+                                            <div class="slideII">
+                                                <img src="images/netflix3.png" alt="">
+                                            </div>
+                                            <div class="slideII">
+                                                <img src="images/netflix4.png" alt="">
+                                            </div>
+                                            <div class="slideII">
+                                                <img src="images/netflix5.png" alt="">
+                                            </div>
+                                            <div class="slideII">
+                                                <img src="images/netflix6.png" alt="">
+                                            </div>
+                                            <div class="slideII">
+                                                <img src="images/netflix7.png" alt="">
+                                            </div>
+                                            <div class="slideII">
+                                                <img src="images/netflix8.png" alt="">
+                                            </div>
+                                            <div class="slideII">
+                                                <img src="images/netflix9.png" alt="">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="navButtons">
+                                            <div class="prev"><a class="previousBtn" onclick="addSlidesII(-1)" >&#10094;</a></div>
+                                            <div class="next"><a class="nextBtn" onclick="addSlidesII(1)" >&#10095;</a></div>
+                                        </div>
+                                        <div class="projectDetails">
+                                            <h6><a href="projects.html">Project Details</a></h6>
+                                            <p>Developed a Netflix-like app using React, incorporating features like dynamic movie categories, user-specific movie lists, and modal dialogs for user interactions. Utilized Context API to manage state and more .</p>
+                                            <a href="https://github.com/Essietasha/Netflix-Clone-React.js" class="github" target="_blank">Source Code</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="ProjectReact">
+                                        <h3>Urban Cafeteria</h3>
+                                        <div class="slides">
+                                            <div class="slideIII">
+                                                <img src="images/urban1.png" alt="">
+                                            </div>
+                                            <div class="slideIII">
+                                                <img src="images/urban2.png" alt="">
+                                            </div>
+                                            <div class="slideIII">
+                                                <img src="images/urban3.png" alt="">
+                                            </div>
+                                            <div class="slideIII">
+                                                <img src="images/urban4.png" alt="">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="navButtons">
+                                            <div class="prev"><a class="previousBtn" onclick="addSlidesIII(-1)" >&#10094;</a></div>
+                                            <div class="next"><a class="nextBtn" onclick="addSlidesIII(1)" >&#10095;</a></div>
+                                        </div>
+                                        <div class="projectDetails">
+                                            <h6><a href="projects.html">Project Details</a></h6>
+                                            <p>Built a demo order app with product listings, a shopping cart, and a checkout functionality using React. Integrated Redux for state management, allowing for the global handling of shopping cart and user data.</p>
+                                            <a href="https://github.com/Essietasha/Urban-Cafeteria" class="github" target="_blank">Source Code</a>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="ProjectReact">
+                                        <h3>Brookside College</h3>
+                                        <div class="slides">
+                                            <div class="slide">
+                                                <img src="images/brookside1.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside2.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside3.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside4.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside5.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside6.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside7.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside8.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside9.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside10.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside11.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside12.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside13.jpg" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="images/brookside14.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="navButtons">
+                                            <div class="prev"><a class="previousBtn" onclick="addSlides(-1)" >&#10094;</a></div>
+                                            <div class="next"><a class="nextBtn" onclick="addSlides(1)" >&#10095;</a></div>
+                                        </div>
+                                        <div class="projectDetails">
+                                            <h6><a href="projects.html">Project Details</a></h6>
+                                            <p>This is a demo university website built with pure HTML, CSS and Javascript</p>
+                                            <a href="https://github.com/Essietasha/Brookside-College" class="github" target="_blank">GitHub</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="ProjectReact">
+                                        <h3>Weather App</h3>
+                                        <div class="slides">
+                                            <div class="slideIIII">
+                                                <img src="images/weather-r-1.png" alt="">
+                                            </div>                                          
+                                        </div>
+                                        <div class="navButtons">
+                                            <div class="prev"><a class="previousBtn" onclick="addSlidesIIII(-1)" >&#10094;</a></div>
+                                            <div class="next"><a class="nextBtn" onclick="addSlidesIIII(1)" >&#10095;</a></div>
+                                        </div>
+                                        <div class="projectDetails">
+                                            <h6><a href="projects.html">Project Details</a></h6>
+                                            <p>Created a weather forecasting application using React and the OpenWeatherMap API to fetch and display real-time weather information based on user input.</p>
+                                            <a href="https://github.com/Essietasha/Weather-App-React.js" class="github" target="_blank">Source Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+                            <div class="projectsJs box" id="javsprojects">
+                                <h1>JavaScript Projects</h1>
+                                <div class="projectsJsGrid">
+
+                                    <div class="projectEachJs">
+                                        <div class="reactImage">
+                                            <img src="images/bmicalc2.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <h2>Bmi Calculator</h2>
+                                        <p>This is a Bmi calculator project that functions as an indicator of body fatness.</p>
+                                        <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/bmi-calculator" target="_blank">Source Code</a>
+                                    </div>
+                
+                                    <div class="projectEachJs">
+                                        <div class="reactImage">
+                                            <img src="images/note.png" class="img-fluid" alt="...">
+                                        </div>
+                                        <h2>Note App</h2>
+                                        <p>Task management app.</p>
+                                        <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/note-app" target="_blank">Source Code</a>
+                                    </div>
+
+                                    <div class="projectEachJs">
+                                        <div class="reactImage">
+                                            <img src="images/stopwatch1.png" class="img-fluid" alt="...">
+                                        </div>
+                                        <h2>Stopwatch Project</h2>
+                                        <p>This is a JavaScript stopwatch to measure time in fractions of seconds.</p>
+                                        <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/stop-watch" target="_blank">Source Code</a>
+                                    </div>  
+
+                                    <div class="projectEachJs">
+                                        <div class="reactImage">
+                                            <img src="images/calc5.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <h2>Basic Calculator</h2>
+                                        <p>This is a basic calculator project that carries out mathematical operations.</p>
+                                        <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/calculator" target="_blank">Source Code</a>
+                                    </div>
+                             
+                                </div>
+                                
+                                <div class="viewAllBtn">
+                                    <button class="viewAllProjectBtn"><a href="projects.html">CLICK HERE TO VIEW ALL PROJECTS</a></button>
+                                </div> 
+                            </div>
+                        </div>
+                    </section>
+            </section>
+        </div>
+        <section id="about" class="repeatSlides">
+            <div class="aboutImgDiv">
+                <img src="images/about.jpg" alt="Image" class="aboutImg">
+            </div>
+            <p>I design and code beautiful things, and I love what I do. Since beginning my journey as a front end developer, I have developed passion to code things from scratch plus i enjoy bringing ideas to life in the browser.. I'm confident, curious, and perpetually working on improving my skills. As a developer, I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+            <div class="viewResume slideleft">
+                <button class="viewResumeBtn"><a href="resume.html" target="_blank">VIEW MY RESUME</a></button>
+            </div>
+        </section>
+
+        <section id="contact" class="repeatSlides">
+            <h1>Hello.</h1>
+            <div class="info">
+                <p>Need a beautiful, well-structured website that you can own and maintain <br> yourself? Get in touch <br><br></p>
+                <p>Email: <a href="mailto:essietasha@gmail.com">essietasha@gmail.com</a></p>
+                <p class="phone">Contact: <a href="tel:+2347018454916">2347018454916</a></p>
+                <p>"Living, learning, & leveling up one day at a time."</p>
+            </div>
+            <div class="socials slideleft" >
+                <div class="social"> <a href="https://twitter.com/Olukoyaessie" target="_blank"><i class="fa-brands fa-twitter"></i></a> </div>
+                <div class="social"> <a href="https://github.com/Essietasha" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                <div class="social"> <a href="https://www.instagram.com/Essietasha1" target="_blank"><i class="fa-brands fa-instagram"></i></a> </div>
+                <div class="social"> <a href="http://linkedin.com/in/esther-olukoya-74b63624b" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </div>
+            </div> 
+
+            <hr>
+            <p>&copy Essietasha 2024</p>
+        </section>
+
+        <div class="navigateUp"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
+
+

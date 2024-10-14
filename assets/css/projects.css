@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    background-color: #ffffff;
+}
+
+.navFlex.links{
+    position: static;
+}
+
+.page{
+    background-color: #ffffff;
+    color: #111;
+    padding: 50px 80px;
+}
+
+.explore{
+    background-color: #1e252d;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+}
+
+.explore h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3rem;
+    padding-right: 50px;
+}
+
+.explore p{
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.jsProjects{
+    margin: 30px 0px;
+}
+.jsProjectsGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px 20px;
+}
+
+.eachJsProject{
+    height: 450px;
+    background-color: #E2DFD0;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+}
+
+.jsImage{
+    height: 50%;
+    width: 100%;
+}
+
+.jsImage img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.eachJsProject h2{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.eachJsProject p{
+    line-height: normal;
+    font-size: 14px;
+}
+
+.eachJsProject a{
+    background-color: #345e82;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.reactProjects{
+    margin: 50px 0px;
+}
+.reactProjectsGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.reactProjects h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.eachReactProject{
+    height: 500px;
+    background-color: #E2DFD0;
+    color: #111;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+}
+
+.reactImage{
+    height: 60%;
+    width: 100%;
+}
+
+.reactImage img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.eachReactProject h2{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.eachReactProject p{
+    line-height: normal;
+    font-size: 12px;
+}
+
+.eachReactProject a{
+    background-color: #ffffff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #345e82;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.slideupward{
+    animation: slideUpward 2s ease normal;
+}
+
+@keyframes slideUpward{
+    from {
+        transform: translateY(0.5%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width:430px) {
+    .page{
+        padding: 50px 10px;
+    }
+
+    .navFlex.links{
+        gap: 20px;
+    }
+
+    #navDivEl a{
+        font-size: 10px;
+    }
+
+    .navFlex a{
+        font-size: 0.7rem;
+    }
+
+    #nametag{
+        font-size: 1.3rem;
+    }
+
+    .jsProjectsGrid{
+        display: block;
+    }
+
+    .reactProjectsGrid{
+        display: block;
+    }
+
+    .explore{
+        padding: 10px ;
+    }
+    
+    .explore h1{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    
+    .explore p{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+    .eachJsProject{
+        height: 350px;
+        padding: 0.5rem;
+        margin-top: 20px;
+    }
+    
+    .eachJsProject h2{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+    .eachJsProject p{
+        line-height: normal;
+        font-size: 12px;
+    }
+    
+    .reactProjects{
+        margin: 30px 0px;
+    }
+
+    .eachReactProject{
+        height: 450px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 600px) {
+    .page{
+        padding: 50px 30px;
+    }
+
+    .navFlex a{
+        font-size: 0.7rem;
+    }
+
+    #nametag{
+        font-size: 1.4rem;
+    }
+
+    .jsProjectsGrid{
+        display: block;
+    }
+
+    .reactProjectsGrid{
+        display: block;
+    }
+
+    .explore{
+        padding: 10px ;
+    }
+    
+    .explore h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+    .explore p{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+    .eachJsProject{
+        height: 350px;
+        padding: 0.5rem;
+        margin-top: 20px;
+    }
+    
+    .eachJsProject h2{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+    .eachJsProject p{
+        line-height: normal;
+        font-size: 12px;
+    }
+    
+    .reactProjects{
+        margin: 30px 0px;
+    }
+
+    .eachReactProject{
+        height: 450px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px){
+    .page{
+        padding: 50px 30px;
+    }
+    
+    .explore{
+        padding: 10px ;
+    }
+    
+    .explore h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+    .explore p{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+    
+    .jsProjectsGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .eachJsProject{
+        height: 450px;
+        padding: 0.5rem;
+        margin-top: 20px;
+    }
+    
+    .eachJsProject h2{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+    .eachJsProject p{
+        line-height: normal;
+        font-size: 12px;
+    }
+    
+    .reactProjects{
+        margin: 30px 0px;
+    }
+
+    .reactProjectsGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .eachReactProject{
+        height: 450px;
+    }
+}
