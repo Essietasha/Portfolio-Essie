@@ -232,6 +232,17 @@
         margin: 30px 0px;
     }
 
+    .eachReactProject .reactImage{
+        height: 68%;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .eachReactProject .reactImage img{
+        height: 100%;
+        width: 100%;
+    }
+
     .eachReactProject{
         height: 450px;
         margin-top: 20px;
@@ -299,6 +310,17 @@
     .eachReactProject{
         height: 450px;
         margin-top: 20px;
+    }
+
+    .eachReactProject .reactImage{
+        height: 68%;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .eachReactProject .reactImage img{
+        height: 100%;
+        width: 100%;
     }
 }
 
