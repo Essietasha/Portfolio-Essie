@@ -603,7 +603,7 @@ section.projects{
     }
 }
 
-@media (min-width: 420px) and (max-width: 768px){
+@media (min-width: 450px) and (max-width: 700px){
 
     section.intro{
         padding: 100px 30px 50px;
@@ -651,11 +651,15 @@ section.projects{
     section.projects{
         margin-top: 20px;
     }
-    
+
     .projectsGrid{
         grid-template-columns: 30% 70%;
     }
     
+    .reactProjectGrid{
+        display: block;
+        margin: 40px 20px;
+    }
     .dots{
         gap: 5px;
     }
@@ -673,13 +677,8 @@ section.projects{
         padding: 10px;
     }
 
-    .reactProjectGrid{
-        display: block;
-    }
-
-    
-    .projectsJsGrid{
-        display: block;
+    .ProjectReact{
+        height: 480px;
     }
     
     .projectsJs h1{
@@ -716,7 +715,7 @@ section.projects{
     
 }
 
-@media (min-width: 360px) and (max-width: 420px) {
+@media (min-width: 360px) and (max-width: 450px) {
     section.intro{
         padding: 100px 30px 50px;
     }
@@ -799,6 +798,7 @@ section.projects{
 
     .reactProjectGrid{
         display: block;
+        margin: 40px 10px;
     }
 
     
@@ -808,7 +808,7 @@ section.projects{
 
         
     .ProjectReact{
-        padding: 20px;
+        padding: 20px 10px;
         margin-top: 10px;
         height: 400px;
     }
