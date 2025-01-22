@@ -162,7 +162,7 @@ section.projects{
 
 .projectsGrid{
     display: grid;
-    grid-template-columns: 33.4% 33.3% 33.3%;
+    grid-template-columns: 20% 80%;
     justify-content: flex-end;
     align-items: center;
     height: 40px;
@@ -173,9 +173,15 @@ section.projects{
     width: 100%;
 }
 
-#javascript, #python, #react{
+#javascript{
     padding-top: 10px;
+    cursor: pointer;
     padding-left: 10px;
+}
+
+#react{
+    padding-left: 10px;
+    padding-top: 10px;
     cursor: pointer;
 }
 
@@ -266,19 +272,11 @@ section.projects{
     height: 480px;
 }
 
-.ProjectPython{
-    padding: 2rem 7rem 2rem 7rem;
-    background-color: #FFF6E9;
-    border: none;
-    margin-top: 20px;
-    height: 650px;
-}
-
-.ProjectReact a, .ProjectPython a{
+.ProjectReact a{
     text-decoration: none;
 }
 
-.ProjectReact h3, .ProjectPython h3{
+.ProjectReact h3{
     text-align: center;
     font-weight: bold;
     font-size: 18px;
@@ -379,19 +377,12 @@ section.projects{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-
-.slideIV img{
-    height: 400px;
-    width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.slide, .slideII, .slideIII, .slideIIII, .slideIV{
+.slide, .slideII, .slideIII, .slideIIII{
     text-align: center;   
     display: none;
     width: 100%;
 }
+
 
 #about{
     background: linear-gradient(90deg,  #1e252d,#345e82, #1e252d);
@@ -662,7 +653,7 @@ section.projects{
     }
 
     .projectsGrid{
-        grid-template-columns: 33.4% 33.3% 33.3%;
+        grid-template-columns: 30% 70%;
     }
     
     .reactProjectGrid{
@@ -689,18 +680,7 @@ section.projects{
     .ProjectReact{
         height: 480px;
     }
-
-    .ProjectPython{
-        padding: 1rem;
-        margin-top: 20px;
-        height: 600px;
-    }
-   
-    .slideIV img{
-        height: 300px;
-        width: 100%;
-    }
-
+    
     .projectsJs h1{
         margin-top: 20px;
         font-size: 1.2rem;
@@ -792,7 +772,7 @@ section.projects{
     }
     
     .projectsGrid{
-        grid-template-columns: 33.4% 33.3% 33.3%;
+        grid-template-columns: 30% 70%;
     }
     
     .dots{
@@ -831,17 +811,6 @@ section.projects{
         padding: 20px 10px;
         margin-top: 20px;
         height: 410px;
-    }
-
-    .ProjectPython{
-        padding: 1rem;
-        margin-top: 20px;
-        height: 600px;
-    }
-
-    .slideIV img{
-        height: 250px;
-        width: 100%;
     }
 
     .projectsJs{
@@ -943,7 +912,7 @@ section.projects{
     }
     
     .projectsGrid{
-        grid-template-columns: 33.4% 33.3% 33.3%;
+        grid-template-columns: 30% 70%;
     }
     
     .dots{
@@ -976,17 +945,6 @@ section.projects{
         padding: 20px;
         margin-top: 10px;
         height: 400px;
-    }
-
-    .ProjectPython{
-        padding: 1rem;
-        margin-top: 20px;
-        height: 400;
-    }
-
-    .slideIV img{
-        height: 300px;
-        width: 100%;
     }
 
     .projectsJs{

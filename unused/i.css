@@ -95,7 +95,6 @@
 .reactProjects{
     margin: 50px 0px;
 }
-
 .reactProjectsGrid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -104,15 +103,14 @@
     gap: 20px;
 }
 
-.reactProjects h1, .pythonProjects h1{
+.reactProjects h1{
     margin-top: 50px;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 2rem;
 }
 
-.eachReactProject, .eachPythonProject{
-    height: 600px;
+.eachReactProject{
+    height: 500px;
     background-color: #E2DFD0;
     color: #111;
     border-radius: 10px;
@@ -120,34 +118,29 @@
     padding: 1rem;
 }
 
-.pythonProjects{
-    margin-top: 3rem;
-    padding: 2rem;
-}
-
-.reactImage, .pythonImage{
+.reactImage{
     height: 60%;
     width: 100%;
 }
 
-.reactImage img, .pythonImage img{
+.reactImage img{
     height: 100%;
     width: 100%;
     border-radius: 5px;
 }
 
-.eachReactProject h2, .pythonProjects h2{
+.eachReactProject h2{
     font-size: 1rem;
     font-weight: bold;
     margin-top: 10px;
 }
 
-.eachReactProject p, .pythonProjects p{
+.eachReactProject p{
     line-height: normal;
     font-size: 12px;
 }
 
-.eachReactProject a, .pythonProjects a{
+.eachReactProject a{
     background-color: #ffffff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -239,28 +232,20 @@
         margin: 30px 0px;
     }
 
-    .reactProjects h1, .pythonProjects h1{
-        font-size: 1.5rem;
-    }
-
-    .eachReactProject .reactImage, .eachPythonProject .pythonImage{
+    .eachReactProject .reactImage{
         height: 68%;
         width: 100%;
         margin-top: 1rem;
     }
 
-    .eachReactProject .reactImage img, .eachPythonProject .pythonImage img{
+    .eachReactProject .reactImage img{
         height: 100%;
         width: 100%;
     }
 
-    .eachReactProject, .eachPythonProject{
+    .eachReactProject{
         height: 450px;
         margin-top: 20px;
-    }
-
-    .pythonProjects{
-        padding: 0rem;
     }
 }
 
@@ -322,28 +307,20 @@
         margin: 30px 0px;
     }
 
-    .reactProjects h1, .pythonProjects h1{
-        font-size: 1.5rem;
-    } 
-
-    .eachReactProject, .eachPythonProject{
+    .eachReactProject{
         height: 450px;
         margin-top: 20px;
     }
 
-    .eachReactProject .reactImage, .eachPythonProject .pythonImage{
+    .eachReactProject .reactImage{
         height: 68%;
         width: 100%;
         margin-top: 1rem;
     }
 
-    .eachReactProject .reactImage img, .eachPythonProject .pythonImage img{
+    .eachReactProject .reactImage img{
         height: 100%;
         width: 100%;
-    }
-
-    .pythonProjects{
-        padding: 0rem;
     }
 }
 
@@ -395,21 +372,13 @@
         margin: 30px 0px;
     }
 
-    .reactProjects h1, .pythonProjects h1{
-        font-size: 1.5rem;
-    }    
-
     .reactProjectsGrid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
 
-    .pythonProjects{
-        padding: 0rem;
-    }
-
-    .eachReactProject, .eachPythonProject{
+    .eachReactProject{
         height: 450px;
     }
 }
