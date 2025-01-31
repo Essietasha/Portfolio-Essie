@@ -557,6 +557,10 @@ section.projects{
     animation: repeatSlide 2s ease normal;
 }
 
+.url{
+    color: #DF6D2D;
+}
+
 @keyframes slideUp{
     from {
         transform: translateY(0.5%);
