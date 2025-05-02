@@ -271,7 +271,7 @@ section.projects{
     background-color: #FFF6E9;
     border: none;
     margin-top: 20px;
-    height: 650px;
+    height: 620px;
 }
 
 .ProjectReact a, .ProjectPython a{
@@ -704,7 +704,7 @@ section.projects{
     .ProjectPython{
         padding: 1rem;
         margin-top: 20px;
-        height: 600px;
+        height: 520px;
     }
    
     .slideIV img{
@@ -852,7 +852,7 @@ section.projects{
     .ProjectPython{
         padding: 1rem;
         margin-top: 20px;
-        height: 600px;
+        height: 520px;
     }
 
     .slideIV img{
