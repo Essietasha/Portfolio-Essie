@@ -120,6 +120,23 @@
     padding: 1rem;
 }
 
+.eachPythonProject{
+    margin-top: 2rem;
+}
+.eachPythonProject h2{
+    padding-top: 1rem;
+}
+
+.eachPythonProject .pythonImage{
+    height: 75%;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.eachPythonProject .pythonImage img{
+    height: 100%;
+    width: 100%;
+}
 .pythonProjects{
     margin-top: 3rem;
     padding: 2rem;

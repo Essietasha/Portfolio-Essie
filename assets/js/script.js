@@ -266,6 +266,31 @@ function showSlidesIV(indexIV) {
 };
 
 
+//Project Six Slider
+let slideIndexVI = 1;
+showSlidesVI(slideIndexVI);
+
+function addSlidesVI(indexVI) {
+    setTimeout(() =>{
+        showSlidesVI(slideIndexVI += indexVI);
+    }, 1000)
+  };
+
+function showSlidesVI(indexVI) {
+    let i;
+    let slideVI = document.getElementsByClassName("slideVI");
+
+    if (indexVI > slideVI.length) { slideIndexVI = 1 }
+    if (indexVI < 1) { slideIndexVI = slideVI.length }
+
+    for (i = 0; i < slideVI.length; i++){
+        slideVI[i].style.display = "none";
+    }
+    
+    slideVI[slideIndexVI-1].style.display = "block";
+};
+
+
 //Nav Element Scroll Event
 // window.addEventListener('scroll', () => {
 //     const navDivElement = document.getElementById('navDivEl');
