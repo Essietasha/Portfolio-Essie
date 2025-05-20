@@ -289,6 +289,10 @@ section.projects{
     font-weight: normal;
 }
 
+.availableOnRequest{
+    color:#3674B5;
+}
+
 .projectDetails h6{
     margin-top: 10px;
 }
