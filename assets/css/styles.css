@@ -747,6 +747,9 @@ section#contact .socials .social:hover {
   section.intro section.projects .allProjectsFlex .projectsJs {
     padding: 1.5rem;
   }
+  section.intro section.projects .allProjectsFlex .projectsJs h1 {
+    font-size: 1.5rem;
+  }
   section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
     display: block;
   }
