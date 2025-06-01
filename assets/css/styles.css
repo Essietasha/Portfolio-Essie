@@ -269,6 +269,8 @@ section.intro section.projects .allProjectsFlex .ProjectPython a {
   text-decoration: none;
 }
 section.intro section.projects .allProjectsFlex .ProjectPython h3 {
+  background-color: black;
+  color: #FFF6E9;
   text-align: center;
   font-weight: bold;
   font-size: 1.1rem;
@@ -344,12 +346,12 @@ section.intro section.projects .allProjectsFlex .slides {
   display: flex;
   transition: transform 0.5s ease;
 }
-section.intro section.projects .allProjectsFlex .slides .slide, section.intro section.projects .allProjectsFlex .slides .slideII, section.intro section.projects .allProjectsFlex .slides .slideIII, section.intro section.projects .allProjectsFlex .slides .slideIIII, section.intro section.projects .allProjectsFlex .slides .slideIV, section.intro section.projects .allProjectsFlex .slides .slideVI {
+section.intro section.projects .allProjectsFlex .slides .slide, section.intro section.projects .allProjectsFlex .slides .slideII, section.intro section.projects .allProjectsFlex .slides .slideIII, section.intro section.projects .allProjectsFlex .slides .slideIIII, section.intro section.projects .allProjectsFlex .slides .slideIV, section.intro section.projects .allProjectsFlex .slides .slideVII {
   text-align: center;
   display: none;
   width: 100%;
 }
-section.intro section.projects .allProjectsFlex .slides .slide img, section.intro section.projects .allProjectsFlex .slides .slideII img, section.intro section.projects .allProjectsFlex .slides .slideIII img, section.intro section.projects .allProjectsFlex .slides .slideIIII img, section.intro section.projects .allProjectsFlex .slides .slideIV img, section.intro section.projects .allProjectsFlex .slides .slideVI img {
+section.intro section.projects .allProjectsFlex .slides .slide img, section.intro section.projects .allProjectsFlex .slides .slideII img, section.intro section.projects .allProjectsFlex .slides .slideIII img, section.intro section.projects .allProjectsFlex .slides .slideIIII img, section.intro section.projects .allProjectsFlex .slides .slideIV img, section.intro section.projects .allProjectsFlex .slides .slideVII img {
   height: 100%;
   width: 100%;
   border-top-right-radius: 5px;
@@ -759,7 +761,7 @@ section#contact .socials .social:hover {
   section.intro section.projects .allProjectsFlex .ProjectPython {
     padding: 1rem;
     margin: 2rem 1rem;
-    height: 500px;
+    height: 450px;
     border: 2px solid gray;
     border-radius: 3px;
   }

@@ -267,27 +267,52 @@ function showSlidesIV(indexIV) {
 
 
 //Project Six Slider
-let slideIndexVI = 1;
-showSlidesVI(slideIndexVI);
+// let slideIndexVI = 1;
+// showSlidesVI(slideIndexVI);
 
-function addSlidesVI(indexVI) {
+// function addSlidesVI(indexVI) {
+//     setTimeout(() =>{
+//         showSlidesVI(slideIndexVI += indexVI);
+//     }, 1000)
+//   };
+
+// function showSlidesVI(indexVI) {
+//     let i;
+//     let slideVI = document.getElementsByClassName("slideVI");
+
+//     if (indexVI > slideVI.length) { slideIndexVI = 1 }
+//     if (indexVI < 1) { slideIndexVI = slideVI.length }
+
+//     for (i = 0; i < slideVI.length; i++){
+//         slideVI[i].style.display = "none";
+//     }
+    
+//     slideVI[slideIndexVI-1].style.display = "block";
+// };
+
+
+//Project Seven Slider
+let slideIndexVII = 1;
+showSlidesVII(slideIndexVII);
+
+function addSlidesVII(indexVII) {
     setTimeout(() =>{
-        showSlidesVI(slideIndexVI += indexVI);
+        showSlidesVII(slideIndexVII += indexVII);
     }, 1000)
   };
 
-function showSlidesVI(indexVI) {
+function showSlidesVII(indexVII) {
     let i;
-    let slideVI = document.getElementsByClassName("slideVI");
+    let slideVII = document.getElementsByClassName("slideVII");
 
-    if (indexVI > slideVI.length) { slideIndexVI = 1 }
-    if (indexVI < 1) { slideIndexVI = slideVI.length }
+    if (indexVII > slideVII.length) { slideIndexVII = 1 }
+    if (indexVII < 1) { slideIndexVII = slideVI.length }
 
-    for (i = 0; i < slideVI.length; i++){
-        slideVI[i].style.display = "none";
+    for (i = 0; i < slideVII.length; i++){
+        slideVII[i].style.display = "none";
     }
     
-    slideVI[slideIndexVI-1].style.display = "block";
+    slideVII[slideIndexVII-1].style.display = "block";
 };
 
 
