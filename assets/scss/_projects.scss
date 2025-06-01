@@ -1,0 +1,416 @@
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    background-color: $white;
+}
+
+.projectsPage{
+    background-color: $white;
+    color: $black;
+    padding: 3rem 6rem;
+
+    .explore{
+        @include flexCenter();
+        background-color: #1e252d;
+        color: $white;
+        padding: 2rem 3rem;
+        font-family: "Poppins", sans-serif;
+        border-radius: 10px;
+
+        h1{
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 3rem;
+            padding-right: 3rem;
+        }
+
+        p{
+            font-size: 1rem;
+            font-weight: normal;
+            line-height: 1.5rem;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+    }
+}
+
+
+.jsProjects{
+    margin: 2rem 0;
+
+    .jsProjectsGrid{
+        @include gridThree();
+        gap: 2rem 1.5rem;
+
+        .eachJsProject{
+            height: 450px;
+            background-color: #E2DFD0;
+            border-radius: 10px;
+            font-family: "Poppins", sans-serif;
+            padding: 1rem;
+
+            h2{
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 1.2rem;
+            }
+
+            p{
+                line-height: normal;
+                font-size: 0.9rem;
+            }
+
+            a{
+                background-color: #345e82;
+                padding: 8px 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: $white;
+                font-size: 0.8rem;
+            }
+            
+            .jsImage{
+                height: 50%;
+                width: 100%;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+.reactProjects{
+    margin: 3rem 0;
+
+    h1{
+        margin: 3rem 0rem 1rem 0rem;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .reactProjectsGrid{
+        @include gridTwo();
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .eachReactProject{
+            height: 450px;
+            background-color: #E2DFD0;
+            color: $black;
+            border-radius: 10px;
+            font-family: "Poppins", sans-serif;
+            padding: 1rem;
+
+            h2{
+                padding-top: 1rem;
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+            p{
+                line-height: normal;
+                font-size: 12px;
+            }
+
+            a{
+                background-color: $white;
+                padding: 8px 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: #345e82;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .reactImage{
+                height: 70%;
+                width: 100%;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.pythonProjects{
+    margin: 0;
+    padding: 2rem;
+
+    h1{
+        margin: 3rem 0rem 1rem 0rem;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .eachPythonProject{
+        margin-top: 2rem;
+        height: 500px;
+        background-color: #E2DFD0;
+        color: $black;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+        padding: 1rem;
+
+        p{
+            line-height: normal;
+            font-size: 12px;
+        }
+        
+        a{
+            background-color: $white;
+            padding: 8px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #345e82;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .pythonImage{
+            height: 80%;
+            width: 100%;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.slideupward{
+    animation: slideUpward 2s ease normal;
+}
+            
+.availableOnRequest{
+    color:#3674B5;
+}
+@keyframes slideUpward{
+    from {
+        transform: translateY(0.5%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 900px){
+    .projectsPage{
+        padding: 3rem;
+
+        .explore{
+            padding: 2rem;
+            h1{
+                font-size: 2rem;
+                line-height: 2.5rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    .jsProjects{
+        .jsProjectsGrid{
+            @include gridTwo();
+            gap: 2rem 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 501px) and (max-width: 650px){
+    .projectsPage{
+        padding: 3rem;
+
+        .explore{
+            padding: 2rem;
+            h1{
+                font-size: 2rem;
+                line-height: 2.5rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    .jsProjects{
+        margin: 2rem 0;
+
+        .jsProjectsGrid{
+            display: block;
+            gap: 2rem 1.5rem;
+
+            .eachJsProject{
+                margin-top: 2rem;
+                height: 400px;
+                
+                p{
+                    font-size: 0.8rem;
+                }
+
+                .jsImage{
+                    height: 60%;
+                    width: 100%;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .reactProjects{
+        margin: 2rem 0;
+
+        h1{
+            font-size: 1.8rem;
+        }
+
+        .reactProjectsGrid{
+            display: block;
+
+            .eachReactProject{
+                height: 450px;
+                margin-top: 2rem;
+                padding: 1rem;
+            }
+        }
+    }
+
+    .pythonProjects{
+        margin: 0;
+        padding: 2rem 0rem;
+
+        h1{
+            margin: 1rem 0rem 0rem 0rem;
+            font-size: 1.8rem;
+        }
+
+        .eachPythonProject{
+            height: 480px;
+
+            .pythonImage{
+                height: 75%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px){
+    .projectsPage{
+        padding: 2rem 1rem;
+
+        .explore{
+            padding: 1rem;
+            h1{
+                font-size: 1.5rem;
+                line-height: 2rem;
+                padding-right: 1rem;
+            }
+
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .jsProjects{
+        margin: 2rem 0;
+
+        .jsProjectsGrid{
+            display: block;
+
+            .eachJsProject{
+                margin-top: 1rem;
+                height: 450px;
+                
+                p{
+                    font-size: 0.8rem;
+                }
+
+                .jsImage{
+                    height: 55%;
+                    width: 100%;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .reactProjects{
+        margin: 2rem 0;
+
+        h1{
+            font-size: 1.5rem;
+            margin-bottom: -1rem;
+        }
+
+        .reactProjectsGrid{
+            display: block;
+
+            .eachReactProject{
+                height: 480px;
+                margin-top: 2rem;
+                padding: 1rem;
+
+                .reactImage{
+                    height: 65%;
+                    width: 100%;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .pythonProjects{
+        margin: 0;
+        padding: 2rem 0rem;
+
+        h1{
+            margin: 1rem 0rem 0rem 0rem;
+            font-size: 1.5rem;
+            margin-bottom: -1rem;
+        }
+
+        .eachPythonProject{
+            height: 460px;
+
+            .pythonImage{
+                height: 75%;
+            }
+        }
+    }
+}

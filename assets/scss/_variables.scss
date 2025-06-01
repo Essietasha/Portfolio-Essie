@@ -1,0 +1,35 @@
+$white: #ffffff;
+$black: #111;
+$bgColor: #EADBC8;
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexJC-SB {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexJC-FS {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin gridTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@mixin gridThree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+

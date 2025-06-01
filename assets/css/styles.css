@@ -1,1069 +1,1150 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container-fluid{
-    padding: 0;
+body, html {
+  overflow-x: hidden;
 }
 
-body, html { 
-    overflow-x: hidden;
+body {
+  background-color: #EADBC8;
+  color: #ffffff;
 }
 
-
-body{
-    background-color: #EADBC8;
-    color: #ffffff;
-}
-
-nav{
-    min-width: 100%;
-    background-color: #111;
-    padding: 12px 30px;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navFlex{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-
-.navFlex.links{
-    gap: 30px;
-    /* position: fixed;
-    right: 2%; */
-}
-
-.navFlex a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.navFlex a:hover{
-    border-bottom: 1px solid #ffffff;
-}
-
-.navFlex h2 a:hover{
-    border-bottom: none;
-}
-
-
-.logo{
-    height: 60px;
-    width: 55px;
-    border-radius: 50%;
-}
-
-section.intro{
-    background-color: #EADBC8;
-    padding: 100px;
-    color: #111;
-}
-
-.introName{
-    font-size: 50px;
-    letter-spacing: 1rem;
-    font-weight: bold;
-}
-
-.hrFlex{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-
-.hrFlex hr{
-    height: 100px;
-    width: 2px;
-    background-color: #111;
-    color: #ffffff;
-}
-
-.hrFlex p{
-    font-size: 20px;
-    padding-right: 100px;
-}
-
-.socials{
-    display: flex;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.social:hover{
-    background-color: #ffffff;
-}
-
-.social{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navDownArrow{
-    margin-top: 40px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navDownArrow .navCircle{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-}
-
-
-
-.navDownArrow .navCircle:hover{
-    border: 2px solid #345e82;
-    transition: 0.5s ease-in-out;
-}
-
-.fa-angle-down{
-    text-align: center;
-    color: #111;
-    font-size: 30px;
-    width: 100%;
-    height: 100%;
-}
-
-section.projects{
-    background-color: #FFF6E9;
-    margin-top: 10px;
-    color: #111;
-    font-weight: bold;
-    font-size: 12px;
-    padding-bottom: 50px;
-    overflow: hidden;
-    width: 100%;
-}
-
-.projectsGrid{
-    display: grid;
-    grid-template-columns: 33.4% 33.3% 33.3%;
-    justify-content: flex-end;
-    align-items: center;
-    height: 40px;
-}
-
-.project{
-    height: 100%;
-    width: 100%;
-}
-
-#javascript, #python, #react{
-    padding-top: 10px;
-    padding-left: 10px;
-    cursor: pointer;
-}
-
-.active{
-    background-color: #171b20;
-    color: #ffffff; 
-}
-
-.jsReactFlex{
-    display: flex;
-}
-.box{
-    min-width: 100%;
-}
-
-.dots{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.dot{
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    border: 1px solid #006989;
-}
-
-.design{
-    text-align: center;
-    margin: 30px 50px;
-    font-size: 1.2rem;
-    font-weight: 100;
-    font-family: "Poppins", sans-serif;
-}
-
-.viewAllBtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.viewAllBtn button{
-    cursor: pointer;
-    background-color: #006989;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: none;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.viewAllBtn a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.viewAllBtn button:hover{
-    background-color: #333;
-    color: #ffffff;
-    transition: 1s ease-in-out;
-}
-
-.ReactProjects h2{
-    margin-top: 3rem;
-    text-align: center;
-    font-size: 3rem;
-    color: #006989;
-}
-
-.reactProjectGrid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin: 40px 30px;
-}
-
-.ProjectReact{
-    padding: 20px;
-    background-color: #FFF6E9;
-    border: 2px solid gray;
-    border-radius: 5px;
-    margin-top: 20px;
-    height: 480px;
-}
-
-.ProjectPython{
-    padding: 2rem 7rem 2rem 7rem;
-    background-color: #FFF6E9;
-    border: none;
-    margin-top: 20px;
-    height: 620px;
-}
-
-.ProjectReact a, .ProjectPython a{
-    text-decoration: none;
-}
-
-.ProjectReact h3, .ProjectPython h3{
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 0px;
-}
-
-.projectDetails p{
-    font-weight: normal;
-}
-
-.availableOnRequest{
-    color:#3674B5;
-}
-
-.projectDetails h6{
-    margin-top: 10px;
-}
-
-.projectDetails a{
-    text-decoration:none;
-}
-.projectDetails a:hover{
-    text-decoration: underline;
-}
-
-.projectDetails .github{
-    text-decoration:underline;
-}
-
-.projectsJs{
-    padding: 20px;
-    margin-top: 1rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.projectsJsGrid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+body {
+  background-color: #EEEEEE;
+  color: #111;
 }
 
-.projectsJs h1{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 1.5rem;
+iframe {
+  width: 92%;
+  height: 100vh;
+  margin: 0px 50px;
 }
 
-.projectEachJs{
-    height: 450px;
-    background-color: #e7e0d6;
-    color: #111;
-    border-radius: 10px;
-    font-family: "Poppins", sans-serif;
-    padding: 1rem;
-    margin-top: 10px;
+.container-fluid {
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  background-color: #111;
+  padding: 1rem 2rem;
 }
-
-.reactImage{
-    height: 70%;
-    width: 100%;
-    margin-top: 1rem;
-}
-
-.reactImage img{
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.projectEachJs h2{
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.projectEachJs p{
-    line-height: normal;
-    font-size: 12px;
-}
-
-.projectEachJs a{
-    background-color: #ffffff;
-    padding: 8px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #345e82;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.slides{
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slide img, .slideII img, .slideIII img, .slideIIII img{
-    height: 100%;
-    width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.slideIV img{
-    height: 400px;
-    width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.slideVI img{
-    height: 400px;
-    width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.slide, .slideII, .slideIII, .slideIIII, .slideIV, .slideVI{
-    text-align: center;   
-    display: none;
-    width: 100%;
-}
-
-#about{
-    background: linear-gradient(90deg,  #1e252d,#345e82, #1e252d);
-    color: #fff;
-    padding: 50px 0px;
-}
-
-.aboutImgDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.aboutImg{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-#about p{
-    padding: 20px 100px;
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-}
-
-.viewResumeBtn a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-#contact{
-    background-color: rgb(26, 24, 24);
-    padding: 5rem 8rem;
-    color:  rgb(236, 231, 225);
-}
-
-#contact h1{
-    font-size: 10rem;
+nav .navFlexCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navFlexCont .navFlex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav .navFlexCont .navFlex .links {
+  gap: 2rem;
+}
+nav .navFlexCont .navFlex a {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav .navFlexCont .navFlex a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+nav .navFlexCont .navFlex #brandName a {
+  font-size: 2rem;
+  border-bottom: none;
+}
+nav .navFlexCont .navFlex #brandName a:hover {
+  text-decoration: none;
+}
+nav .navFlexCont .navFlex .imgLogo {
+  height: 60px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+section.intro {
+  background-color: #EADBC8;
+  padding: 6rem;
+  color: #111;
+}
+section.intro h1 {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  font-weight: bold;
+}
+section.intro .hrFlex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+section.intro .hrFlex hr {
+  height: 6.5rem;
+  width: 5px;
+  background-color: #111;
+}
+section.intro .hrFlex p {
+  font-size: 1.2rem;
+  padding-right: 8rem;
+}
+section.intro .socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+section.intro .socials .social {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.intro .socials .social:hover {
+  background-color: #ffffff;
+}
+section.intro .navDownArrow {
+  margin-top: 2.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.intro .navDownArrow .navCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #111;
+  text-align: center;
+  cursor: pointer;
+}
+section.intro .navDownArrow .navCircle:hover {
+  border: 2px solid #345e82;
+  transition: 0.5s ease-in-out;
+}
+section.intro .navDownArrow .navCircle .fa-angle-down {
+  text-align: center;
+  color: #111;
+  font-size: 2rem;
+}
+section.intro .viewAllBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+section.intro .viewAllBtn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+section.intro .viewAllBtn button {
+  cursor: pointer;
+  background-color: #006989;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+section.intro .viewAllBtn button:hover {
+  background-color: #333;
+  color: #ffffff;
+  transition: 1s ease-in-out;
+}
+section.intro section.projects {
+  background-color: #FFF6E9;
+  margin-top: 1rem;
+  color: #111;
+  font-size: 0.8rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+section.intro section.projects .projectsTitleGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+section.intro section.projects .projectsTitleGrid .project {
+  height: 100%;
+  width: 100%;
+}
+section.intro section.projects .projectsTitleGrid #javascript, section.intro section.projects .projectsTitleGrid #python, section.intro section.projects .projectsTitleGrid #react {
+  padding: 10px 0px 10px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+section.intro section.projects .allProjectsFlex {
+  display: flex;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects {
+  min-width: 100%;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects h2 {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #006989;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.8rem 0rem;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects a {
+  text-decoration: none;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails h6 {
+  margin-top: 10px;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails a {
+  text-decoration: none;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails a:hover {
+  text-decoration: underline;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails .github {
+  text-decoration: underline;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .dots .dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 1px solid #006989;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .design {
+  text-align: center;
+  margin: 2rem 3rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+  padding: 1.2rem;
+  background-color: #FFF6E9;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-top: 1rem;
+  height: 500px;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython {
+  margin-top: 5rem;
+  padding: 2rem 7rem;
+  background-color: #FFF6E9;
+  margin-top: 1.2rem;
+  height: 600px;
+  border: none;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython a {
+  text-decoration: none;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.8rem 0rem;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails h6 {
+  margin-top: 10px;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a {
+  text-decoration: none;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a:hover {
+  text-decoration: underline;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails .github {
+  text-decoration: underline;
+}
+section.intro section.projects .allProjectsFlex .projectsJs {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs h1 {
+  margin: 2rem 0rem;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs {
+  height: 450px;
+  background-color: #e7e0d6;
+  color: #111;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.8rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs p {
+  line-height: normal;
+  font-size: 0.8rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs a {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #345e82;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
+  height: 70%;
+  width: 100%;
+  margin-top: 1rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+section.intro section.projects .allProjectsFlex .slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+section.intro section.projects .allProjectsFlex .slides .slide, section.intro section.projects .allProjectsFlex .slides .slideII, section.intro section.projects .allProjectsFlex .slides .slideIII, section.intro section.projects .allProjectsFlex .slides .slideIIII, section.intro section.projects .allProjectsFlex .slides .slideIV, section.intro section.projects .allProjectsFlex .slides .slideVI {
+  text-align: center;
+  display: none;
+  width: 100%;
+}
+section.intro section.projects .allProjectsFlex .slides .slide img, section.intro section.projects .allProjectsFlex .slides .slideII img, section.intro section.projects .allProjectsFlex .slides .slideIII img, section.intro section.projects .allProjectsFlex .slides .slideIIII img, section.intro section.projects .allProjectsFlex .slides .slideIV img, section.intro section.projects .allProjectsFlex .slides .slideVI img {
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+section.intro section.projects .allProjectsFlex .availableOnRequest {
+  color: #3674B5;
+}
+
+.active {
+  background-color: #171b20;
+  color: #ffffff;
+}
+
+section#about {
+  background: linear-gradient(90deg, #1e252d, #345e82, #1e252d);
+  color: #ffffff;
+  padding: 3.5rem 0rem;
+}
+section#about p {
+  padding: 1.2rem 6rem;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+section#about .aboutImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section#about .aboutImgDiv img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+section#about .viewResume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#about .viewResume button {
+  cursor: pointer;
+  background-color: #006989;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+}
+section#about .viewResume button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+section#about .viewResume button:hover {
+  background-color: #333;
+  color: #ffffff;
+  transition: 1s ease-in-out;
+}
+
+section#contact {
+  background-color: rgb(26, 24, 24);
+  padding: 5rem 8rem;
+  color: rgb(236, 231, 225);
+}
+section#contact h1 {
+  font-size: 10rem;
+  margin-bottom: 2rem;
+  font-family: "EB Garamond", serif;
+  font-weight: 300;
+}
+section#contact a {
+  color: rgb(236, 231, 225);
+}
+section#contact p {
+  font-size: 0.9rem;
+}
+section#contact .phone {
+  margin-top: -12px;
+}
+section#contact .socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+section#contact .socials .social {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#contact .socials .social:hover {
+  background-color: #345e82;
+}
+
+.navigateUp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #111;
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  bottom: 2%;
+  cursor: pointer;
+}
+.navigateUp a {
+  color: #ffffff;
+}
+
+.fa-arrow-up {
+  text-align: center;
+  margin-top: 30%;
+  width: 100%;
+  height: 100%;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.navButtons div {
+  background-color: #111;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previousBtn, .nextBtn {
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.nextBtn {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  padding-right: 1.2rem;
+}
+
+.previousBtn:hover, .nextBtn:hover {
+  color: #006989;
+}
+
+.slideup {
+  animation: slideUp 2s ease normal;
+}
+
+.slideabove {
+  animation: slideAbove 2s ease normal;
+}
+
+.textslide {
+  animation: textSlide 2s ease normal;
+}
+
+.slidein {
+  animation: slideIn 3s ease forwards;
+}
+
+.repeatslide {
+  animation: repeatSlide 2s ease normal;
+}
+
+.url {
+  color: #DF6D2D;
+}
+
+#techive {
+  height: 720px;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0.5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes textSlide {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slideAbove {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-8%);
+    opacity: 1;
+  }
+}
+@keyframes repeatSlide {
+  from {
+    transform: translateY(0.5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  nav .navFlexCont .navFlex .links {
+    gap: 1.5rem;
+  }
+  section.intro {
+    padding: 5rem 3rem 3rem 3rem;
+  }
+  section.intro h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
     margin-bottom: 2rem;
-    font-family: "EB Garamond", serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-#contact a{
-    color:  rgb(236, 231, 225);
-}
-
-#contact p{
-    font-size: 14px;
-}
-
-#contact .phone{
-    margin-top: -12px;
-}
-
-#contact .socials{
-    margin-bottom: 30px;
-}
-
-#contact .social:hover{
-    background-color: #345e82;
-}
-
-.viewResume{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.viewResume button{
-    cursor: pointer;
-    background-color: #006989;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: none;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.viewResume button:hover{
-    background-color: #333;
-    color: #ffffff;
-    transition: 1s ease-in-out;
-}
-
-.navigateUp{
-    width: 50px;
+  }
+  section.intro .hrFlex p {
+    font-size: 1.2rem;
+    padding-right: 3rem;
+  }
+  section.intro .navDownArrow .navCircle {
+    width: 40px;
+    height: 40px;
+  }
+  section.intro .navDownArrow .navCircle .fa-angle-down {
+    font-size: 1.4rem;
+  }
+  section.intro section.projects .projectsTitleGrid {
     height: 50px;
-    border-radius: 50%;
-    background-color: #111;
-    color: #ffffff;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython {
+    padding: 2rem;
+    background-color: #FFF6E9;
+    border: none;
+    margin-top: 1.2rem;
+    height: 500px;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython a {
+    text-decoration: none;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython h3 {
     text-align: center;
-    position: fixed;
-    bottom: 2%;
-    cursor: pointer;
-}
-
-.navigateUp a{
-    color: #ffffff;
-}
-
-.fa-arrow-up{
-    text-align: center;
-    margin-top: 30%;
-    width: 100%;
-    height: 100%;
-}
-
-.navButtons{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-bottom: 5px;
-}
-
-.navButtons div{
-    background-color: #111;
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.previousBtn, .nextBtn{
-    cursor: pointer;
-    color: #fff;
     font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    user-select: none;
+    font-size: 1.1rem;
+    padding: 0.8rem 0rem;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails h6 {
+    margin-top: 10px;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a {
+    text-decoration: none;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a:hover {
+    text-decoration: underline;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails .github {
+    text-decoration: underline;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs {
+    padding: 1.5rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+    gap: 1rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs h1 {
+    font-size: 1.5rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs {
+    height: 420px;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
+    height: 60%;
+    width: 100%;
+  }
+  .active {
+    background-color: #171b20;
+    color: #ffffff;
+  }
+  section#about {
+    padding: 2.5rem 0rem;
+  }
+  section#about p {
+    padding: 1.2rem 3rem;
+    font-size: 1rem;
+  }
+  section#contact {
+    padding: 5rem 2rem;
+  }
+  section#contact h1 {
+    font-size: 8rem;
+  }
+  section#contact p {
+    font-size: 0.8rem;
+  }
+  section#contact .socials {
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  #techive {
+    height: 500px;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    padding: 1rem;
+  }
+  nav .navFlexCont #navDivEl a {
+    font-size: 0.8rem;
+  }
+  nav .navFlexCont .navFlex .links {
+    gap: 1rem;
+  }
+  nav .navFlexCont .navFlex #brandName a {
+    font-size: 1.2rem;
+  }
+  nav .navFlexCont .navFlex .imgLogo {
+    height: 50px;
+    width: 45px;
+    border-radius: 50%;
+  }
+  section.intro {
+    padding: 5rem 1.5rem 3rem 1.5rem;
+  }
+  section.intro h1 {
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+  }
+  section.intro .hrFlex hr {
+    height: 12rem;
+  }
+  section.intro .hrFlex p {
+    font-size: 1.1rem;
+    padding-right: 1rem;
+  }
+  section.intro .navDownArrow .navCircle {
+    width: 40px;
+    height: 40px;
+  }
+  section.intro .navDownArrow .navCircle .fa-angle-down {
+    font-size: 1.4rem;
+  }
+  section.intro section.projects .projectsTitleGrid {
+    height: 50px;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects h3 {
+    font-size: 1rem;
+    padding: 0.8rem 0rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .design {
+    font-size: 1rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
+    display: block;
+    gap: 1rem;
+    margin: 2rem 1rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+    padding: 1rem;
+    margin-top: 1rem;
+    height: 450px;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs {
+    padding: 1.5rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+    display: block;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs {
+    height: 420px;
+    margin-top: 1rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
+    height: 60%;
+    width: 100%;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    height: 500px;
+    border: 2px solid gray;
+    border-radius: 3px;
+  }
+  .active {
+    background-color: #171b20;
+    color: #ffffff;
+  }
+  section#about {
+    padding: 1rem 0rem;
+  }
+  section#about p {
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+  section#contact {
+    padding: 5rem 2rem;
+  }
+  section#contact h1 {
+    font-size: 8rem;
+  }
+  section#contact p {
+    font-size: 0.8rem;
+  }
+  section#contact .socials {
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  #techive {
+    height: 500px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.nextBtn{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    padding-right: 20px;
+.container-fluid {
+  background-color: #ffffff;
 }
 
-.previousBtn:hover, .nextBtn:hover{
-    color: #006989;
+.projectsPage {
+  background-color: #ffffff;
+  color: #111;
+  padding: 3rem 6rem;
+}
+.projectsPage .explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e252d;
+  color: #ffffff;
+  padding: 2rem 3rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
+.projectsPage .explore h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  padding-right: 3rem;
+}
+.projectsPage .explore p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
 }
 
-.slideup{
-    animation: slideUp 2s ease normal;
+.jsProjects {
+  margin: 2rem 0;
+}
+.jsProjects .jsProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  gap: 2rem 1.5rem;
+}
+.jsProjects .jsProjectsGrid .eachJsProject {
+  height: 450px;
+  background-color: #E2DFD0;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+.jsProjects .jsProjectsGrid .eachJsProject h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.2rem;
+}
+.jsProjects .jsProjectsGrid .eachJsProject p {
+  line-height: normal;
+  font-size: 0.9rem;
+}
+.jsProjects .jsProjectsGrid .eachJsProject a {
+  background-color: #345e82;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+.jsProjects .jsProjectsGrid .eachJsProject .jsImage {
+  height: 50%;
+  width: 100%;
+}
+.jsProjects .jsProjectsGrid .eachJsProject .jsImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
 
-.slideabove{
-    animation: slideAbove 2s ease normal;
+.reactProjects {
+  margin: 3rem 0;
+}
+.reactProjects h1 {
+  margin: 3rem 0rem 1rem 0rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.reactProjects .reactProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.reactProjects .reactProjectsGrid .eachReactProject {
+  height: 450px;
+  background-color: #E2DFD0;
+  color: #111;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+.reactProjects .reactProjectsGrid .eachReactProject h2 {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.reactProjects .reactProjectsGrid .eachReactProject p {
+  line-height: normal;
+  font-size: 12px;
+}
+.reactProjects .reactProjectsGrid .eachReactProject a {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #345e82;
+  font-size: 12px;
+  font-weight: bold;
+}
+.reactProjects .reactProjectsGrid .eachReactProject .reactImage {
+  height: 70%;
+  width: 100%;
+}
+.reactProjects .reactProjectsGrid .eachReactProject .reactImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
 
-.textslide{
-    animation: textSlide 2s ease normal;
+.pythonProjects {
+  margin: 0;
+  padding: 2rem;
+}
+.pythonProjects h1 {
+  margin: 3rem 0rem 1rem 0rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.pythonProjects h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.pythonProjects .eachPythonProject {
+  margin-top: 2rem;
+  height: 500px;
+  background-color: #E2DFD0;
+  color: #111;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+.pythonProjects .eachPythonProject p {
+  line-height: normal;
+  font-size: 12px;
+}
+.pythonProjects .eachPythonProject a {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #345e82;
+  font-size: 12px;
+  font-weight: bold;
+}
+.pythonProjects .eachPythonProject .pythonImage {
+  height: 80%;
+  width: 100%;
+}
+.pythonProjects .eachPythonProject .pythonImage img {
+  height: 100%;
+  width: 100%;
 }
 
-.slidein{
-    animation: slideIn 3s ease forwards;
+.slideupward {
+  animation: slideUpward 2s ease normal;
 }
 
-.repeatslide{
-    animation: repeatSlide 2s ease normal;
+.availableOnRequest {
+  color: #3674B5;
 }
 
-.url{
-    color: #DF6D2D;
+@keyframes slideUpward {
+  from {
+    transform: translateY(0.5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (min-width: 651px) and (max-width: 900px) {
+  .projectsPage {
+    padding: 3rem;
+  }
+  .projectsPage .explore {
+    padding: 2rem;
+  }
+  .projectsPage .explore h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-right: 2rem;
+  }
+  .jsProjects .jsProjectsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    gap: 2rem 1.5rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 650px) {
+  .projectsPage {
+    padding: 3rem;
+  }
+  .projectsPage .explore {
+    padding: 2rem;
+  }
+  .projectsPage .explore h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-right: 2rem;
+  }
+  .jsProjects {
+    margin: 2rem 0;
+  }
+  .jsProjects .jsProjectsGrid {
+    display: block;
+    gap: 2rem 1.5rem;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject {
+    margin-top: 2rem;
+    height: 400px;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject p {
+    font-size: 0.8rem;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject .jsImage {
+    height: 60%;
+    width: 100%;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject .jsImage img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .reactProjects {
+    margin: 2rem 0;
+  }
+  .reactProjects h1 {
+    font-size: 1.8rem;
+  }
+  .reactProjects .reactProjectsGrid {
+    display: block;
+  }
+  .reactProjects .reactProjectsGrid .eachReactProject {
+    height: 450px;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .pythonProjects {
+    margin: 0;
+    padding: 2rem 0rem;
+  }
+  .pythonProjects h1 {
+    margin: 1rem 0rem 0rem 0rem;
+    font-size: 1.8rem;
+  }
+  .pythonProjects .eachPythonProject {
+    height: 480px;
+  }
+  .pythonProjects .eachPythonProject .pythonImage {
+    height: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .projectsPage {
+    padding: 2rem 1rem;
+  }
+  .projectsPage .explore {
+    padding: 1rem;
+  }
+  .projectsPage .explore h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-right: 1rem;
+  }
+  .projectsPage .explore p {
+    font-size: 0.9rem;
+  }
+  .jsProjects {
+    margin: 2rem 0;
+  }
+  .jsProjects .jsProjectsGrid {
+    display: block;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject {
+    margin-top: 1rem;
+    height: 450px;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject p {
+    font-size: 0.8rem;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject .jsImage {
+    height: 55%;
+    width: 100%;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject .jsImage img {
+    height: 100%;
+    width: 100%;
+  }
+  .reactProjects {
+    margin: 2rem 0;
+  }
+  .reactProjects h1 {
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+  }
+  .reactProjects .reactProjectsGrid {
+    display: block;
+  }
+  .reactProjects .reactProjectsGrid .eachReactProject {
+    height: 480px;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .reactProjects .reactProjectsGrid .eachReactProject .reactImage {
+    height: 65%;
+    width: 100%;
+  }
+  .reactProjects .reactProjectsGrid .eachReactProject .reactImage img {
+    height: 100%;
+    width: 100%;
+  }
+  .pythonProjects {
+    margin: 0;
+    padding: 2rem 0rem;
+  }
+  .pythonProjects h1 {
+    margin: 1rem 0rem 0rem 0rem;
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+  }
+  .pythonProjects .eachPythonProject {
+    height: 460px;
+  }
+  .pythonProjects .eachPythonProject .pythonImage {
+    height: 75%;
+  }
 }
 
-@keyframes slideUp{
-    from {
-        transform: translateY(0.5%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes textSlide{
-    from {
-        transform: translateY(50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn{
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-
-@keyframes slideAbove{
-    from {
-        transform: translateY(50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(-8%);
-        opacity: 1;
-    }
-}
-
-@keyframes repeatSlide{
-    from {
-        transform: translateY(0.5%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@media (min-width: 450px) and (max-width: 700px){
-
-    section.intro{
-        padding: 100px 30px 50px;
-    }
-
-    .navFlex.links{
-        gap: 20px;
-    }
-
-    #nametag a{
-       font-size: 25px;
-    }
-
-    #navDivEl a{
-        font-size: 12px;
-    }
-
-    .introName{
-        font-size: 32px;
-        letter-spacing: 1rem;
-    }
-
-    .hrFlex hr{
-        height: 150px;
-    }
-    
-    .hrFlex p{
-        font-size: 16px;
-        padding-right: 100px;
-    }
-
-    .socials{
-        margin-top: 2px;
-    }
-    
-    .navDownArrow .navCircle{
-        width: 40px;
-        height: 40px;
-    }
-    
-    .fa-angle-down{
-        font-size: 20px;
-    }
-
-    section.projects{
-        margin-top: 20px;
-    }
-
-    .projectsGrid{
-        grid-template-columns: 33.4% 33.3% 33.3%;
-    }
-    
-    .reactProjectGrid{
-        display: block;
-        margin: 40px 20px;
-    }
-    .dots{
-        gap: 5px;
-    }
-    
-    .ReactProjects h2{
-        font-size: 2rem;
-    }
-    
-    .design{
-        margin: 30px 10px;
-        font-size: 1rem;
-    }
-    
-    .viewAllBtn button{
-        padding: 10px;
-    }
-
-    .ProjectReact{
-        height: 480px;
-    }
-
-    .ProjectPython{
-        padding: 1rem;
-        margin-top: 20px;
-        height: 520px;
-    }
-   
-    .slideIV img{
-        height: 300px;
-        width: 100%;
-    }
-
-    .slideVI img{
-        height: 300px;
-        width: 100%;
-    }
-
-    .projectsJs h1{
-        margin-top: 20px;
-        font-size: 1.2rem;
-    }
-    
-    #about p{
-        padding: 20px 30px;
-        font-size: 16px;
-    }
-      
-    #contact{
-        padding: 5rem 3rem;
-    }
-    
-    #contact h1{
-        font-size: 7rem;
-    }
-    
-    
-    #contact p{
-        font-size: 12px;
-    }
-    
-    #contact .socials{
-        margin-bottom: 20px;
-    }
-     
-    .navigateUp{
-        width: 40px;
-        height: 40px;
-    }
-    
-}
-
-@media (min-width: 360px) and (max-width: 450px) {
-    section.intro{
-        padding: 100px 30px 50px;
-    }
-
-    nav{
-        padding: 12px 20px;
-    }
-    
-    .navFlex.links{
-        gap: 10px;
-    }
-
-    #nametag a{
-       font-size: 22px;
-    }
-
-    #navDivEl a{
-        font-size: 11px;
-    }
-
-    .introName{
-        font-size: 32px;
-        letter-spacing: 1rem;
-    }
-
-    .hrFlex hr{
-        height: 150px;
-    }
-    
-    .hrFlex p{
-        font-size: 16px;
-        padding-right: 100px;
-    }
-
-    .socials{
-        margin-top: 2px;
-    }
-    
-    .navDownArrow .navCircle{
-        width: 40px;
-        height: 40px;
-    }
-    
-    .fa-angle-down{
-        font-size: 20px;
-    }
-
-    section.projects{
-        margin-top: 20px;
-    }
-
-    #react{
-        padding-top: 5px;
-    }
-    
-    .projectsGrid{
-        grid-template-columns: 33.4% 33.3% 33.3%;
-    }
-    
-    .dots{
-        gap: 5px;
-    }
-    
-    .ReactProjects h2{
-        font-size: 2rem;
-    }
-
-    .projectEachJs{
-        margin-top: 20px;
-    }
-    
-    .design{
-        margin: 30px 10px;
-        font-size: 1rem;
-    }
-    
-    .viewAllBtn button{
-        padding: 10px;
-    }
-
-    .reactProjectGrid{
-        display: block;
-        margin: 40px 10px;
-    }
-
-    
-    .projectsJsGrid{
-        display: block;
-    }
-
-        
-    .ProjectReact{
-        padding: 20px 10px;
-        margin-top: 20px;
-        height: 410px;
-    }
-
-    .ProjectPython{
-        padding: 1rem;
-        margin-top: 20px;
-        height: 520px;
-    }
-
-    .slideIV img{
-        height: 250px;
-        width: 100%;
-    }
-
-    .slideVI img{
-        height: 250px;
-        width: 100%;
-    }
-
-    .projectsJs{
-        padding: 20px;
-        margin-top: 1rem;
-    }
-
-    .reactImage{
-        height: 70%;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .reactImage img{
-        height: 100%;
-        width: 100%;
-    }
-    
-    .projectsJs h1{
-        margin-top: 20px;
-        font-size: 1.2rem;
-    }
-    
-    #about p{
-        padding: 20px 30px;
-        font-size: 16px;
-    }
-      
-    #contact{
-        padding: 5rem 3rem;
-    }
-    
-    #contact h1{
-        font-size: 7rem;
-    }
-    
-    
-    #contact p{
-        font-size: 12px;
-    }
-    
-    #contact .socials{
-        margin-bottom: 20px;
-    }
-     
-    .navigateUp{
-        width: 40px;
-        height: 40px;
-    }
-
-}
-
-@media (max-width:360px) {
-    section.intro{
-        padding: 100px 30px 50px;
-    }
-
-    .navFlex.links{
-        gap: 10px;
-    }
-
-    #nametag a{
-       font-size: 20px;
-    }
-
-    #navDivEl a{
-        font-size: 10px;
-    }
-
-    .introName{
-        font-size: 32px;
-        letter-spacing: 1rem;
-    }
-
-    .hrFlex hr{
-        height: 150px;
-    }
-    
-    .hrFlex p{
-        font-size: 16px;
-        padding-right: 100px;
-    }
-
-    .socials{
-        margin-top: 2px;
-    }
-    
-    .navDownArrow .navCircle{
-        width: 40px;
-        height: 40px;
-    }
-    
-    .fa-angle-down{
-        font-size: 20px;
-    }
-
-    section.projects{
-        margin-top: 20px;
-    }
-    
-    .projectsGrid{
-        grid-template-columns: 33.4% 33.3% 33.3%;
-    }
-    
-    .dots{
-        gap: 5px;
-    }
-    
-    
-    .ReactProjects h2{
-        font-size: 2rem;
-    }
-    
-    .design{
-        margin: 30px 10px;
-        font-size: 1rem;
-    }
-    
-    .viewAllBtn button{
-        padding: 10px;
-    }
-
-    .reactProjectGrid{
-        display: block;
-    }
-    
-    .projectsJsGrid{
-        display: block;
-    }
-
-    .ProjectReact{
-        padding: 20px;
-        margin-top: 10px;
-        height: 400px;
-    }
-
-    .ProjectPython{
-        padding: 1rem;
-        margin-top: 20px;
-        height: 400;
-    }
-
-    .slideIV img{
-        height: 300px;
-        width: 100%;
-    }
-
-    .slideVI img{
-        height: 300px;
-        width: 100%;
-    }
-
-    .projectsJs{
-        padding: 20px;
-        margin-top: 1rem;
-    }
-
-    .reactImage{
-        height: 70%;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .reactImage img{
-        height: 100%;
-        width: 100%;
-    }
-    
-    .projectsJs h1{
-        margin-top: 20px;
-        font-size: 1.2rem;
-    }
-    
-    #about p{
-        padding: 20px 30px;
-        font-size: 16px;
-    }
-      
-    #contact{
-        padding: 5rem 3rem;
-    }
-    
-    #contact h1{
-        font-size: 7rem;
-    }
-    
-    
-    #contact p{
-        font-size: 12px;
-    }
-    
-    #contact .socials{
-        margin-bottom: 20px;
-    }
-     
-    .navigateUp{
-        width: 40px;
-        height: 40px;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

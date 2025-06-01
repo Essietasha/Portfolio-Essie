@@ -19,10 +19,10 @@
         <div class="homepage">
             <div class="nav">
                 <nav>
-                    <div class="flex">
+                    <div class="navFlexCont">
                         <div class="navFlex" id="nametag">
-                            <div class="img"><img class="logo" src="images/essie.jpg" alt=""></div>
-                            <h2><a href="index.html">Essie</a></h2>
+                            <div class="img"><img class="imgLogo" src="images/essie.jpg" alt=""></div>
+                            <h2 id="brandName"><a href="index.html">Essie</a></h2>
                         </div>
                         <div class="navFlex links" id="navDivEl">
                             <a href="#about" >ABOUT</a>
@@ -36,11 +36,11 @@
 
 
             <section class="intro">
-                <div class="selfIntro">
-                    <h1 class="introName">ESSIE OLUKOYA</h1>
+                <div>
+                    <h1>ESSIE OLUKOYA</h1>
                     <div class="hrFlex">
                         <hr>
-                        <p>Hi, I'm Essie. I am a front end developer; passionate about designing and implementing solutions to problems with a focus on responsive design and accessibility. Skillful in building user-friendly digital experiences and writing clear, concise code that is easy to maintain. </p>
+                        <p>Hi, I'm Essie. I am a full-stack developer; passionate about designing and implementing solutions to problems with a focus on responsive design and accessibility. Skillful in building user-friendly digital experiences and writing clear, concise code that is easy to maintain. </p>
                     </div>
                     <div class="socials">
                         <div class="social"> <a href="https://twitter.com/Olukoyaessie" target="_blank"><i class="fa-brands fa-twitter"></i></a> </div>
@@ -57,14 +57,14 @@
                 </div>
 
                 <section class="projects" id="projectsPage">
-                        <div class="projectsGrid" id="parentDiv">
+                        <div class="projectsTitleGrid" id="parentDiv">
                             <div class="project active" id="react">REACT PROJECTS</div>
                             <div class="project" id="javascript">JAVASCRIPT PROJECTS</div>
                             <div class="project" id="python">PYTHON PROJECT</div>
                         </div>
 
-                        <div class="jsReactFlex">
-                            <div class="ReactProjects box">
+                        <div class="allProjectsFlex">
+                            <div class="ReactProjects">
                                 <h2 class="desgn">Design</h2>
                                 <div class="dots">
                                     <div class="dot"></div>
@@ -79,10 +79,9 @@
                                     <button class="viewAllProjectBtn"><a href="projects.html">VIEW ALL PERSONAL PROJECTS</a></button>
                                 </div>
 
-                                <div class="reactProjectGrid">      
-                                    
-                                    
-                                    <div class="ProjectReact">
+
+                                <div class="reactProjectGrid">                                       
+                                    <div class="eachReactProjectGridBox">
                                         <h3>Interactive ESL Website: EnglishWithZoey</h3>
                                         <div class="slides">
                                             <div class="slideIIII">
@@ -161,7 +160,7 @@
                                     </div>
 
 
-                                    <div class="ProjectReact">
+                                    <div class="eachReactProjectGridBox">
                                         <h3>Netflix Clone</h3>
                                         <div class="slides">
                                             <div class="slideII">
@@ -204,7 +203,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="ProjectReact">
+                                    <div class="eachReactProjectGridBox">
                                         <h3>Urban Cafeteria</h3>
                                         <div class="slides">
                                             <div class="slideIII">
@@ -233,7 +232,7 @@
                                     </div>
 
                                     
-                                    <div class="ProjectReact">
+                                    <div class="eachReactProjectGridBox">
                                         <h3>Brookside College</h3>
                                         <div class="slides">
                                             <div class="slide">
@@ -300,7 +299,7 @@
                                 <div class="projectsJsGrid">
 
                                     <div class="projectEachJs">
-                                        <div class="reactImage">
+                                        <div class="jsImageDiv">
                                             <img src="images/bmicalc2.jpg" class="img-fluid" alt="...">
                                         </div>
                                         <h2>Bmi Calculator</h2>
@@ -309,7 +308,7 @@
                                     </div>
                 
                                     <div class="projectEachJs">
-                                        <div class="reactImage">
+                                        <div class="jsImageDiv">
                                             <img src="images/note.png" class="img-fluid" alt="...">
                                         </div>
                                         <h2>Note App</h2>
@@ -318,7 +317,7 @@
                                     </div>
 
                                     <div class="projectEachJs">
-                                        <div class="reactImage">
+                                        <div class="jsImageDiv">
                                             <img src="images/stopwatch1.png" class="img-fluid" alt="...">
                                         </div>
                                         <h2>Stopwatch Project</h2>
@@ -327,7 +326,7 @@
                                     </div>  
 
                                     <div class="projectEachJs">
-                                        <div class="reactImage">
+                                        <div class="jsImageDiv">
                                             <img src="images/calc5.jpg" class="img-fluid" alt="...">
                                         </div>
                                         <h2>Basic Calculator</h2>
@@ -419,7 +418,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="ProjectPython">
+                                    <div class="ProjectPython" id="techive">
                                         <h3>Techive Blogpost</h3>
                                         <div class="slides">
                                             <div class="slideVI">
@@ -473,7 +472,7 @@
                                             <h6><a href="projects.html">Project Details</a></h6>
                                             <p>Developed a fully functional Python-driven blog post website using Flask and SQL, featuring both front-end and back-end capabilities. 
                                                 It offers a platform for content creation, management. Techive includes a range of feature like 
-                                                user authentication, login, and logout functionality, content management to enable users create, edit, delete and explore posts, categories, and searching for specific content.</p>
+                                                user authentication, login, and logout functionality and content management.</p>
                                             <p class="availableOnRequest">Source code available on request</p>
                                         </div>
                                     </div>
@@ -481,13 +480,14 @@
                     </section>
             </section>
         </div>
+        
         <section id="about" class="repeatSlides">
             <div class="aboutImgDiv">
-                <img src="images/about.jpg" alt="Image" class="aboutImg">
+                <img src="images/about.jpg" alt="Image">
             </div>
             <p>I design and code beautiful things, and I love what I do. Since beginning my journey as a front end developer, I have developed passion to code things from scratch plus i enjoy bringing ideas to life in the browser.. I'm confident, curious, and perpetually working on improving my skills. As a developer, I value simple content structure, clean design patterns, and thoughtful interactions.</p>
             <div class="viewResume slideleft">
-                <button class="viewResumeBtn"><a href="resume.html" target="_blank">VIEW MY RESUME</a></button>
+                <button><a href="resume.html" target="_blank">VIEW MY RESUME</a></button>
             </div>
         </section>
 

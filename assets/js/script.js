@@ -1,9 +1,9 @@
 //OnLoad Event
 window.addEventListener('DOMContentLoaded', () => {
-    const projectsGrid = document.querySelector('.projectsGrid');
+    const projectsTitleGrid = document.querySelector('.projectsTitleGrid');
     const intro = document.querySelector('.intro');
 
-    projectsGrid.classList.add('slideup');
+    projectsTitleGrid.classList.add('slideup');
     intro.classList.add('textslide');
 })
 

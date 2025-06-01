@@ -1,0 +1,1358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #EADBC8;
+  color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEEEEE;
+  color: #111;
+}
+
+iframe {
+  width: 92%;
+  height: 100vh;
+  margin: 0px 50px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+nav {
+  min-width: 100%;
+  background-color: #111;
+  padding: 12px 30px;
+}
+nav .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .flex .navFlex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+nav .flex .navFlex .links {
+  gap: 30px;
+}
+nav .flex .navFlex a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav .flex .navFlex a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.navFlex h2 a:hover {
+  border-bottom: none;
+}
+
+.logo {
+  height: 60px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+section.intro {
+  background-color: #EADBC8;
+  padding: 100px;
+  color: #111;
+}
+
+.introName {
+  font-size: 50px;
+  letter-spacing: 1rem;
+  font-weight: bold;
+}
+
+.hrFlex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.hrFlex hr {
+  height: 100px;
+  width: 2px;
+  background-color: #111;
+  color: #ffffff;
+}
+
+.hrFlex p {
+  font-size: 20px;
+  padding-right: 100px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.social:hover {
+  background-color: #ffffff;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navDownArrow {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navDownArrow .navCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navDownArrow .navCircle:hover {
+  border: 2px solid #345e82;
+  transition: 0.5s ease-in-out;
+}
+
+.fa-angle-down {
+  text-align: center;
+  color: #111;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+section.projects {
+  background-color: #FFF6E9;
+  margin-top: 10px;
+  color: #111;
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 33.4% 33.3% 33.3%;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+}
+
+.project {
+  height: 100%;
+  width: 100%;
+}
+
+#javascript, #python, #react {
+  padding-top: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #171b20;
+  color: #ffffff;
+}
+
+.jsReactFlex {
+  display: flex;
+}
+
+.box {
+  min-width: 100%;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 1px solid #006989;
+}
+
+.design {
+  text-align: center;
+  margin: 30px 50px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+}
+
+.viewAllBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.viewAllBtn button {
+  cursor: pointer;
+  background-color: #006989;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.viewAllBtn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.viewAllBtn button:hover {
+  background-color: #333;
+  color: #ffffff;
+  transition: 1s ease-in-out;
+}
+
+.ReactProjects h2 {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #006989;
+}
+
+.reactProjectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 30px;
+}
+
+.ProjectReact {
+  padding: 20px;
+  background-color: #FFF6E9;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 480px;
+}
+
+.ProjectPython {
+  padding: 2rem 7rem 2rem 7rem;
+  background-color: #FFF6E9;
+  border: none;
+  margin-top: 20px;
+  height: 620px;
+}
+
+.ProjectReact a, .ProjectPython a {
+  text-decoration: none;
+}
+
+.ProjectReact h3, .ProjectPython h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+.projectDetails p {
+  font-weight: normal;
+}
+
+.availableOnRequest {
+  color: #3674B5;
+}
+
+.projectDetails h6 {
+  margin-top: 10px;
+}
+
+.projectDetails a {
+  text-decoration: none;
+}
+
+.projectDetails a:hover {
+  text-decoration: underline;
+}
+
+.projectDetails .github {
+  text-decoration: underline;
+}
+
+.projectsJs {
+  padding: 20px;
+  margin-top: 1rem;
+}
+
+.projectsJsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.projectsJs h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.projectEachJs {
+  height: 450px;
+  background-color: #e7e0d6;
+  color: #111;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  margin-top: 10px;
+}
+
+.reactImage {
+  height: 70%;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.reactImage img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.projectEachJs h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.projectEachJs p {
+  line-height: normal;
+  font-size: 12px;
+}
+
+.projectEachJs a {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #345e82;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide img, .slideII img, .slideIII img, .slideIIII img {
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.slideIV img {
+  height: 400px;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.slideVI img {
+  height: 400px;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.slide, .slideII, .slideIII, .slideIIII, .slideIV, .slideVI {
+  text-align: center;
+  display: none;
+  width: 100%;
+}
+
+#about {
+  background: linear-gradient(90deg, #1e252d, #345e82, #1e252d);
+  color: #fff;
+  padding: 50px 0px;
+}
+
+.aboutImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#about p {
+  padding: 20px 100px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.viewResumeBtn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#contact {
+  background-color: rgb(26, 24, 24);
+  padding: 5rem 8rem;
+  color: rgb(236, 231, 225);
+}
+
+#contact h1 {
+  font-size: 10rem;
+  margin-bottom: 2rem;
+  font-family: "EB Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#contact a {
+  color: rgb(236, 231, 225);
+}
+
+#contact p {
+  font-size: 14px;
+}
+
+#contact .phone {
+  margin-top: -12px;
+}
+
+#contact .socials {
+  margin-bottom: 30px;
+}
+
+#contact .social:hover {
+  background-color: #345e82;
+}
+
+.viewResume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewResume button {
+  cursor: pointer;
+  background-color: #006989;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.viewResume button:hover {
+  background-color: #333;
+  color: #ffffff;
+  transition: 1s ease-in-out;
+}
+
+.navigateUp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #111;
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  bottom: 2%;
+  cursor: pointer;
+}
+
+.navigateUp a {
+  color: #ffffff;
+}
+
+.fa-arrow-up {
+  text-align: center;
+  margin-top: 30%;
+  width: 100%;
+  height: 100%;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.navButtons div {
+  background-color: #111;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previousBtn, .nextBtn {
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.nextBtn {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  padding-right: 20px;
+}
+
+.previousBtn:hover, .nextBtn:hover {
+  color: #006989;
+}
+
+.slideup {
+  animation: slideUp 2s ease normal;
+}
+
+.slideabove {
+  animation: slideAbove 2s ease normal;
+}
+
+.textslide {
+  animation: textSlide 2s ease normal;
+}
+
+.slidein {
+  animation: slideIn 3s ease forwards;
+}
+
+.repeatslide {
+  animation: repeatSlide 2s ease normal;
+}
+
+.url {
+  color: #DF6D2D;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0.5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes textSlide {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slideAbove {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-8%);
+    opacity: 1;
+  }
+}
+@keyframes repeatSlide {
+  from {
+    transform: translateY(0.5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (min-width: 450px) and (max-width: 700px) {
+  section.intro {
+    padding: 100px 30px 50px;
+  }
+  .navFlex.links {
+    gap: 20px;
+  }
+  #nametag a {
+    font-size: 25px;
+  }
+  #navDivEl a {
+    font-size: 12px;
+  }
+  .introName {
+    font-size: 32px;
+    letter-spacing: 1rem;
+  }
+  .hrFlex hr {
+    height: 150px;
+  }
+  .hrFlex p {
+    font-size: 16px;
+    padding-right: 100px;
+  }
+  .socials {
+    margin-top: 2px;
+  }
+  .navDownArrow .navCircle {
+    width: 40px;
+    height: 40px;
+  }
+  .fa-angle-down {
+    font-size: 20px;
+  }
+  section.projects {
+    margin-top: 20px;
+  }
+  .projectsGrid {
+    grid-template-columns: 33.4% 33.3% 33.3%;
+  }
+  .reactProjectGrid {
+    display: block;
+    margin: 40px 20px;
+  }
+  .dots {
+    gap: 5px;
+  }
+  .ReactProjects h2 {
+    font-size: 2rem;
+  }
+  .design {
+    margin: 30px 10px;
+    font-size: 1rem;
+  }
+  .viewAllBtn button {
+    padding: 10px;
+  }
+  .ProjectReact {
+    height: 480px;
+  }
+  .ProjectPython {
+    padding: 1rem;
+    margin-top: 20px;
+    height: 520px;
+  }
+  .slideIV img {
+    height: 300px;
+    width: 100%;
+  }
+  .slideVI img {
+    height: 300px;
+    width: 100%;
+  }
+  .projectsJs h1 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  #about p {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+  #contact {
+    padding: 5rem 3rem;
+  }
+  #contact h1 {
+    font-size: 7rem;
+  }
+  #contact p {
+    font-size: 12px;
+  }
+  #contact .socials {
+    margin-bottom: 20px;
+  }
+  .navigateUp {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 360px) and (max-width: 450px) {
+  section.intro {
+    padding: 100px 30px 50px;
+  }
+  nav {
+    padding: 12px 20px;
+  }
+  .navFlex.links {
+    gap: 10px;
+  }
+  #nametag a {
+    font-size: 22px;
+  }
+  #navDivEl a {
+    font-size: 11px;
+  }
+  .introName {
+    font-size: 32px;
+    letter-spacing: 1rem;
+  }
+  .hrFlex hr {
+    height: 150px;
+  }
+  .hrFlex p {
+    font-size: 16px;
+    padding-right: 100px;
+  }
+  .socials {
+    margin-top: 2px;
+  }
+  .navDownArrow .navCircle {
+    width: 40px;
+    height: 40px;
+  }
+  .fa-angle-down {
+    font-size: 20px;
+  }
+  section.projects {
+    margin-top: 20px;
+  }
+  #react {
+    padding-top: 5px;
+  }
+  .projectsGrid {
+    grid-template-columns: 33.4% 33.3% 33.3%;
+  }
+  .dots {
+    gap: 5px;
+  }
+  .ReactProjects h2 {
+    font-size: 2rem;
+  }
+  .projectEachJs {
+    margin-top: 20px;
+  }
+  .design {
+    margin: 30px 10px;
+    font-size: 1rem;
+  }
+  .viewAllBtn button {
+    padding: 10px;
+  }
+  .reactProjectGrid {
+    display: block;
+    margin: 40px 10px;
+  }
+  .projectsJsGrid {
+    display: block;
+  }
+  .ProjectReact {
+    padding: 20px 10px;
+    margin-top: 20px;
+    height: 410px;
+  }
+  .ProjectPython {
+    padding: 1rem;
+    margin-top: 20px;
+    height: 520px;
+  }
+  .slideIV img {
+    height: 250px;
+    width: 100%;
+  }
+  .slideVI img {
+    height: 250px;
+    width: 100%;
+  }
+  .projectsJs {
+    padding: 20px;
+    margin-top: 1rem;
+  }
+  .reactImage {
+    height: 70%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .reactImage img {
+    height: 100%;
+    width: 100%;
+  }
+  .projectsJs h1 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  #about p {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+  #contact {
+    padding: 5rem 3rem;
+  }
+  #contact h1 {
+    font-size: 7rem;
+  }
+  #contact p {
+    font-size: 12px;
+  }
+  #contact .socials {
+    margin-bottom: 20px;
+  }
+  .navigateUp {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 360px) {
+  section.intro {
+    padding: 100px 30px 50px;
+  }
+  .navFlex.links {
+    gap: 10px;
+  }
+  #nametag a {
+    font-size: 20px;
+  }
+  #navDivEl a {
+    font-size: 10px;
+  }
+  .introName {
+    font-size: 32px;
+    letter-spacing: 1rem;
+  }
+  .hrFlex hr {
+    height: 150px;
+  }
+  .hrFlex p {
+    font-size: 16px;
+    padding-right: 100px;
+  }
+  .socials {
+    margin-top: 2px;
+  }
+  .navDownArrow .navCircle {
+    width: 40px;
+    height: 40px;
+  }
+  .fa-angle-down {
+    font-size: 20px;
+  }
+  section.projects {
+    margin-top: 20px;
+  }
+  .projectsGrid {
+    grid-template-columns: 33.4% 33.3% 33.3%;
+  }
+  .dots {
+    gap: 5px;
+  }
+  .ReactProjects h2 {
+    font-size: 2rem;
+  }
+  .design {
+    margin: 30px 10px;
+    font-size: 1rem;
+  }
+  .viewAllBtn button {
+    padding: 10px;
+  }
+  .reactProjectGrid {
+    display: block;
+  }
+  .projectsJsGrid {
+    display: block;
+  }
+  .ProjectReact {
+    padding: 20px;
+    margin-top: 10px;
+    height: 400px;
+  }
+  .ProjectPython {
+    padding: 1rem;
+    margin-top: 20px;
+    height: 400;
+  }
+  .slideIV img {
+    height: 300px;
+    width: 100%;
+  }
+  .slideVI img {
+    height: 300px;
+    width: 100%;
+  }
+  .projectsJs {
+    padding: 20px;
+    margin-top: 1rem;
+  }
+  .reactImage {
+    height: 70%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .reactImage img {
+    height: 100%;
+    width: 100%;
+  }
+  .projectsJs h1 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  #about p {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+  #contact {
+    padding: 5rem 3rem;
+  }
+  #contact h1 {
+    font-size: 7rem;
+  }
+  #contact p {
+    font-size: 12px;
+  }
+  #contact .socials {
+    margin-bottom: 20px;
+  }
+  .navigateUp {
+    width: 40px;
+    height: 40px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  background-color: #ffffff;
+}
+
+.navFlex.links {
+  position: static;
+}
+
+.page {
+  background-color: #ffffff;
+  color: #111;
+  padding: 50px 80px;
+}
+
+.explore {
+  background-color: #1e252d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
+
+.explore h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  padding-right: 50px;
+}
+
+.explore p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.jsProjects {
+  margin: 30px 0px;
+}
+
+.jsProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px 20px;
+}
+
+.eachJsProject {
+  height: 450px;
+  background-color: #E2DFD0;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+.jsImage {
+  height: 50%;
+  width: 100%;
+}
+
+.jsImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.eachJsProject h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.eachJsProject p {
+  line-height: normal;
+  font-size: 14px;
+}
+
+.eachJsProject a {
+  background-color: #345e82;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.reactProjects {
+  margin: 50px 0px;
+}
+
+.reactProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.reactProjects h1, .pythonProjects h1 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.eachReactProject, .eachPythonProject {
+  height: 600px;
+  background-color: #E2DFD0;
+  color: #111;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+.eachPythonProject {
+  margin-top: 2rem;
+}
+
+.eachPythonProject h2 {
+  padding-top: 1rem;
+}
+
+.eachPythonProject .pythonImage {
+  height: 75%;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.eachPythonProject .pythonImage img {
+  height: 100%;
+  width: 100%;
+}
+
+.pythonProjects {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.reactImage, .pythonImage {
+  height: 60%;
+  width: 100%;
+}
+
+.reactImage img, .pythonImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.eachReactProject h2, .pythonProjects h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.eachReactProject p, .pythonProjects p {
+  line-height: normal;
+  font-size: 12px;
+}
+
+.eachReactProject a, .pythonProjects a {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #345e82;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.slideupward {
+  animation: slideUpward 2s ease normal;
+}
+
+@keyframes slideUpward {
+  from {
+    transform: translateY(0.5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 430px) {
+  .page {
+    padding: 50px 20px;
+  }
+  .navFlex.links {
+    gap: 20px;
+  }
+  #navDivEl a {
+    font-size: 10px;
+  }
+  .navFlex a {
+    font-size: 0.7rem;
+  }
+  #nametag {
+    font-size: 1.3rem;
+  }
+  .jsProjectsGrid {
+    display: block;
+  }
+  .reactProjectsGrid {
+    display: block;
+  }
+  .explore {
+    padding: 10px;
+  }
+  .explore h1 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .explore p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+  .eachJsProject {
+    height: 350px;
+    padding: 0.5rem;
+    margin-top: 20px;
+  }
+  .eachJsProject h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .eachJsProject p {
+    line-height: normal;
+    font-size: 12px;
+  }
+  .reactProjects {
+    margin: 30px 0px;
+  }
+  .reactProjects h1, .pythonProjects h1 {
+    font-size: 1.5rem;
+  }
+  .eachReactProject .reactImage, .eachPythonProject .pythonImage {
+    height: 68%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .eachReactProject .reactImage img, .eachPythonProject .pythonImage img {
+    height: 100%;
+    width: 100%;
+  }
+  .eachReactProject, .eachPythonProject {
+    height: 450px;
+    margin-top: 20px;
+  }
+  .pythonProjects {
+    padding: 0rem;
+  }
+}
+@media (min-width: 430px) and (max-width: 600px) {
+  .page {
+    padding: 50px 30px;
+  }
+  .navFlex a {
+    font-size: 0.7rem;
+  }
+  #nametag {
+    font-size: 1.4rem;
+  }
+  .jsProjectsGrid {
+    display: block;
+  }
+  .reactProjectsGrid {
+    display: block;
+  }
+  .explore {
+    padding: 10px;
+  }
+  .explore h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .explore p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+  .eachJsProject {
+    height: 350px;
+    padding: 0.5rem;
+    margin-top: 20px;
+  }
+  .eachJsProject h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .eachJsProject p {
+    line-height: normal;
+    font-size: 12px;
+  }
+  .reactProjects {
+    margin: 30px 0px;
+  }
+  .reactProjects h1, .pythonProjects h1 {
+    font-size: 1.5rem;
+  }
+  .eachReactProject, .eachPythonProject {
+    height: 450px;
+    margin-top: 20px;
+  }
+  .eachReactProject .reactImage, .eachPythonProject .pythonImage {
+    height: 68%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .eachReactProject .reactImage img, .eachPythonProject .pythonImage img {
+    height: 100%;
+    width: 100%;
+  }
+  .pythonProjects {
+    padding: 0rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .page {
+    padding: 50px 30px;
+  }
+  .explore {
+    padding: 10px;
+  }
+  .explore h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .explore p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+  .jsProjectsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .eachJsProject {
+    height: 450px;
+    padding: 0.5rem;
+    margin-top: 20px;
+  }
+  .eachJsProject h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .eachJsProject p {
+    line-height: normal;
+    font-size: 12px;
+  }
+  .reactProjects {
+    margin: 30px 0px;
+  }
+  .reactProjects h1, .pythonProjects h1 {
+    font-size: 1.5rem;
+  }
+  .reactProjectsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .pythonProjects {
+    padding: 0rem;
+  }
+  .eachReactProject, .eachPythonProject {
+    height: 450px;
+  }
+}

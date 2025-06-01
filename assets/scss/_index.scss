@@ -1,0 +1,928 @@
+@import 'variables';
+
+.container-fluid{
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    background-color: $black;
+    padding: 1rem 2rem;
+
+    .navFlexCont{
+        @include flexJC-SB();
+
+        .navFlex{
+            @include flexJC-FS();
+            gap: 0.5rem;
+
+            .links{
+                gap: 2rem;
+            }
+
+            a{
+                font-size: 1rem;
+                color: $white;
+                text-decoration: none;
+
+                &:hover{
+                    border-bottom: 1px solid $white;
+                }
+            }
+
+            #brandName{
+
+                a{
+                    font-size: 2rem;
+                    border-bottom: none;
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .imgLogo{
+                height: 60px;
+                width: 55px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+section.intro{
+    background-color: $bgColor;
+    padding: 6rem;
+    color: $black;
+
+    h1{
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        font-weight: bold;
+    }
+
+    .hrFlex{
+        @include flexJC-FS();
+        gap: 0.5rem;
+
+        hr{
+            height: 6.5rem;
+            width: 5px;
+            background-color: $black;
+        }
+
+        p{
+            font-size: 1.2rem;
+            padding-right: 8rem;
+        }
+    }
+
+    .socials{
+        display: flex;
+        gap: 0.8rem;
+        margin-top: 2rem;
+
+        .social{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $black;
+            @include flexCenter();
+            
+            &:hover{
+                background-color: $white;
+            }
+        }
+    }
+
+    .navDownArrow{
+        margin-top: 2.5rem;
+        text-align: center;
+        @include flexCenter();
+
+        .navCircle{
+            @include flexCenter();
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid $black;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover{
+                border: 2px solid #345e82;
+                transition: 0.5s ease-in-out;
+            }
+
+            .fa-angle-down{
+                text-align: center;
+                color: $black;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .viewAllBtn{
+        @include flexCenter();
+        margin-top: 1rem;
+
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+
+        button{
+            cursor: pointer;
+            background-color: #006989;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+            color: $white;
+            font-weight: bold;
+
+            &:hover{
+                background-color: #333;
+                color: $white;
+                transition: 1s ease-in-out;
+            }
+        }
+    }
+
+
+    section.projects{
+        background-color: #FFF6E9;
+        margin-top: 1rem;
+        color: $black;
+        font-size: 0.8rem;
+        padding-bottom: 3rem;
+        overflow: hidden;
+
+        .projectsTitleGrid{
+            @include flexCenter();
+            height: 40px;
+            
+            .project{
+                height: 100%;
+                width: 100%;
+            }
+
+            #javascript, #python, #react{
+                padding: 10px 0px 10px 10px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+
+        .allProjectsFlex{
+            display: flex;
+            
+            .ReactProjects {
+                min-width: 100%;
+
+                h2{
+                    margin-top: 3rem;
+                    text-align: center;
+                    font-size: 3rem;
+                    color: #006989;
+                }  
+                
+                h3{
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    padding: 0.8rem 0rem;
+                }
+                
+                a{
+                    text-decoration: none;
+                }
+
+                .projectDetails{
+
+                    h6{
+                        margin-top: 10px;
+                    }
+
+                    a{
+                        text-decoration:none;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .github{
+                        text-decoration:underline;
+                    }
+                }
+
+                .dots{
+                    @include flexCenter();
+                    gap: 10px;
+
+                    .dot{
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 50%;
+                        border: 1px solid #006989;
+                    }
+                }
+
+                .design{
+                    text-align: center;
+                    margin: 2rem 3rem;
+                    font-size: 1.2rem;
+                    font-family: "Poppins", sans-serif;
+                }
+
+                .reactProjectGrid{
+                    @include gridTwo();
+                    align-items: center;
+                    gap: 1.5rem;
+                    margin: 2rem;
+
+                    .eachReactProjectGridBox{
+                        padding: 1.2rem;
+                        background-color: #FFF6E9;
+                        border: 2px solid gray;
+                        border-radius: 5px;
+                        margin-top: 1rem;
+                        height: 500px;
+                    }
+                }
+            }
+
+            .ProjectPython{
+                margin-top: 5rem;
+                padding: 2rem 7rem;
+                background-color: #FFF6E9;
+                margin-top: 1.2rem;
+                height: 600px;
+                border: none;
+
+                a{
+                    text-decoration: none;
+                }
+
+                h3{
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    padding: 0.8rem 0rem;
+                }
+
+                .projectDetails{
+
+                    h6{
+                        margin-top: 10px;
+                    }
+
+                    a{
+                        text-decoration:none;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .github{
+                        text-decoration:underline;
+                    }
+                }
+            }
+
+            .projectsJs{
+                padding: 2rem;
+                margin-top: 1rem;
+
+                .projectsJsGrid{
+                    @include gridTwo();
+                    align-items: center;
+                    gap: 2rem;
+                }
+
+                h1{
+                    margin: 2rem 0rem;
+                    font-weight: bold;
+                    font-size: 2rem;
+                    letter-spacing: 0;
+                }
+
+                .projectEachJs{
+                    height: 450px;
+                    background-color: #e7e0d6;
+                    color: $black;
+                    border-radius: 10px;
+                    font-family: "Poppins", sans-serif;
+                    padding: 1rem;
+
+                    
+                    h2{
+                        font-size: 1rem;
+                        font-weight: bold;
+                        margin-top: 0.8rem;
+                    }
+
+                    p{
+                        line-height: normal;
+                        font-size: 0.8rem;
+                    }
+
+                    a{
+                        background-color: $white;
+                        padding: 8px 10px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        color: #345e82;
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                    }
+
+                    .jsImageDiv{
+                        height: 70%;
+                        width: 100%;
+                        margin-top: 1rem;
+
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                        }
+                    }
+                }
+            }
+
+            
+            .slides{
+                display: flex;
+                transition: transform 0.5s ease;
+
+                .slide, .slideII, .slideIII, .slideIIII, .slideIV, .slideVI{
+                    text-align: center;   
+                    display: none;
+                    width: 100%;
+                }
+
+                .slide, .slideII, .slideIII, .slideIIII, .slideIV, .slideVI{
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        border-top-right-radius: 5px;
+                        border-top-left-radius: 5px;
+                    }
+                }
+            }
+            
+            .availableOnRequest{
+                color:#3674B5;
+            }
+        }
+    }
+}
+
+.active{
+    background-color: #171b20;
+    color: $white; 
+}
+
+section#about{
+    background: linear-gradient(90deg,  #1e252d,#345e82, #1e252d);
+    color: $white;
+    padding: 3.5rem 0rem;
+
+    
+    p{
+        padding: 1.2rem 6rem;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .aboutImgDiv{
+        @include flexCenter();
+        text-align: center;
+
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    }
+
+    .viewResume{
+        @include flexCenter();
+
+        button{
+            cursor: pointer;
+            background-color: #006989;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+            font-weight: bold;
+
+            a{
+                text-decoration: none;
+                color: $white;
+            }
+
+            &:hover{
+                background-color: #333;
+                color: $white;
+                transition: 1s ease-in-out;
+            }
+        }
+    }
+}
+
+section#contact{
+    background-color: rgb(26, 24, 24);
+    padding: 5rem 8rem;
+    color:  rgb(236, 231, 225);
+
+    h1{
+        font-size: 10rem;
+        margin-bottom: 2rem;
+        font-family: "EB Garamond", serif;
+        font-weight: 300;
+    }
+
+    a{
+        color:  rgb(236, 231, 225);
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+
+    .phone{
+        margin-top: -12px;
+    }
+    .socials{
+        display: flex;
+        gap: 0.8rem;
+        margin-top: 2rem;
+
+        .social{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $black;
+            @include flexCenter();
+            
+            &:hover{
+                background-color: #345e82;
+            }
+        }
+    }
+}
+
+.navigateUp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    position: fixed;
+    bottom: 2%;
+    cursor: pointer;
+
+    a{
+        color: $white;
+    }
+}
+
+.fa-arrow-up{
+    text-align: center;
+    margin-top: 30%;
+    width: 100%;
+    height: 100%;
+}
+
+.navButtons{
+    @include flexCenter();
+    margin-bottom: 5px;
+
+    div{
+        background-color: $black;
+        width: 100%;
+        height: 30px;
+        @include flexCenter();
+    }
+}
+
+.previousBtn, .nextBtn{
+    cursor: pointer;
+    color: $white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.nextBtn{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    padding-right: 1.2rem;
+}
+
+.previousBtn:hover, .nextBtn:hover{
+    color: #006989;
+}
+
+.slideup{
+    animation: slideUp 2s ease normal;
+}
+
+.slideabove{
+    animation: slideAbove 2s ease normal;
+}
+
+.textslide{
+    animation: textSlide 2s ease normal;
+}
+
+.slidein{
+    animation: slideIn 3s ease forwards;
+}
+
+.repeatslide{
+    animation: repeatSlide 2s ease normal;
+}
+
+.url{
+    color: #DF6D2D;
+}
+
+#techive{
+    height: 720px;
+}
+
+@keyframes slideUp{
+    from {
+        transform: translateY(0.5%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textSlide{
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn{
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideAbove{
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-8%);
+        opacity: 1;
+    }
+}
+
+@keyframes repeatSlide{
+    from {
+        transform: translateY(0.5%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+//MEDIA//
+@media (min-width: 501px) and (max-width: 700px){
+    nav{
+        .navFlexCont{
+            .navFlex{
+                .links{
+                    gap: 1.5rem;
+                }
+            }
+        }
+    }
+
+
+    section.intro{
+        padding: 5rem 3rem 3rem 3rem;
+
+        h1{
+            font-size: 2.5rem;
+            letter-spacing: 0.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .hrFlex{
+            p{
+                font-size: 1.2rem;
+                padding-right: 3rem;
+            }
+        }
+
+        .navDownArrow{
+            .navCircle{
+                width: 40px;
+                height: 40px;
+
+                .fa-angle-down{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        section.projects{
+
+            .projectsTitleGrid{
+                height: 50px;
+            }
+
+            .allProjectsFlex{
+                .ProjectPython{
+                    padding: 2rem;
+                    background-color: #FFF6E9;
+                    border: none;
+                    margin-top: 1.2rem;
+                    height: 500px;
+
+                    a{
+                        text-decoration: none;
+                    }
+
+                    h3{
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                        padding: 0.8rem 0rem;
+                    }
+
+                    .projectDetails{
+
+                        h6{
+                            margin-top: 10px;
+                        }
+
+                        a{
+                            text-decoration:none;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+
+                        .github{
+                            text-decoration:underline;
+                        }
+                    }
+                }
+
+                .projectsJs{
+                    padding: 1.5rem;
+
+                    .projectsJsGrid{
+                        gap: 1rem;
+                    }
+
+                    h1{
+                        font-size: 1.5rem;
+                    }
+
+                    .projectEachJs{
+                        height: 420px;
+
+                        .jsImageDiv{
+                            height:60%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .active{
+        background-color: #171b20;
+        color: $white; 
+    }
+
+    section#about{
+        padding: 2.5rem 0rem;
+
+        
+        p{
+            padding: 1.2rem 3rem;
+            font-size: 1rem;
+        }
+    }
+
+    section#contact{
+        padding: 5rem 2rem;
+
+        h1{
+            font-size: 8rem;
+        }
+
+        p{
+            font-size: 0.8rem;
+        }
+
+        .socials{
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+    }
+
+    #techive{
+        height: 500px;
+    }
+}
+
+@media (max-width: 500px){
+    nav{
+        padding: 1rem;
+
+        .navFlexCont{
+                #navDivEl{
+                    a{
+                        font-size: 0.8rem;
+                    }
+                }
+
+            .navFlex{
+                .links{
+                    gap: 1rem;
+                }
+
+                #brandName{
+                    a{
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .imgLogo{
+                    height: 50px;
+                    width: 45px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+
+    section.intro{
+        padding: 5rem 1.5rem 3rem 1.5rem;
+
+        h1{
+            font-size: 2.4rem;
+            letter-spacing: 0.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hrFlex{
+
+            hr{
+                height: 12rem;
+            }
+
+            p{
+                font-size: 1.1rem;
+                padding-right: 1rem;
+            }
+        }
+
+        .navDownArrow{
+            .navCircle{
+                width: 40px;
+                height: 40px;
+
+                .fa-angle-down{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        section.projects{
+
+            .projectsTitleGrid{
+                height: 50px;
+            }
+
+            .allProjectsFlex{
+                .ReactProjects {
+                    h2{
+                        margin-top: 2rem;
+                        font-size: 2rem;
+                    }  
+                    
+                    h3{
+                        font-size: 1rem;
+                        padding: 0.8rem 0rem;
+                    }
+
+                    .design{
+                        font-size: 1rem;
+                    }
+
+                    .reactProjectGrid{
+                        display: block;
+                        gap: 1rem;
+                        margin: 2rem 1rem;
+
+                        .eachReactProjectGridBox{
+                            padding: 1rem;
+                            margin-top: 1rem;
+                            height: 450px;
+                        }
+                    }
+                }
+
+                .projectsJs{
+                    padding: 1.5rem;
+
+                    .projectsJsGrid{
+                        display: block;
+                    }
+
+                    .projectEachJs{
+                        height: 420px;
+                        margin-top: 1rem;
+
+                        .jsImageDiv{
+                            height:60%;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .ProjectPython{
+                    padding: 1rem;
+                    margin: 2rem 1rem;
+                    height: 500px;
+                    border: 2px solid gray;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+    .active{
+        background-color: #171b20;
+        color: $white; 
+    }
+
+    section#about{
+        padding: 1rem 0rem;
+        
+        p{
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    section#contact{
+        padding: 5rem 2rem;
+
+        h1{
+            font-size: 8rem;
+        }
+
+        p{
+            font-size: 0.8rem;
+        }
+
+        .socials{
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+    }
+
+    #techive{
+        height: 500px;
+    }
+}
