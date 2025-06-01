@@ -84,7 +84,7 @@
                                     
                                     <div class="eachReactProjectGridBox">
                                         <h3>Lunverra university</h3>
-                                        <div class="slides">
+                                        <div class="slider" data-slider="project1">
                                             <div class="slide">
                                                 <img src="images/lunv1.jpg" alt="">
                                             </div>
@@ -163,10 +163,10 @@
                                             <div class="slide">
                                                 <img src="images/lunv26.jpg" alt="">
                                             </div>
-                                        </div>
-                                        <div class="navButtons">
-                                            <div class="prev"><a class="previousBtn" onclick="addSlides(-1)" >&#10094;</a></div>
-                                            <div class="next"><a class="nextBtn" onclick="addSlides(1)" >&#10095;</a></div>
+                                            <div class="navButtons">
+                                                <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
+                                                <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
+                                            </div>                                            
                                         </div>
                                         <div class="projectDetails">
                                             <h6><a href="projects.html">Project Details</a></h6>
@@ -179,74 +179,74 @@
 
                                     <div class="eachReactProjectGridBox">
                                         <h3>Interactive ESL Website: EnglishWithZoey</h3>
-                                        <div class="slides">
-                                            <div class="slideIIII">
+                                        <div class="slider" data-slider="project2">
+                                            <div class="slide">
                                                 <img src="images/ewz10.jpg" alt="">
                                             </div> 
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz1.jpg" alt="">
                                             </div>                                                                                    
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz7.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz8.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz9.jpg" alt="">
                                             </div>                                                                                  
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz11.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz12.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz13.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz21.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz22.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz14.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz15.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz16.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz17.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz20.jpg" alt="">
                                             </div>
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz18.jpg" alt="">
                                             </div>
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz2.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz23.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz4.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz5.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIIII">
+                                            <div class="slide">
                                                 <img src="images/ewz19.jpg" alt="">
-                                            </div>                                         
-                                        </div>
-                                        <div class="navButtons">
-                                            <div class="prev"><a class="previousBtn" onclick="addSlidesIIII(-1)" >&#10094;</a></div>
-                                            <div class="next"><a class="nextBtn" onclick="addSlidesIIII(1)" >&#10095;</a></div>
+                                            </div>                                                                               
+                                            <div class="navButtons">
+                                                <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
+                                                <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
+                                            </div>
                                         </div>
                                         <div class="projectDetails">
                                             <h6><a href="projects.html">Project Details</a></h6>
@@ -258,39 +258,38 @@
 
                                     <div class="eachReactProjectGridBox">
                                         <h3>Netflix Clone</h3>
-                                        <div class="slides">
-                                            <div class="slideII">
+                                        <div class="slider" data-slider="project3">
+                                            <div class="slide">
                                                 <img src="images/netflix1.png" alt="">
                                             </div>
-                                            <div class="slideII">
+                                            <div class="slide">
                                                 <img src="images/netflix2.png" alt="">
                                             </div>
-                                            <div class="slideII">
+                                            <div class="slide">
                                                 <img src="images/netflix3.png" alt="">
                                             </div>
-                                            <div class="slideII">
+                                            <div class="slide">
                                                 <img src="images/netflix4.png" alt="">
                                             </div>
-                                            <div class="slideII">
+                                            <div class="slide">
                                                 <img src="images/netflix5.png" alt="">
                                             </div>
-                                            <div class="slideII">
+                                            <div class="slide">
                                                 <img src="images/netflix6.png" alt="">
                                             </div>
-                                            <div class="slideII">
+                                            <div class="slide">
                                                 <img src="images/netflix7.png" alt="">
                                             </div>
-                                            <div class="slideII">
+                                            <div class="slide">
                                                 <img src="images/netflix8.png" alt="">
                                             </div>
-                                            <div class="slideII">
+                                            <div class="slide">
                                                 <img src="images/netflix9.png" alt="">
                                             </div>
-                                            
-                                        </div>
-                                        <div class="navButtons">
-                                            <div class="prev"><a class="previousBtn" onclick="addSlidesII(-1)" >&#10094;</a></div>
-                                            <div class="next"><a class="nextBtn" onclick="addSlidesII(1)" >&#10095;</a></div>
+                                            <div class="navButtons">
+                                                <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
+                                                <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
+                                            </div>
                                         </div>
                                         <div class="projectDetails">
                                             <h6><a href="projects.html">Project Details</a></h6>
@@ -301,24 +300,23 @@
 
                                     <div class="eachReactProjectGridBox">
                                         <h3>Urban Cafeteria</h3>
-                                        <div class="slides">
-                                            <div class="slideIII">
+                                        <div class="slider" data-slider="project4">
+                                            <div class="slide">
                                                 <img src="images/urban1.png" alt="">
                                             </div>
-                                            <div class="slideIII">
+                                            <div class="slide">
                                                 <img src="images/urban2.png" alt="">
                                             </div>
-                                            <div class="slideIII">
+                                            <div class="slide">
                                                 <img src="images/urban3.png" alt="">
                                             </div>
-                                            <div class="slideIII">
+                                            <div class="slide">
                                                 <img src="images/urban4.png" alt="">
                                             </div>
-                                            
-                                        </div>
-                                        <div class="navButtons">
-                                            <div class="prev"><a class="previousBtn" onclick="addSlidesIII(-1)" >&#10094;</a></div>
-                                            <div class="next"><a class="nextBtn" onclick="addSlidesIII(1)" >&#10095;</a></div>
+                                            <div class="navButtons">
+                                                <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
+                                                <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
+                                            </div>
                                         </div>
                                         <div class="projectDetails">
                                             <h6><a href="projects.html">Project Details</a></h6>
@@ -383,89 +381,89 @@
                             <div class="PythonProjects box">
                                     <div class="ProjectPython">
                                         <h3>Lunverra University</h3>
-                                        <div class="slides">
-                                            <div class="slideVII">
+                                        <div class="slider" data-slider="project5">
+                                            <div class="slide">
                                                 <img src="images/lunv1.jpg" alt="">
                                             </div>                                                                                    
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv2.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv3.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv4.jpg" alt="">
                                             </div>                                                                                   
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv5.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv6.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv7.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv8.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv9.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv10.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv11.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv12.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv13.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv14.jpg" alt="">
                                             </div>
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv15.jpg" alt="">
                                             </div>
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv16.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv17.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv18.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv19.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv20.jpg" alt="">
                                             </div>
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv21.jpg" alt="">
                                             </div>
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv22.jpg" alt="">
                                             </div>
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv23.jpg" alt="">
                                             </div>
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv24.jpg" alt="">
                                             </div>
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv25.jpg" alt="">
                                             </div>
-                                            <div class="slideVII">
+                                            <div class="slide">
                                                 <img src="images/lunv26.jpg" alt="">
                                             </div>
-                                        </div>
-                                        <div class="navButtons">
-                                            <div class="prev"><a class="previousBtn" onclick="addSlidesVII(-1)" >&#10094;</a></div>
-                                            <div class="next"><a class="nextBtn" onclick="addSlidesVII(1)" >&#10095;</a></div>
+                                            <div class="navButtons">
+                                                <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
+                                                <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
+                                            </div>
                                         </div>
                                         <div class="projectDetails">
                                             <h6><a href="projects.html">Project Details</a></h6>
@@ -479,71 +477,71 @@
 
                                     <div class="ProjectPython">
                                         <h3>ESL Website: English With Zoey</h3>
-                                        <div class="slides">
-                                            <div class="slideIV">
+                                        <div class="slider" data-slider="project6">
+                                            <div class="slide">
                                                 <img src="images/ewz10.jpg" alt="">
                                             </div>                                                                                    
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz7.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz8.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz9.jpg" alt="">
                                             </div>                                                                                   
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz11.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz12.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz13.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz21.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz22.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz14.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz15.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz16.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz17.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz20.jpg" alt="">
                                             </div>
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz18.jpg" alt="">
                                             </div>
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz2.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz23.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz4.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz5.jpg" alt="">
                                             </div>                                          
-                                            <div class="slideIV">
+                                            <div class="slide">
                                                 <img src="images/ewz19.jpg" alt="">
                                             </div>
-                                        </div>
-                                        <div class="navButtons">
-                                            <div class="prev"><a class="previousBtn" onclick="addSlidesIV(-1)" >&#10094;</a></div>
-                                            <div class="next"><a class="nextBtn" onclick="addSlidesIV(1)" >&#10095;</a></div>
+                                            <div class="navButtons">
+                                                <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
+                                                <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
+                                            </div>
                                         </div>
                                         <div class="projectDetails">
                                             <h6><a href="projects.html">Project Details</a></h6>
@@ -551,65 +549,6 @@
                                             <p class="availableOnRequest">Fully deployed and live for client.</p>
                                         </div>
                                     </div>
-<!-- 
-                                    <div class="ProjectPython" id="techive">
-                                        <h3>Techive Blogpost</h3>
-                                        <div class="slides">
-                                            <div class="slideVI">
-                                                <img src="images/tch2.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch3.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch1.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch4.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch5.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch6.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch7.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch8.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch9.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch10.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch11.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch12.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch13.jpg" alt="">
-                                            </div>
-                                            <div class="slideVI">
-                                                <img src="images/tch14.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="navButtons">
-                                            <div class="prev"><a class="previousBtn" onclick="addSlidesVI(-1)" >&#10094;</a></div>
-                                            <div class="next"><a class="nextBtn" onclick="addSlidesVI(1)" >&#10095;</a></div>
-                                        </div>
-                                        <div class="projectDetails">
-                                            <h6><a href="projects.html">Project Details</a></h6>
-                                            <p>Developed a fully functional Python-driven blog post website using Flask and SQL, featuring both front-end and back-end capabilities. 
-                                                It offers a platform for content creation, management. Techive includes a range of feature like 
-                                                user authentication, login, and logout functionality and content management.</p>
-                                            <p class="availableOnRequest">Source code available on request</p>
-                                        </div>
-                                    </div> -->
                         </div>
                     </section>
             </section>

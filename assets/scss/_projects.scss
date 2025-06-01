@@ -9,10 +9,22 @@
     background-color: $white;
 }
 
+.projectsHome{
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+}
+
 .projectsPage{
     background-color: $white;
     color: $black;
     padding: 3rem 6rem;
+    margin-top: 6rem;
 
     .explore{
         @include flexCenter();
@@ -406,10 +418,10 @@
         }
 
         .eachPythonProject{
-            height: 460px;
+            height: 480px;
 
             .pythonImage{
-                height: 75%;
+                height: 72%;
             }
         }
     }

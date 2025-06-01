@@ -255,14 +255,14 @@ section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid
   border: 2px solid gray;
   border-radius: 5px;
   margin-top: 1rem;
-  height: 500px;
+  height: 600px;
 }
 section.intro section.projects .allProjectsFlex .ProjectPython {
   margin-top: 5rem;
   padding: 2rem 7rem;
   background-color: #FFF6E9;
   margin-top: 1.2rem;
-  height: 600px;
+  height: 500px;
   border: none;
 }
 section.intro section.projects .allProjectsFlex .ProjectPython a {
@@ -342,17 +342,20 @@ section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsIm
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-section.intro section.projects .allProjectsFlex .slides {
+section.intro section.projects .allProjectsFlex .slider {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: transform 0.5s ease;
 }
-section.intro section.projects .allProjectsFlex .slides .slide, section.intro section.projects .allProjectsFlex .slides .slideII, section.intro section.projects .allProjectsFlex .slides .slideIII, section.intro section.projects .allProjectsFlex .slides .slideIIII, section.intro section.projects .allProjectsFlex .slides .slideIV, section.intro section.projects .allProjectsFlex .slides .slideVII {
+section.intro section.projects .allProjectsFlex .slider .slide {
   text-align: center;
   display: none;
   width: 100%;
 }
-section.intro section.projects .allProjectsFlex .slides .slide img, section.intro section.projects .allProjectsFlex .slides .slideII img, section.intro section.projects .allProjectsFlex .slides .slideIII img, section.intro section.projects .allProjectsFlex .slides .slideIIII img, section.intro section.projects .allProjectsFlex .slides .slideIV img, section.intro section.projects .allProjectsFlex .slides .slideVII img {
-  height: 100%;
+section.intro section.projects .allProjectsFlex .slider .slide img {
+  height: 300px;
   width: 100%;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -471,41 +474,31 @@ section#contact .socials .social:hover {
 }
 
 .navButtons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5px;
-}
-.navButtons div {
-  background-color: #111;
+  position: absolute;
+  top: 50%;
   width: 100%;
-  height: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  pointer-events: none;
 }
-
-.previousBtn, .nextBtn {
+.navButtons .prev, .navButtons .next {
+  pointer-events: all;
+}
+.navButtons a {
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 50%;
+  text-decoration: none;
   cursor: pointer;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: 0.6s ease;
   user-select: none;
+  transition: background-color 0.3s ease;
 }
-
-.nextBtn {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-  padding-right: 1.2rem;
-}
-
-.previousBtn:hover, .nextBtn:hover {
-  color: #006989;
-}
-
-.slideup {
-  animation: slideUp 2s ease normal;
+.navButtons a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slideabove {
@@ -526,10 +519,6 @@ section#contact .socials .social:hover {
 
 .url {
   color: #DF6D2D;
-}
-
-#techive {
-  height: 720px;
 }
 
 @keyframes slideUp {
@@ -608,6 +597,31 @@ section#contact .socials .social:hover {
   section.intro section.projects .projectsTitleGrid {
     height: 50px;
   }
+  section.intro section.projects .allProjectsFlex .slider .slide img {
+    height: 250px;
+    width: 100%;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects h3 {
+    font-size: 1rem;
+    padding: 0.8rem 0rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .design {
+    font-size: 1rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
+    display: block;
+    gap: 1rem;
+    margin: 2rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+    padding: 1rem;
+    margin-top: 1rem;
+    height: 500px;
+  }
   section.intro section.projects .allProjectsFlex .ProjectPython {
     padding: 2rem;
     background-color: #FFF6E9;
@@ -676,9 +690,6 @@ section#contact .socials .social:hover {
     gap: 0.5rem;
     margin-top: 1rem;
   }
-  #techive {
-    height: 500px;
-  }
 }
 @media (max-width: 500px) {
   nav {
@@ -723,6 +734,10 @@ section#contact .socials .social:hover {
   section.intro section.projects .projectsTitleGrid {
     height: 50px;
   }
+  section.intro section.projects .allProjectsFlex .slider .slide img {
+    height: 180px;
+    width: 100%;
+  }
   section.intro section.projects .allProjectsFlex .ReactProjects h2 {
     margin-top: 2rem;
     font-size: 2rem;
@@ -742,7 +757,7 @@ section#contact .socials .social:hover {
   section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
     padding: 1rem;
     margin-top: 1rem;
-    height: 450px;
+    height: 500px;
   }
   section.intro section.projects .allProjectsFlex .projectsJs {
     padding: 1.5rem;
@@ -764,7 +779,7 @@ section#contact .socials .social:hover {
   section.intro section.projects .allProjectsFlex .ProjectPython {
     padding: 1rem;
     margin: 2rem 1rem;
-    height: 450px;
+    height: 500px;
     border: 2px solid gray;
     border-radius: 3px;
   }
@@ -792,9 +807,6 @@ section#contact .socials .social:hover {
     gap: 0.5rem;
     margin-top: 1rem;
   }
-  #techive {
-    height: 500px;
-  }
 }
 * {
   margin: 0;
@@ -805,10 +817,19 @@ section#contact .socials .social:hover {
   background-color: #ffffff;
 }
 
+.projectsHome nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .projectsPage {
   background-color: #ffffff;
   color: #111;
   padding: 3rem 6rem;
+  margin-top: 6rem;
 }
 .projectsPage .explore {
   display: flex;
@@ -1145,10 +1166,10 @@ section#contact .socials .social:hover {
     margin-bottom: -1rem;
   }
   .pythonProjects .eachPythonProject {
-    height: 460px;
+    height: 480px;
   }
   .pythonProjects .eachPythonProject .pythonImage {
-    height: 75%;
+    height: 72%;
   }
 }
 
