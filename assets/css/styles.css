@@ -1144,12 +1144,12 @@ section#contact .socials .social:hover {
     display: block;
   }
   .reactProjects .reactProjectsGrid .eachReactProject {
-    height: 480px;
+    height: 400px;
     margin-top: 2rem;
     padding: 1rem;
   }
   .reactProjects .reactProjectsGrid .eachReactProject .reactImage {
-    height: 65%;
+    height: 50%;
     width: 100%;
   }
   .reactProjects .reactProjectsGrid .eachReactProject .reactImage img {

@@ -10,7 +10,7 @@ body, html {
 
 body {
   background-color: #EADBC8;
-  color: red;
+  color: #ffffff;
 }
 
 * {
@@ -35,37 +35,40 @@ iframe {
 }
 
 nav {
-  min-width: 100%;
+  width: 100%;
   background-color: #111;
-  padding: 12px 30px;
+  padding: 1rem 2rem;
 }
-nav .flex {
+nav .navFlexCont {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .flex .navFlex {
+nav .navFlexCont .navFlex {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 0.5rem;
 }
-nav .flex .navFlex .links {
-  gap: 30px;
+nav .navFlexCont .navFlex .links {
+  gap: 2rem;
 }
-nav .flex .navFlex a {
+nav .navFlexCont .navFlex a {
+  font-size: 1rem;
   color: #ffffff;
   text-decoration: none;
 }
-nav .flex .navFlex a:hover {
+nav .navFlexCont .navFlex a:hover {
   border-bottom: 1px solid #ffffff;
 }
-
-.navFlex h2 a:hover {
+nav .navFlexCont .navFlex #brandName a {
+  font-size: 2rem;
   border-bottom: none;
 }
-
-.logo {
+nav .navFlexCont .navFlex #brandName a:hover {
+  text-decoration: none;
+}
+nav .navFlexCont .navFlex .imgLogo {
   height: 60px;
   width: 55px;
   border-radius: 50%;
@@ -73,46 +76,35 @@ nav .flex .navFlex a:hover {
 
 section.intro {
   background-color: #EADBC8;
-  padding: 100px;
+  padding: 6rem;
   color: #111;
 }
-
-.introName {
-  font-size: 50px;
+section.intro h1 {
+  font-size: 3rem;
   letter-spacing: 1rem;
   font-weight: bold;
 }
-
-.hrFlex {
+section.intro .hrFlex {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 0.5rem;
 }
-
-.hrFlex hr {
-  height: 100px;
-  width: 2px;
+section.intro .hrFlex hr {
+  height: 6.5rem;
+  width: 5px;
   background-color: #111;
-  color: #ffffff;
 }
-
-.hrFlex p {
-  font-size: 20px;
-  padding-right: 100px;
+section.intro .hrFlex p {
+  font-size: 1.2rem;
+  padding-right: 8rem;
 }
-
-.socials {
+section.intro .socials {
   display: flex;
-  gap: 10px;
-  margin-top: 30px;
+  gap: 0.8rem;
+  margin-top: 2rem;
 }
-
-.social:hover {
-  background-color: #ffffff;
-}
-
-.social {
+section.intro .socials .social {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -121,68 +113,255 @@ section.intro {
   justify-content: center;
   align-items: center;
 }
-
-.navDownArrow {
-  margin-top: 40px;
+section.intro .socials .social:hover {
+  background-color: #ffffff;
+}
+section.intro .navDownArrow {
+  margin-top: 2.5rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.navDownArrow .navCircle {
+section.intro .navDownArrow .navCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: 2px solid #111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   cursor: pointer;
 }
-
-.navDownArrow .navCircle:hover {
+section.intro .navDownArrow .navCircle:hover {
   border: 2px solid #345e82;
   transition: 0.5s ease-in-out;
 }
-
-.fa-angle-down {
+section.intro .navDownArrow .navCircle .fa-angle-down {
   text-align: center;
   color: #111;
-  font-size: 30px;
-  width: 100%;
-  height: 100%;
+  font-size: 2rem;
 }
-
-section.projects {
-  background-color: #FFF6E9;
-  margin-top: 10px;
-  color: #111;
+section.intro .viewAllBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+section.intro .viewAllBtn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+section.intro .viewAllBtn button {
+  cursor: pointer;
+  background-color: #006989;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  color: #ffffff;
   font-weight: bold;
-  font-size: 12px;
-  padding-bottom: 50px;
-  overflow: hidden;
-  width: 100%;
 }
-
-.projectsGrid {
-  display: grid;
-  grid-template-columns: 33.4% 33.3% 33.3%;
-  justify-content: flex-end;
+section.intro .viewAllBtn button:hover {
+  background-color: #333;
+  color: #ffffff;
+  transition: 1s ease-in-out;
+}
+section.intro section.projects {
+  background-color: #FFF6E9;
+  margin-top: 1rem;
+  color: #111;
+  font-size: 0.8rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+section.intro section.projects .projectsTitleGrid {
+  display: flex;
+  justify-content: center;
   align-items: center;
   height: 40px;
 }
-
-.project {
+section.intro section.projects .projectsTitleGrid .project {
   height: 100%;
   width: 100%;
 }
-
-#javascript, #python, #react {
-  padding-top: 10px;
-  padding-left: 10px;
+section.intro section.projects .projectsTitleGrid #javascript, section.intro section.projects .projectsTitleGrid #python, section.intro section.projects .projectsTitleGrid #react {
+  padding: 10px 0px 10px 10px;
   cursor: pointer;
+  font-weight: bold;
+}
+section.intro section.projects .allProjectsFlex {
+  display: flex;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects {
+  min-width: 100%;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects h2 {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #006989;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.8rem 0rem;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects a {
+  text-decoration: none;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails h6 {
+  margin-top: 10px;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails a {
+  text-decoration: none;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails a:hover {
+  text-decoration: underline;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails .github {
+  text-decoration: underline;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .dots .dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 1px solid #006989;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .design {
+  text-align: center;
+  margin: 2rem 3rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+  padding: 1.2rem;
+  background-color: #FFF6E9;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-top: 1rem;
+  height: 600px;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython {
+  margin-top: 5rem;
+  padding: 2rem 7rem;
+  background-color: #FFF6E9;
+  margin-top: 1.2rem;
+  height: 500px;
+  border: none;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython a {
+  text-decoration: none;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython h3 {
+  background-color: black;
+  color: #FFF6E9;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.8rem 0rem;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails h6 {
+  margin-top: 10px;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a {
+  text-decoration: none;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a:hover {
+  text-decoration: underline;
+}
+section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails .github {
+  text-decoration: underline;
+}
+section.intro section.projects .allProjectsFlex .projectsJs {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs h1 {
+  margin: 2rem 0rem;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs {
+  height: 450px;
+  background-color: #e7e0d6;
+  color: #111;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.8rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs p {
+  line-height: normal;
+  font-size: 0.8rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs a {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #345e82;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
+  height: 70%;
+  width: 100%;
+  margin-top: 1rem;
+}
+section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+section.intro section.projects .allProjectsFlex .slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+section.intro section.projects .allProjectsFlex .slider .slide {
+  text-align: center;
+  display: none;
+  width: 100%;
+}
+section.intro section.projects .allProjectsFlex .slider .slide img {
+  height: 300px;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+section.intro section.projects .allProjectsFlex .availableOnRequest {
+  color: #3674B5;
 }
 
 .active {
@@ -190,312 +369,86 @@ section.projects {
   color: #ffffff;
 }
 
-.jsReactFlex {
-  display: flex;
-}
-
-.box {
-  min-width: 100%;
-}
-
-.dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.dot {
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  border: 1px solid #006989;
-}
-
-.design {
-  text-align: center;
-  margin: 30px 50px;
-  font-size: 1.2rem;
-  font-weight: 100;
-  font-family: "Poppins", sans-serif;
-}
-
-.viewAllBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.viewAllBtn button {
-  cursor: pointer;
-  background-color: #006989;
-  border-radius: 5px;
-  padding: 10px 20px;
-  border: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.viewAllBtn a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.viewAllBtn button:hover {
-  background-color: #333;
-  color: #ffffff;
-  transition: 1s ease-in-out;
-}
-
-.ReactProjects h2 {
-  margin-top: 3rem;
-  text-align: center;
-  font-size: 3rem;
-  color: #006989;
-}
-
-.reactProjectGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin: 40px 30px;
-}
-
-.ProjectReact {
-  padding: 20px;
-  background-color: #FFF6E9;
-  border: 2px solid gray;
-  border-radius: 5px;
-  margin-top: 20px;
-  height: 480px;
-}
-
-.ProjectPython {
-  padding: 2rem 7rem 2rem 7rem;
-  background-color: #FFF6E9;
-  border: none;
-  margin-top: 20px;
-  height: 620px;
-}
-
-.ProjectReact a, .ProjectPython a {
-  text-decoration: none;
-}
-
-.ProjectReact h3, .ProjectPython h3 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 10px 0px;
-}
-
-.projectDetails p {
-  font-weight: normal;
-}
-
-.availableOnRequest {
-  color: #3674B5;
-}
-
-.projectDetails h6 {
-  margin-top: 10px;
-}
-
-.projectDetails a {
-  text-decoration: none;
-}
-
-.projectDetails a:hover {
-  text-decoration: underline;
-}
-
-.projectDetails .github {
-  text-decoration: underline;
-}
-
-.projectsJs {
-  padding: 20px;
-  margin-top: 1rem;
-}
-
-.projectsJsGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.projectsJs h1 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.projectEachJs {
-  height: 450px;
-  background-color: #e7e0d6;
-  color: #111;
-  border-radius: 10px;
-  font-family: "Poppins", sans-serif;
-  padding: 1rem;
-  margin-top: 10px;
-}
-
-.reactImage {
-  height: 70%;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.reactImage img {
-  height: 100%;
-  width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.projectEachJs h2 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.projectEachJs p {
-  line-height: normal;
-  font-size: 12px;
-}
-
-.projectEachJs a {
-  background-color: #ffffff;
-  padding: 8px 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #345e82;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide img, .slideII img, .slideIII img, .slideIIII img {
-  height: 100%;
-  width: 100%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.slideIV img {
-  height: 400px;
-  width: 100%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.slideVI img {
-  height: 400px;
-  width: 100%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.slide, .slideII, .slideIII, .slideIIII, .slideIV, .slideVI {
-  text-align: center;
-  display: none;
-  width: 100%;
-}
-
-#about {
+section#about {
   background: linear-gradient(90deg, #1e252d, #345e82, #1e252d);
-  color: #fff;
-  padding: 50px 0px;
+  color: #ffffff;
+  padding: 3.5rem 0rem;
 }
-
-.aboutImgDiv {
+section#about p {
+  padding: 1.2rem 6rem;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+section#about .aboutImgDiv {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.aboutImg {
+section#about .aboutImgDiv img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
-
-#about p {
-  padding: 20px 100px;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-}
-
-.viewResumeBtn a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-#contact {
-  background-color: rgb(26, 24, 24);
-  padding: 5rem 8rem;
-  color: rgb(236, 231, 225);
-}
-
-#contact h1 {
-  font-size: 10rem;
-  margin-bottom: 2rem;
-  font-family: "EB Garamond", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-#contact a {
-  color: rgb(236, 231, 225);
-}
-
-#contact p {
-  font-size: 14px;
-}
-
-#contact .phone {
-  margin-top: -12px;
-}
-
-#contact .socials {
-  margin-bottom: 30px;
-}
-
-#contact .social:hover {
-  background-color: #345e82;
-}
-
-.viewResume {
+section#about .viewResume {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.viewResume button {
+section#about .viewResume button {
   cursor: pointer;
   background-color: #006989;
   border-radius: 5px;
   padding: 10px 20px;
   border: none;
-  color: #ffffff;
   font-weight: bold;
 }
-
-.viewResume button:hover {
+section#about .viewResume button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+section#about .viewResume button:hover {
   background-color: #333;
   color: #ffffff;
   transition: 1s ease-in-out;
+}
+
+section#contact {
+  background-color: rgb(26, 24, 24);
+  padding: 5rem 8rem;
+  color: rgb(236, 231, 225);
+}
+section#contact h1 {
+  font-size: 10rem;
+  margin-bottom: 2rem;
+  font-family: "EB Garamond", serif;
+  font-weight: 300;
+}
+section#contact a {
+  color: rgb(236, 231, 225);
+}
+section#contact p {
+  font-size: 0.9rem;
+}
+section#contact .phone {
+  margin-top: -12px;
+}
+section#contact .socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+section#contact .socials .social {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#contact .socials .social:hover {
+  background-color: #345e82;
 }
 
 .navigateUp {
@@ -509,7 +462,6 @@ section.projects {
   bottom: 2%;
   cursor: pointer;
 }
-
 .navigateUp a {
   color: #ffffff;
 }
@@ -522,44 +474,33 @@ section.projects {
 }
 
 .navButtons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.navButtons div {
-  background-color: #111;
+  position: absolute;
+  top: 50%;
   width: 100%;
-  height: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  pointer-events: none;
 }
-
-.previousBtn, .nextBtn {
+.navButtons .prev, .navButtons .next {
+  pointer-events: all;
+}
+.navButtons a {
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 50%;
+  text-decoration: none;
   cursor: pointer;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  transition: background-color 0.3s ease;
 }
-
-.nextBtn {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-  padding-right: 20px;
-}
-
-.previousBtn:hover, .nextBtn:hover {
-  color: #006989;
-}
-
-.slideup {
-  animation: slideUp 2s ease normal;
+.navButtons a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slideabove {
@@ -632,342 +573,241 @@ section.projects {
     opacity: 1;
   }
 }
-@media (min-width: 450px) and (max-width: 700px) {
+@media (min-width: 501px) and (max-width: 700px) {
+  nav .navFlexCont .navFlex .links {
+    gap: 1.5rem;
+  }
   section.intro {
-    padding: 100px 30px 50px;
+    padding: 5rem 3rem 3rem 3rem;
   }
-  .navFlex.links {
-    gap: 20px;
+  section.intro h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
   }
-  #nametag a {
-    font-size: 25px;
-  }
-  #navDivEl a {
-    font-size: 12px;
-  }
-  .introName {
-    font-size: 32px;
-    letter-spacing: 1rem;
-  }
-  .hrFlex hr {
-    height: 150px;
-  }
-  .hrFlex p {
-    font-size: 16px;
-    padding-right: 100px;
-  }
-  .socials {
-    margin-top: 2px;
-  }
-  .navDownArrow .navCircle {
-    width: 40px;
-    height: 40px;
-  }
-  .fa-angle-down {
-    font-size: 20px;
-  }
-  section.projects {
-    margin-top: 20px;
-  }
-  .projectsGrid {
-    grid-template-columns: 33.4% 33.3% 33.3%;
-  }
-  .reactProjectGrid {
-    display: block;
-    margin: 40px 20px;
-  }
-  .dots {
-    gap: 5px;
-  }
-  .ReactProjects h2 {
-    font-size: 2rem;
-  }
-  .design {
-    margin: 30px 10px;
-    font-size: 1rem;
-  }
-  .viewAllBtn button {
-    padding: 10px;
-  }
-  .ProjectReact {
-    height: 480px;
-  }
-  .ProjectPython {
-    padding: 1rem;
-    margin-top: 20px;
-    height: 520px;
-  }
-  .slideIV img {
-    height: 300px;
-    width: 100%;
-  }
-  .slideVI img {
-    height: 300px;
-    width: 100%;
-  }
-  .projectsJs h1 {
-    margin-top: 20px;
+  section.intro .hrFlex p {
     font-size: 1.2rem;
+    padding-right: 3rem;
   }
-  #about p {
-    padding: 20px 30px;
-    font-size: 16px;
-  }
-  #contact {
-    padding: 5rem 3rem;
-  }
-  #contact h1 {
-    font-size: 7rem;
-  }
-  #contact p {
-    font-size: 12px;
-  }
-  #contact .socials {
-    margin-bottom: 20px;
-  }
-  .navigateUp {
+  section.intro .navDownArrow .navCircle {
     width: 40px;
     height: 40px;
   }
-}
-@media (min-width: 360px) and (max-width: 450px) {
-  section.intro {
-    padding: 100px 30px 50px;
+  section.intro .navDownArrow .navCircle .fa-angle-down {
+    font-size: 1.4rem;
   }
-  nav {
-    padding: 12px 20px;
+  section.intro section.projects .projectsTitleGrid {
+    height: 50px;
   }
-  .navFlex.links {
-    gap: 10px;
-  }
-  #nametag a {
-    font-size: 22px;
-  }
-  #navDivEl a {
-    font-size: 11px;
-  }
-  .introName {
-    font-size: 32px;
-    letter-spacing: 1rem;
-  }
-  .hrFlex hr {
-    height: 150px;
-  }
-  .hrFlex p {
-    font-size: 16px;
-    padding-right: 100px;
-  }
-  .socials {
-    margin-top: 2px;
-  }
-  .navDownArrow .navCircle {
-    width: 40px;
-    height: 40px;
-  }
-  .fa-angle-down {
-    font-size: 20px;
-  }
-  section.projects {
-    margin-top: 20px;
-  }
-  #react {
-    padding-top: 5px;
-  }
-  .projectsGrid {
-    grid-template-columns: 33.4% 33.3% 33.3%;
-  }
-  .dots {
-    gap: 5px;
-  }
-  .ReactProjects h2 {
-    font-size: 2rem;
-  }
-  .projectEachJs {
-    margin-top: 20px;
-  }
-  .design {
-    margin: 30px 10px;
-    font-size: 1rem;
-  }
-  .viewAllBtn button {
-    padding: 10px;
-  }
-  .reactProjectGrid {
-    display: block;
-    margin: 40px 10px;
-  }
-  .projectsJsGrid {
-    display: block;
-  }
-  .ProjectReact {
-    padding: 20px 10px;
-    margin-top: 20px;
-    height: 410px;
-  }
-  .ProjectPython {
-    padding: 1rem;
-    margin-top: 20px;
-    height: 520px;
-  }
-  .slideIV img {
+  section.intro section.projects .allProjectsFlex .slider .slide img {
     height: 250px;
     width: 100%;
   }
-  .slideVI img {
-    height: 250px;
-    width: 100%;
-  }
-  .projectsJs {
-    padding: 20px;
-    margin-top: 1rem;
-  }
-  .reactImage {
-    height: 70%;
-    width: 100%;
-    margin-top: 1rem;
-  }
-  .reactImage img {
-    height: 100%;
-    width: 100%;
-  }
-  .projectsJs h1 {
-    margin-top: 20px;
-    font-size: 1.2rem;
-  }
-  #about p {
-    padding: 20px 30px;
-    font-size: 16px;
-  }
-  #contact {
-    padding: 5rem 3rem;
-  }
-  #contact h1 {
-    font-size: 7rem;
-  }
-  #contact p {
-    font-size: 12px;
-  }
-  #contact .socials {
-    margin-bottom: 20px;
-  }
-  .navigateUp {
-    width: 40px;
-    height: 40px;
-  }
-}
-@media (max-width: 360px) {
-  section.intro {
-    padding: 100px 30px 50px;
-  }
-  .navFlex.links {
-    gap: 10px;
-  }
-  #nametag a {
-    font-size: 20px;
-  }
-  #navDivEl a {
-    font-size: 10px;
-  }
-  .introName {
-    font-size: 32px;
-    letter-spacing: 1rem;
-  }
-  .hrFlex hr {
-    height: 150px;
-  }
-  .hrFlex p {
-    font-size: 16px;
-    padding-right: 100px;
-  }
-  .socials {
-    margin-top: 2px;
-  }
-  .navDownArrow .navCircle {
-    width: 40px;
-    height: 40px;
-  }
-  .fa-angle-down {
-    font-size: 20px;
-  }
-  section.projects {
-    margin-top: 20px;
-  }
-  .projectsGrid {
-    grid-template-columns: 33.4% 33.3% 33.3%;
-  }
-  .dots {
-    gap: 5px;
-  }
-  .ReactProjects h2 {
+  section.intro section.projects .allProjectsFlex .ReactProjects h2 {
+    margin-top: 2rem;
     font-size: 2rem;
   }
-  .design {
-    margin: 30px 10px;
+  section.intro section.projects .allProjectsFlex .ReactProjects h3 {
+    font-size: 1rem;
+    padding: 0.8rem 0rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .design {
     font-size: 1rem;
   }
-  .viewAllBtn button {
-    padding: 10px;
-  }
-  .reactProjectGrid {
+  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
     display: block;
+    gap: 1rem;
+    margin: 2rem;
   }
-  .projectsJsGrid {
-    display: block;
+  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+    padding: 1rem;
+    margin-top: 1rem;
+    height: 500px;
   }
-  .ProjectReact {
-    padding: 20px;
+  section.intro section.projects .allProjectsFlex .ProjectPython {
+    padding: 2rem;
+    background-color: #FFF6E9;
+    border: none;
+    margin-top: 1.2rem;
+    height: 500px;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython a {
+    text-decoration: none;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.8rem 0rem;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails h6 {
     margin-top: 10px;
-    height: 400px;
   }
-  .ProjectPython {
+  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a {
+    text-decoration: none;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a:hover {
+    text-decoration: underline;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails .github {
+    text-decoration: underline;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs {
+    padding: 1.5rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+    gap: 1rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs h1 {
+    font-size: 1.5rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs {
+    height: 420px;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
+    height: 60%;
+    width: 100%;
+  }
+  .active {
+    background-color: #171b20;
+    color: #ffffff;
+  }
+  section#about {
+    padding: 2.5rem 0rem;
+  }
+  section#about p {
+    padding: 1.2rem 3rem;
+    font-size: 1rem;
+  }
+  section#contact {
+    padding: 5rem 2rem;
+  }
+  section#contact h1 {
+    font-size: 8rem;
+  }
+  section#contact p {
+    font-size: 0.8rem;
+  }
+  section#contact .socials {
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  nav {
     padding: 1rem;
-    margin-top: 20px;
-    height: 400;
   }
-  .slideIV img {
-    height: 300px;
-    width: 100%;
+  nav .navFlexCont #navDivEl a {
+    font-size: 0.8rem;
   }
-  .slideVI img {
-    height: 300px;
-    width: 100%;
+  nav .navFlexCont .navFlex .links {
+    gap: 1rem;
   }
-  .projectsJs {
-    padding: 20px;
-    margin-top: 1rem;
-  }
-  .reactImage {
-    height: 70%;
-    width: 100%;
-    margin-top: 1rem;
-  }
-  .reactImage img {
-    height: 100%;
-    width: 100%;
-  }
-  .projectsJs h1 {
-    margin-top: 20px;
+  nav .navFlexCont .navFlex #brandName a {
     font-size: 1.2rem;
   }
-  #about p {
-    padding: 20px 30px;
-    font-size: 16px;
+  nav .navFlexCont .navFlex .imgLogo {
+    height: 50px;
+    width: 45px;
+    border-radius: 50%;
   }
-  #contact {
-    padding: 5rem 3rem;
+  section.intro {
+    padding: 5rem 1.5rem 3rem 1.5rem;
   }
-  #contact h1 {
-    font-size: 7rem;
+  section.intro h1 {
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
   }
-  #contact p {
-    font-size: 12px;
+  section.intro .hrFlex hr {
+    height: 12rem;
   }
-  #contact .socials {
-    margin-bottom: 20px;
+  section.intro .hrFlex p {
+    font-size: 1.1rem;
+    padding-right: 1rem;
   }
-  .navigateUp {
+  section.intro .navDownArrow .navCircle {
     width: 40px;
     height: 40px;
+  }
+  section.intro .navDownArrow .navCircle .fa-angle-down {
+    font-size: 1.4rem;
+  }
+  section.intro section.projects .projectsTitleGrid {
+    height: 50px;
+  }
+  section.intro section.projects .allProjectsFlex .slider .slide img {
+    height: 180px;
+    width: 100%;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects h3 {
+    font-size: 1rem;
+    padding: 0.8rem 0rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .design {
+    font-size: 1rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
+    display: block;
+    gap: 1rem;
+    margin: 2rem 1rem;
+  }
+  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+    padding: 1rem;
+    margin-top: 1rem;
+    height: 500px;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs {
+    padding: 1.5rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs h1 {
+    font-size: 1.5rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+    display: block;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs {
+    height: 420px;
+    margin-top: 1rem;
+  }
+  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
+    height: 60%;
+    width: 100%;
+  }
+  section.intro section.projects .allProjectsFlex .ProjectPython {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    height: 500px;
+    border: 2px solid gray;
+    border-radius: 3px;
+  }
+  .active {
+    background-color: #171b20;
+    color: #ffffff;
+  }
+  section#about {
+    padding: 1rem 0rem;
+  }
+  section#about p {
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+  section#contact {
+    padding: 5rem 2rem;
+  }
+  section#contact h1 {
+    font-size: 8rem;
+  }
+  section#contact p {
+    font-size: 0.8rem;
+  }
+  section#contact .socials {
+    gap: 0.5rem;
+    margin-top: 1rem;
   }
 }
 * {
@@ -979,35 +819,37 @@ section.projects {
   background-color: #ffffff;
 }
 
-.navFlex.links {
-  position: static;
+.projectsHome nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.page {
+.projectsPage {
   background-color: #ffffff;
   color: #111;
-  padding: 50px 80px;
+  padding: 3rem 6rem;
+  margin-top: 6rem;
 }
-
-.explore {
-  background-color: #1e252d;
-  color: #ffffff;
+.projectsPage .explore {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 50px;
+  background-color: #1e252d;
+  color: #ffffff;
+  padding: 2rem 3rem;
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
 }
-
-.explore h1 {
+.projectsPage .explore h1 {
   font-size: 3rem;
   font-weight: bold;
   line-height: 3rem;
-  padding-right: 50px;
+  padding-right: 3rem;
 }
-
-.explore p {
+.projectsPage .explore p {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5rem;
@@ -1016,131 +858,83 @@ section.projects {
 }
 
 .jsProjects {
-  margin: 30px 0px;
+  margin: 2rem 0;
 }
-
-.jsProjectsGrid {
+.jsProjects .jsProjectsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 30px 20px;
+  gap: 1rem;
+  gap: 2rem 1.5rem;
 }
-
-.eachJsProject {
+.jsProjects .jsProjectsGrid .eachJsProject {
   height: 450px;
   background-color: #E2DFD0;
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   padding: 1rem;
 }
-
-.jsImage {
-  height: 50%;
-  width: 100%;
-}
-
-.jsImage img {
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.eachJsProject h2 {
+.jsProjects .jsProjectsGrid .eachJsProject h2 {
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 1.2rem;
 }
-
-.eachJsProject p {
+.jsProjects .jsProjectsGrid .eachJsProject p {
   line-height: normal;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
-
-.eachJsProject a {
+.jsProjects .jsProjectsGrid .eachJsProject a {
   background-color: #345e82;
   padding: 8px 10px;
   border-radius: 5px;
   text-decoration: none;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 0.8rem;
+}
+.jsProjects .jsProjectsGrid .eachJsProject .jsImage {
+  height: 50%;
+  width: 100%;
+}
+.jsProjects .jsProjectsGrid .eachJsProject .jsImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .reactProjects {
-  margin: 50px 0px;
+  margin: 3rem 0;
 }
-
-.reactProjectsGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.reactProjects h1, .pythonProjects h1 {
-  margin-top: 50px;
-  margin-bottom: 10px;
+.reactProjects h1 {
+  margin: 3rem 0rem 1rem 0rem;
   font-weight: bold;
   font-size: 2rem;
 }
-
-.eachReactProject, .eachPythonProject {
-  height: 600px;
+.reactProjects .reactProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.reactProjects .reactProjectsGrid .eachReactProject {
+  height: 450px;
   background-color: #E2DFD0;
   color: #111;
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   padding: 1rem;
 }
-
-.eachPythonProject {
-  margin-top: 2rem;
-}
-
-.eachPythonProject h2 {
+.reactProjects .reactProjectsGrid .eachReactProject h2 {
   padding-top: 1rem;
-}
-
-.eachPythonProject .pythonImage {
-  height: 75%;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.eachPythonProject .pythonImage img {
-  height: 100%;
-  width: 100%;
-}
-
-.pythonProjects {
-  margin-top: 3rem;
-  padding: 2rem;
-}
-
-.reactImage, .pythonImage {
-  height: 60%;
-  width: 100%;
-}
-
-.reactImage img, .pythonImage img {
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.eachReactProject h2, .pythonProjects h2 {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 10px;
 }
-
-.eachReactProject p, .pythonProjects p {
+.reactProjects .reactProjectsGrid .eachReactProject p {
   line-height: normal;
   font-size: 12px;
 }
-
-.eachReactProject a, .pythonProjects a {
+.reactProjects .reactProjectsGrid .eachReactProject a {
   background-color: #ffffff;
   padding: 8px 10px;
   border-radius: 5px;
@@ -1149,9 +943,67 @@ section.projects {
   font-size: 12px;
   font-weight: bold;
 }
+.reactProjects .reactProjectsGrid .eachReactProject .reactImage {
+  height: 70%;
+  width: 100%;
+}
+.reactProjects .reactProjectsGrid .eachReactProject .reactImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.pythonProjects {
+  margin: 0;
+  padding: 2rem;
+}
+.pythonProjects h1 {
+  margin: 3rem 0rem 1rem 0rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.pythonProjects h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.pythonProjects .eachPythonProject {
+  margin-top: 2rem;
+  height: 500px;
+  background-color: #E2DFD0;
+  color: #111;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+.pythonProjects .eachPythonProject p {
+  line-height: normal;
+  font-size: 12px;
+}
+.pythonProjects .eachPythonProject a {
+  background-color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #345e82;
+  font-size: 12px;
+  font-weight: bold;
+}
+.pythonProjects .eachPythonProject .pythonImage {
+  height: 80%;
+  width: 100%;
+}
+.pythonProjects .eachPythonProject .pythonImage img {
+  height: 100%;
+  width: 100%;
+}
 
 .slideupward {
   animation: slideUpward 2s ease normal;
+}
+
+.availableOnRequest {
+  color: #3674B5;
 }
 
 @keyframes slideUpward {
@@ -1164,195 +1016,161 @@ section.projects {
     opacity: 1;
   }
 }
-@media (max-width: 430px) {
-  .page {
-    padding: 50px 20px;
+@media (min-width: 651px) and (max-width: 900px) {
+  .projectsPage {
+    padding: 3rem;
   }
-  .navFlex.links {
-    gap: 20px;
+  .projectsPage .explore {
+    padding: 2rem;
   }
-  #navDivEl a {
-    font-size: 10px;
+  .projectsPage .explore h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-right: 2rem;
   }
-  .navFlex a {
-    font-size: 0.7rem;
+  .jsProjects .jsProjectsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    gap: 2rem 1.5rem;
   }
-  #nametag {
-    font-size: 1.3rem;
+}
+@media (min-width: 501px) and (max-width: 650px) {
+  .projectsPage {
+    padding: 3rem;
   }
-  .jsProjectsGrid {
+  .projectsPage .explore {
+    padding: 2rem;
+  }
+  .projectsPage .explore h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-right: 2rem;
+  }
+  .jsProjects {
+    margin: 2rem 0;
+  }
+  .jsProjects .jsProjectsGrid {
     display: block;
+    gap: 2rem 1.5rem;
   }
-  .reactProjectsGrid {
-    display: block;
+  .jsProjects .jsProjectsGrid .eachJsProject {
+    margin-top: 2rem;
+    height: 400px;
   }
-  .explore {
-    padding: 10px;
-  }
-  .explore h1 {
-    font-size: 1.7rem;
-    line-height: 2rem;
-  }
-  .explore p {
+  .jsProjects .jsProjectsGrid .eachJsProject p {
     font-size: 0.8rem;
-    line-height: 1.5rem;
-    letter-spacing: 1px;
-    word-spacing: 3px;
   }
-  .eachJsProject {
-    height: 350px;
-    padding: 0.5rem;
-    margin-top: 20px;
+  .jsProjects .jsProjectsGrid .eachJsProject .jsImage {
+    height: 60%;
+    width: 100%;
   }
-  .eachJsProject h2 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  .eachJsProject p {
-    line-height: normal;
-    font-size: 12px;
+  .jsProjects .jsProjectsGrid .eachJsProject .jsImage img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
   }
   .reactProjects {
-    margin: 30px 0px;
+    margin: 2rem 0;
   }
-  .reactProjects h1, .pythonProjects h1 {
+  .reactProjects h1 {
+    font-size: 1.8rem;
+  }
+  .reactProjects .reactProjectsGrid {
+    display: block;
+  }
+  .reactProjects .reactProjectsGrid .eachReactProject {
+    height: 450px;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .pythonProjects {
+    margin: 0;
+    padding: 2rem 0rem;
+  }
+  .pythonProjects h1 {
+    margin: 1rem 0rem 0rem 0rem;
+    font-size: 1.8rem;
+  }
+  .pythonProjects .eachPythonProject {
+    height: 480px;
+  }
+  .pythonProjects .eachPythonProject .pythonImage {
+    height: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .projectsPage {
+    padding: 2rem 1rem;
+  }
+  .projectsPage .explore {
+    padding: 1rem;
+  }
+  .projectsPage .explore h1 {
     font-size: 1.5rem;
+    line-height: 2rem;
+    padding-right: 1rem;
   }
-  .eachReactProject .reactImage, .eachPythonProject .pythonImage {
-    height: 68%;
-    width: 100%;
+  .projectsPage .explore p {
+    font-size: 0.9rem;
+  }
+  .jsProjects {
+    margin: 2rem 0;
+  }
+  .jsProjects .jsProjectsGrid {
+    display: block;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject {
     margin-top: 1rem;
+    height: 450px;
   }
-  .eachReactProject .reactImage img, .eachPythonProject .pythonImage img {
+  .jsProjects .jsProjectsGrid .eachJsProject p {
+    font-size: 0.8rem;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject .jsImage {
+    height: 55%;
+    width: 100%;
+  }
+  .jsProjects .jsProjectsGrid .eachJsProject .jsImage img {
     height: 100%;
     width: 100%;
   }
-  .eachReactProject, .eachPythonProject {
-    height: 450px;
-    margin-top: 20px;
-  }
-  .pythonProjects {
-    padding: 0rem;
-  }
-}
-@media (min-width: 430px) and (max-width: 600px) {
-  .page {
-    padding: 50px 30px;
-  }
-  .navFlex a {
-    font-size: 0.7rem;
-  }
-  #nametag {
-    font-size: 1.4rem;
-  }
-  .jsProjectsGrid {
-    display: block;
-  }
-  .reactProjectsGrid {
-    display: block;
-  }
-  .explore {
-    padding: 10px;
-  }
-  .explore h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .explore p {
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-  }
-  .eachJsProject {
-    height: 350px;
-    padding: 0.5rem;
-    margin-top: 20px;
-  }
-  .eachJsProject h2 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  .eachJsProject p {
-    line-height: normal;
-    font-size: 12px;
-  }
   .reactProjects {
-    margin: 30px 0px;
+    margin: 2rem 0;
   }
-  .reactProjects h1, .pythonProjects h1 {
+  .reactProjects h1 {
     font-size: 1.5rem;
+    margin-bottom: -1rem;
   }
-  .eachReactProject, .eachPythonProject {
-    height: 450px;
-    margin-top: 20px;
+  .reactProjects .reactProjectsGrid {
+    display: block;
   }
-  .eachReactProject .reactImage, .eachPythonProject .pythonImage {
-    height: 68%;
+  .reactProjects .reactProjectsGrid .eachReactProject {
+    height: 400px;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .reactProjects .reactProjectsGrid .eachReactProject .reactImage {
+    height: 50%;
     width: 100%;
-    margin-top: 1rem;
   }
-  .eachReactProject .reactImage img, .eachPythonProject .pythonImage img {
+  .reactProjects .reactProjectsGrid .eachReactProject .reactImage img {
     height: 100%;
     width: 100%;
   }
   .pythonProjects {
-    padding: 0rem;
+    margin: 0;
+    padding: 2rem 0rem;
   }
-}
-@media (min-width: 600px) and (max-width: 768px) {
-  .page {
-    padding: 50px 30px;
-  }
-  .explore {
-    padding: 10px;
-  }
-  .explore h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  .explore p {
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-  }
-  .jsProjectsGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .eachJsProject {
-    height: 450px;
-    padding: 0.5rem;
-    margin-top: 20px;
-  }
-  .eachJsProject h2 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  .eachJsProject p {
-    line-height: normal;
-    font-size: 12px;
-  }
-  .reactProjects {
-    margin: 30px 0px;
-  }
-  .reactProjects h1, .pythonProjects h1 {
+  .pythonProjects h1 {
+    margin: 1rem 0rem 0rem 0rem;
     font-size: 1.5rem;
+    margin-bottom: -1rem;
   }
-  .reactProjectsGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+  .pythonProjects .eachPythonProject {
+    height: 480px;
   }
-  .pythonProjects {
-    padding: 0rem;
-  }
-  .eachReactProject, .eachPythonProject {
-    height: 450px;
+  .pythonProjects .eachPythonProject .pythonImage {
+    height: 72%;
   }
 }
