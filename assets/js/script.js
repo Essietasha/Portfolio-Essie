@@ -18,17 +18,13 @@ navcircle.addEventListener('click', slideUpProjects);
 //Display and Hide Projects Content
 let reactBtn;
 let javascriptBtn;
-let pythonBtn;
 let reactPage;
 let javascriptPage;
-let pythonPage;
 let projectsPage;
 reactBtn = document.getElementById('react');
 javascriptBtn = document.getElementById('javascript');
-pythonBtn = document.getElementById('python');
 javascriptPage = document.querySelector('.projectsJs');
 reactPage = document.querySelector('.ReactProjects');
-pythonPage = document.querySelector('.PythonProjects');
 projectsPage = document.querySelector('.projects');
 
 reactBtn.addEventListener('click', () => {
@@ -36,7 +32,6 @@ reactBtn.addEventListener('click', () => {
     reactPage.classList.add('slideup');
     projectsPage.classList.add('slideabove');
     javascriptPage.style.display = 'none';
-    pythonPage.style.display = 'none';
 });
 
 javascriptBtn.addEventListener('click', () => {
@@ -44,36 +39,37 @@ javascriptBtn.addEventListener('click', () => {
     javascriptPage.classList.add('slideup');
     projectsPage.classList.add('slideabove');
     reactPage.style.display = 'none';
-    pythonPage.style.display = 'none';
 });
 
-pythonBtn.addEventListener('click', () => {
-    pythonPage.style.display = 'block';
-    pythonPage.classList.add('slideup');
-    projectsPage.classList.add('slideabove');
-    reactPage.style.display = 'none';
-    javascriptPage.style.display = 'none';
-});
+// Active class
+const tabs = document.querySelectorAll('.projectSwitcher');
+const reactSection = document.querySelector('.ReactProjects');
+const jsSection = document.querySelector('.projectsJs');
 
-
-//Active Class
-let parentDiv;
-let childDivs;
-parentDiv = document.getElementById('parentDiv');
-childDivs = parentDiv.querySelectorAll('div');
-
-function handleButtonClick(event){
-    childDivs.forEach(childDiv => {
-        childDiv.classList.remove('active');
-    });
-
+function handleButtonClick(event) {
+    tabs.forEach(tab => tab.classList.remove('active'));
     event.target.classList.add('active');
+
+    if (event.target.id === 'react') {
+        reactSection.classList.add('active-content');
+        reactSection.classList.remove('hidden-content');
+        
+        jsSection.classList.add('hidden-content');
+        jsSection.classList.remove('active-content');
+    } else {
+        jsSection.classList.add('active-content');
+        jsSection.classList.remove('hidden-content');
+        
+        reactSection.classList.add('hidden-content');
+        reactSection.classList.remove('active-content');
+    }
 }
 
-childDivs.forEach(childDiv => {
-    childDiv.addEventListener('click', handleButtonClick);
-});
+tabs.forEach(tab => tab.addEventListener('click', handleButtonClick));
 
+// Set initial state
+reactSection.classList.add('active-content');
+jsSection.classList.add('hidden-content');
 
 
 //Keep Animation Active on page view.
@@ -162,6 +158,24 @@ document.querySelectorAll('.slider').forEach(slider => {
     slides.forEach(slide => slide.style.display = "none");
     slides[0].style.display = "block";
 });
+
+// //Active Class
+// let parentDiv;
+// let childDivs;
+// parentDiv = document.getElementById('parentDiv');
+// childDivs = parentDiv.querySelectorAll('div');
+
+// function handleButtonClick(event){
+//     childDivs.forEach(childDiv => {
+//         childDiv.classList.remove('active');
+//     });
+
+//     event.target.classList.add('active');
+// }
+
+// childDivs.forEach(childDiv => {
+//     childDiv.addEventListener('click', handleButtonClick);
+// });
 
 
 //Nav Element Scroll Event

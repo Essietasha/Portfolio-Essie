@@ -76,7 +76,7 @@ nav .navFlexCont .navFlex .imgLogo {
 
 section.intro {
   background-color: #EADBC8;
-  padding: 6rem;
+  padding: 6rem 6rem 0rem 6rem;
   color: #111;
 }
 section.intro h1 {
@@ -102,7 +102,7 @@ section.intro .hrFlex p {
 section.intro .socials {
   display: flex;
   gap: 0.8rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 section.intro .socials .social {
   width: 30px;
@@ -115,6 +115,46 @@ section.intro .socials .social {
 }
 section.intro .socials .social:hover {
   background-color: #ffffff;
+}
+section.intro .skills-section {
+  padding: 20px 0px;
+}
+section.intro .skills-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+section.intro .skills-section .skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+section.intro .skills-section .skills-grid .skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: all 0.2s ease;
+}
+section.intro .skills-section .skills-grid .skill-pill:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+section.intro .skills-section .skills-grid .skill-pill img {
+  width: 22px;
+  height: 22px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.intro .skills-section .skills-grid .skill-pill span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
 }
 section.intro .navDownArrow {
   margin-top: 2.5rem;
@@ -167,7 +207,8 @@ section.intro .viewAllBtn button:hover {
   color: #ffffff;
   transition: 1s ease-in-out;
 }
-section.intro section.projects {
+
+section.projects {
   background-color: #FFF6E9;
   margin-top: 1rem;
   color: #111;
@@ -175,198 +216,219 @@ section.intro section.projects {
   padding-bottom: 3rem;
   overflow: hidden;
 }
-section.intro section.projects .projectsTitleGrid {
+section.projects .projectsTitleGrid {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   height: 40px;
 }
-section.intro section.projects .projectsTitleGrid .project {
-  height: 100%;
-  width: 100%;
-}
-section.intro section.projects .projectsTitleGrid #javascript, section.intro section.projects .projectsTitleGrid #python, section.intro section.projects .projectsTitleGrid #react {
-  padding: 10px 0px 10px 10px;
+section.projects .projectsTitleGrid #javascript, section.projects .projectsTitleGrid #react {
+  padding: 10px;
   cursor: pointer;
   font-weight: bold;
 }
-section.intro section.projects .allProjectsFlex {
+section.projects .allProjectsFlex {
   display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
 }
-section.intro section.projects .allProjectsFlex .ReactProjects {
+section.projects .allProjectsFlex .ReactProjects {
+  height: auto;
   min-width: 100%;
 }
-section.intro section.projects .allProjectsFlex .ReactProjects h2 {
-  margin-top: 3rem;
+section.projects .allProjectsFlex .ReactProjects p:last-of-type {
+  margin-bottom: 0;
+}
+section.projects .allProjectsFlex .ReactProjects h2 {
   text-align: center;
   font-size: 3rem;
   color: #006989;
 }
-section.intro section.projects .allProjectsFlex .ReactProjects h3 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 0.8rem 0rem;
-}
-section.intro section.projects .allProjectsFlex .ReactProjects a {
+section.projects .allProjectsFlex .ReactProjects a {
   text-decoration: none;
 }
-section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails h6 {
-  margin-top: 10px;
-}
-section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails a {
-  text-decoration: none;
-}
-section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails a:hover {
-  text-decoration: underline;
-}
-section.intro section.projects .allProjectsFlex .ReactProjects .projectDetails .github {
-  text-decoration: underline;
-}
-section.intro section.projects .allProjectsFlex .ReactProjects .dots {
+section.projects .allProjectsFlex .ReactProjects .dots {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-section.intro section.projects .allProjectsFlex .ReactProjects .dots .dot {
+section.projects .allProjectsFlex .ReactProjects .dots .dot {
   height: 8px;
   width: 8px;
   border-radius: 50%;
   border: 1px solid #006989;
 }
-section.intro section.projects .allProjectsFlex .ReactProjects .design {
+section.projects .allProjectsFlex .ReactProjects .design {
   text-align: center;
   margin: 2rem 3rem;
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
 }
-section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 2rem;
-}
-section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
-  padding: 1.2rem;
-  background-color: #FFF6E9;
-  border: 2px solid gray;
-  border-radius: 5px;
-  margin-top: 1rem;
-  height: 600px;
-}
-section.intro section.projects .allProjectsFlex .ProjectPython {
-  margin-top: 5rem;
-  padding: 2rem 7rem;
-  background-color: #FFF6E9;
-  margin-top: 1.2rem;
-  height: 500px;
-  border: none;
-}
-section.intro section.projects .allProjectsFlex .ProjectPython a {
-  text-decoration: none;
-}
-section.intro section.projects .allProjectsFlex .ProjectPython h3 {
-  background-color: black;
-  color: #FFF6E9;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 0.8rem 0rem;
-}
-section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails h6 {
-  margin-top: 10px;
-}
-section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a {
-  text-decoration: none;
-}
-section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a:hover {
-  text-decoration: underline;
-}
-section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails .github {
-  text-decoration: underline;
-}
-section.intro section.projects .allProjectsFlex .projectsJs {
-  padding: 2rem;
-  margin-top: 1rem;
-}
-section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   align-items: center;
   gap: 2rem;
+  margin: 2rem 2rem 0rem 2rem;
 }
-section.intro section.projects .allProjectsFlex .projectsJs h1 {
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+  background: #fff;
+  border: 1px solid e5e5e5;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  border-radius: 24px;
+  overflow: hidden;
+  height: auto;
+}
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails {
+  padding: 1.2rem;
+}
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails h6 {
+  margin-top: 15px;
+}
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails h6 a {
+  color: #000000;
+}
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails p:first-of-type {
+  color: #4b4a4a;
+}
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails a:hover {
+  text-decoration: underline;
+}
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails .deployed {
+  color: #006989;
+}
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails .techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+}
+section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails .techStack span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.5rem;
+  background: #f3f3f3;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #111;
+}
+section.projects .allProjectsFlex .projectsJs {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+section.projects .allProjectsFlex .projectsJs h1 {
   margin: 2rem 0rem;
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0;
 }
-section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs {
-  height: 450px;
-  background-color: #e7e0d6;
+section.projects .allProjectsFlex .projectsJs .projectEachJs {
+  background-color: #ffffff;
   color: #111;
-  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   font-family: "Poppins", sans-serif;
-  padding: 1rem;
+  border-radius: 24px;
+  padding-bottom: 2rem;
 }
-section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs h2 {
+section.projects .allProjectsFlex .projectsJs .projectEachJs h2 {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 0.8rem;
+  padding: 0rem 1rem;
 }
-section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs p {
+section.projects .allProjectsFlex .projectsJs .projectEachJs p {
   line-height: normal;
   font-size: 0.8rem;
+  padding: 0rem 1rem;
+  color: #4b4a4a;
 }
-section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs a {
-  background-color: #ffffff;
-  padding: 8px 10px;
+section.projects .allProjectsFlex .projectsJs .projectEachJs a {
   border-radius: 5px;
   text-decoration: none;
-  color: #345e82;
   font-size: 0.8rem;
-  font-weight: bold;
 }
-section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
-  height: 70%;
+section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
+  height: 60%;
   width: 100%;
-  margin-top: 1rem;
 }
-section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv img {
+section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv img {
   height: 100%;
   width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
-section.intro section.projects .allProjectsFlex .slider {
+section.projects .allProjectsFlex .slider {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.5s ease;
 }
-section.intro section.projects .allProjectsFlex .slider .slide {
+section.projects .allProjectsFlex .slider .slide {
   text-align: center;
   display: none;
   width: 100%;
 }
-section.intro section.projects .allProjectsFlex .slider .slide img {
+section.projects .allProjectsFlex .slider .slide img {
   height: 300px;
   width: 100%;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-section.intro section.projects .allProjectsFlex .availableOnRequest {
+section.projects .allProjectsFlex .availableOnRequest {
   color: #3674B5;
+}
+
+.srcBtn a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.4rem;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.srcBtn a svg {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.srcBtn a:hover {
+  background-color: #1c1c1c;
+  transform: translateY(-1px);
+}
+.srcBtn .github {
+  text-decoration: underline;
 }
 
 .active {
   background-color: #171b20;
   color: #ffffff;
+}
+
+.ReactProjects.active-content, .projectsJs.active-content {
+  display: block !important;
+  animation: fadeInUp 0.5s ease forwards;
+}
+.ReactProjects.hidden-content, .projectsJs.hidden-content {
+  display: none !important;
 }
 
 section#about {
@@ -573,17 +635,27 @@ section#contact .socials .social:hover {
     opacity: 1;
   }
 }
-@media (min-width: 501px) and (max-width: 700px) {
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
   nav .navFlexCont .navFlex .links {
     gap: 1.5rem;
   }
   section.intro {
-    padding: 5rem 3rem 3rem 3rem;
+    padding: 3rem 2rem 0rem 2rem;
   }
   section.intro h1 {
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   section.intro .hrFlex p {
     font-size: 1.2rem;
@@ -596,75 +668,58 @@ section#contact .socials .social:hover {
   section.intro .navDownArrow .navCircle .fa-angle-down {
     font-size: 1.4rem;
   }
-  section.intro section.projects .projectsTitleGrid {
+  section.projects .projectsTitleGrid {
     height: 50px;
   }
-  section.intro section.projects .allProjectsFlex .slider .slide img {
+  section.projects .allProjectsFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto !important;
+  }
+  section.projects .allProjectsFlex .slider .slide img {
     height: 250px;
     width: 100%;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects h2 {
+  section.projects .allProjectsFlex .ReactProjects {
+    height: auto;
+  }
+  section.projects .allProjectsFlex .ReactProjects h2 {
     margin-top: 2rem;
     font-size: 2rem;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects h3 {
+  section.projects .allProjectsFlex .ReactProjects h3 {
     font-size: 1rem;
     padding: 0.8rem 0rem;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects .design {
+  section.projects .allProjectsFlex .ReactProjects .design {
     font-size: 1rem;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
-    display: block;
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
     gap: 1rem;
-    margin: 2rem;
+    margin: 1rem 1rem 0rem 1rem;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+    overflow: hidden;
+  }
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails {
     padding: 1rem;
-    margin-top: 1rem;
-    height: 500px;
   }
-  section.intro section.projects .allProjectsFlex .ProjectPython {
-    padding: 2rem;
-    background-color: #FFF6E9;
-    border: none;
-    margin-top: 1.2rem;
-    height: 500px;
-  }
-  section.intro section.projects .allProjectsFlex .ProjectPython a {
-    text-decoration: none;
-  }
-  section.intro section.projects .allProjectsFlex .ProjectPython h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 0.8rem 0rem;
-  }
-  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails h6 {
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails h6 {
     margin-top: 10px;
   }
-  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a {
-    text-decoration: none;
-  }
-  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails a:hover {
-    text-decoration: underline;
-  }
-  section.intro section.projects .allProjectsFlex .ProjectPython .projectDetails .github {
-    text-decoration: underline;
-  }
-  section.intro section.projects .allProjectsFlex .projectsJs {
+  section.projects .allProjectsFlex .projectsJs {
+    height: auto;
     padding: 1.5rem;
   }
-  section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+  section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
     gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  section.intro section.projects .allProjectsFlex .projectsJs h1 {
+  section.projects .allProjectsFlex .projectsJs h1 {
     font-size: 1.5rem;
   }
-  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs {
-    height: 420px;
-  }
-  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
+  section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
     height: 60%;
     width: 100%;
   }
@@ -693,7 +748,7 @@ section#contact .socials .social:hover {
     margin-top: 1rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   nav {
     padding: 1rem;
   }
@@ -712,7 +767,7 @@ section#contact .socials .social:hover {
     border-radius: 50%;
   }
   section.intro {
-    padding: 5rem 1.5rem 3rem 1.5rem;
+    padding: 3rem 1rem 0rem 1rem;
   }
   section.intro h1 {
     font-size: 2.4rem;
@@ -733,57 +788,59 @@ section#contact .socials .social:hover {
   section.intro .navDownArrow .navCircle .fa-angle-down {
     font-size: 1.4rem;
   }
-  section.intro section.projects .projectsTitleGrid {
+  section.projects .projectsTitleGrid {
     height: 50px;
   }
-  section.intro section.projects .allProjectsFlex .slider .slide img {
+  section.projects .allProjectsFlex .slider .slide img {
     height: 180px;
     width: 100%;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects h2 {
+  section.projects .allProjectsFlex .ReactProjects h2 {
     margin-top: 2rem;
     font-size: 2rem;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects h3 {
+  section.projects .allProjectsFlex .ReactProjects h3 {
     font-size: 1rem;
     padding: 0.8rem 0rem;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects .design {
+  section.projects .allProjectsFlex .ReactProjects .design {
     font-size: 1rem;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid {
     display: block;
     gap: 1rem;
-    margin: 2rem 1rem;
+    margin: 1rem 1rem 0rem 1rem;
   }
-  section.intro section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox {
+    margin-top: 2rem;
+  }
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails {
     padding: 1rem;
-    margin-top: 1rem;
-    height: 500px;
   }
-  section.intro section.projects .allProjectsFlex .projectsJs {
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails h6 {
+    margin-top: 10px;
+  }
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails p:first-of-type {
+    color: #4b4a4a;
+  }
+  section.projects .allProjectsFlex .ReactProjects .reactProjectGrid .eachReactProjectGridBox .projectDetails .techStack {
+    gap: 0.5rem;
+  }
+  section.projects .allProjectsFlex .projectsJs {
     padding: 1.5rem;
   }
-  section.intro section.projects .allProjectsFlex .projectsJs h1 {
+  section.projects .allProjectsFlex .projectsJs h1 {
     font-size: 1.5rem;
   }
-  section.intro section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
+  section.projects .allProjectsFlex .projectsJs .projectsJsGrid {
     display: block;
   }
-  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs {
-    height: 420px;
+  section.projects .allProjectsFlex .projectsJs .projectEachJs {
     margin-top: 1rem;
   }
-  section.intro section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
+  section.projects .allProjectsFlex .projectsJs .projectEachJs .jsImageDiv {
     height: 60%;
     width: 100%;
-  }
-  section.intro section.projects .allProjectsFlex .ProjectPython {
-    padding: 1rem;
-    margin: 2rem 1rem;
-    height: 500px;
-    border: 2px solid gray;
-    border-radius: 3px;
   }
   .active {
     background-color: #171b20;

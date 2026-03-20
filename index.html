@@ -40,29 +40,85 @@
                     <h1>ESTHER OLUKOYA</h1>
                     <div class="hrFlex">
                         <hr>
-                        <p>Hi, I'm Essie. I am a full-stack developer passionate about designing and implementing solutions with a focus on responsive design and accessibility. Skillful in building user-friendly digital experiences and writing clear, concise, and maintainable code. </p>
+                        <p>Hi, I'm Essie. I am a frontend developer with experience in backend integrations. Passionate about designing and implementing solutions with a focus on responsive design and accessibility. I love writing clear, concise, and maintainable code. </p>
                     </div>
-                    <div class="socials">
-                        <div class="social"> <a href="https://twitter.com/Olukoyaessie" target="_blank"><i class="fa-brands fa-twitter"></i></a> </div>
-                        <div class="social"> <a href="https://github.com/Essietasha" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-                        <div class="social"> <a href="http://linkedin.com/in/esther-olukoya-74b63624b" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </div>
-                    </div>      
+                </div>
 
-                    <div class="navDownArrow">
-                        <div class="navCircle">
-                            <a href="#projectsPage"><i class="fa-solid fa-angle-down"></i></a>
+                <section class="skills-section">
+                    <h2>Skills</h2>
+
+                    <div class="skills-grid">
+                        <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React icon">
+                        <span>React</span>
                         </div>
+
+                        <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript icon">
+                        <span>JavaScript</span>
+                        </div>
+
+                        <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript icon">
+                        <span>TypeScript</span>
+                        </div>
+
+                        <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML icon">
+                        <span>HTML</span>
+                        </div>
+
+                        <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS icon">
+                        <span>CSS</span>
+                        </div>
+
+                        <div class="skill-pill">
+                        <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind icon">
+                        <span>Tailwind</span>
+                        </div>
+
+                        <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python icon">
+                        <span>Python</span>
+                        </div>
+
+                        <div class="skill-pill">
+                        <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase icon">
+                        <span>Firebase</span>
+                        </div>
+
+                        <div class="skill-pill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" alt="REST API icon">
+                        <span>REST API</span>
+                        </div>
+
+                        <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL icon">
+                        <span>SQL</span>
+                        </div>
+
+                        <div class="skill-pill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git icon">
+                        <span>Git</span>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navDownArrow">
+                    <div class="navCircle">
+                        <a href="#projectsPage"><i class="fa-solid fa-angle-down"></i></a>
                     </div>
                 </div>
 
                 <section class="projects" id="projectsPage">
                         <div class="projectsTitleGrid" id="parentDiv">
-                            <div class="project active" id="react">REACT PROJECTS</div>
-                            <div class="project" id="javascript">JAVASCRIPT PROJECTS</div>
-                            <div class="project" id="python">PYTHON PROJECT</div>
+                            <div class="projectSwitcher active" id="react">REACT | PYTHON PROJECTS</div>
+                            <div class="projectSwitcher" id="javascript">JAVASCRIPT PROJECTS</div>
                         </div>
 
                         <div class="allProjectsFlex">
+
                             <div class="ReactProjects">
                                 <h2 class="desgn">Design</h2>
                                 <div class="dots">
@@ -82,7 +138,6 @@
                                 <div class="reactProjectGrid">    
  
                                     <div class="eachReactProjectGridBox">
-                                        <h3>Bnbly: Travel & Book Your Stay</h3>
                                         <div class="slider" data-slider="project3">
                                             <div class="slide">
                                                 <img src="images/bnbly1.jpg" alt="">
@@ -120,20 +175,36 @@
                                             <div class="slide">
                                                 <img src="images/bnbly14.jpg" alt="">
                                             </div>
+
                                             <div class="navButtons">
                                                 <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
                                                 <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
                                             </div>
                                         </div>
+
                                         <div class="projectDetails">
-                                            <h6><a href="projects.html">Project Details</a></h6>
-                                            <p>Bnbly is a modern travel and booking platform that allows users to browse, filter or add apartments, and reserve stays seamlessly. Built with React and Firebase, it features user authentication, reservation management, and a clean, responsive UI. Users can explore available rooms, make bookings, and manage reservations while maintaining a smooth experience.</p>
-                                            <p class="availableOnRequest">Source code available on request.</p>
+                                            <h6><a href="projects.html">Bnbly: Travel & Book Your Stay</a></h6>
+                                            <p>Bnbly is a modern travel and booking platform that allows users to browse, filter, reserve, and list apartments seamlessly. It features user authentication, hosting management, and a clean, responsive UI.</p>
+                                            
+                                            <div class="techStack">
+                                                <span>React</span>
+                                                <span>JavaScript</span>
+                                                <span>Firebase</span>
+                                                <span>Tailwind CSS</span>
+                                            </div>
+
+                                            <p class="srcBtn">
+                                                <a href="https://github.com/Essietasha/Bnbly">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                    </svg>
+                                                    <span>Source</span>
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>                                    
 
                                     <div class="eachReactProjectGridBox">
-                                        <h3>Lunverra university</h3>
                                         <div class="slider" data-slider="project1">
                                             <div class="slide">
                                                 <img src="images/lunv1.jpg" alt="">
@@ -144,9 +215,6 @@
                                             <div class="slide">
                                                 <img src="images/lunv7.jpg" alt="">
                                             </div>
-                                            <!-- <div class="slide">
-                                                <img src="images/lunv2.jpg" alt="">
-                                            </div> -->
                                             <div class="slide">
                                                 <img src="images/lunv3.jpg" alt="">
                                             </div>
@@ -219,16 +287,30 @@
                                             </div>                                            
                                         </div>
                                         <div class="projectDetails">
-                                            <h6><a href="projects.html">Project Details</a></h6>
-                                            <p>
-                                                Developed a fully functional university website that streamlines student admission and academic registration process, 
-                                                featuring secure login/logout, unique registration numbers, admin controls, dynamic content, feedback functionality, and data persistence.</p>
-                                            <p class="availableOnRequest">Source code available on request.</p>
+                                            <h6><a href="projects.html">Lunverra university</a></h6>
+                                            <p>Developed a fully functional university website that streamlines student admission and academic registration process, 
+                                                featuring secure login/logout, unique registration numbers, admin controls, dynamic content, feedback functionality, and data persistence.
+                                            </p>
+                                            
+                                            <div class="techStack">
+                                                <span>Python</span>
+                                                <span>Flask</span>
+                                                <span>SQL</span>
+                                                <span>SCSS</span>
+                                            </div>
+
+                                            <p class="srcBtn">
+                                                <a href="https://github.com/Essietasha/Lunverra-University">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                    </svg>
+                                                    <span>Source</span>
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
 
                                     <div class="eachReactProjectGridBox">
-                                        <h3>Interactive ESL Website: EnglishWithZoey</h3>
                                         <div class="slider" data-slider="project2">
                                             <div class="slide">
                                                 <img src="images/ewz10.jpg" alt="">
@@ -299,23 +381,36 @@
                                             </div>
                                         </div>
                                         <div class="projectDetails">
-                                            <h6><a href="projects.html">Project Details</a></h6>
-                                            <p>Snippet from past work: Built a full-stack English learning website for a client, serving as an interactive platform for learners. The website allows students to browse learning topics and resources, book English sessions, submit, update, and delete reviews, and more.</p>
-                                            <p class="availableOnRequest">Fully deployed and live for client.</p>
-                                        </div>
+                                            <h6><a href="projects.html">ESL Website</a></h6>
+                                            <p>Built a full-stack English learning website for a client, serving as an interactive platform for learners. The website allows students to browse learning topics and resources, book English sessions, submit, update, and delete reviews, and more.</p>
+                                            
+                                            <div class="techStack">
+                                                <span>Flask</span>
+                                                <span>Python</span>
+                                                <span>SQL</span>
+                                                <span>SCSS</span>
+                                            </div>
+
+                                            <p class="srcBtn">
+                                                <a href="https://github.com/Essietasha">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                    </svg>
+                                                    <span>Source</span>
+                                                </a>
+                                            </p>                                        </div>
                                     </div>
 
                                     <div class="eachReactProjectGridBox">
-                                        <h3>Netflix Clone</h3>
                                         <div class="slider" data-slider="project7">
                                             <div class="slide">
-                                                <img src="images/netflix1.png" alt="">
+                                                <img src="images/netflix3.png" alt="">
                                             </div>
                                             <div class="slide">
                                                 <img src="images/netflix2.png" alt="">
                                             </div>
                                             <div class="slide">
-                                                <img src="images/netflix3.png" alt="">
+                                                <img src="images/netflix1.png" alt="">
                                             </div>
                                             <div class="slide">
                                                 <img src="images/netflix4.png" alt="">
@@ -341,9 +436,21 @@
                                             </div>
                                         </div>
                                         <div class="projectDetails">
-                                            <h6><a href="projects.html">Project Details</a></h6>
+                                            <h6><a href="projects.html">Netflix Clone</a></h6>
                                             <p>Developed a Netflix-like app using React, incorporating features like dynamic movie categories, movie lists, and modal dialogs for user interactions. Utilized Context API to manage state and more.</p>
-                                            <a href="https://github.com/Essietasha/Netflix-Clone-React.js" class="github" target="_blank">Source Code</a>
+                                            <div class="techStack">
+                                                <span>React</span>
+                                                <span>JavaScript</span>
+                                            </div>
+
+                                            <p class="srcBtn">
+                                                <a href="https://github.com/Essietasha/Netflix-Clone-React.js">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                    </svg>
+                                                    <span>Source</span>
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -353,7 +460,88 @@
                             
                             <div class="projectsJs box" id="javsprojects">
                                 <h1>JavaScript Projects</h1>
+
                                 <div class="projectsJsGrid">
+
+                                    <div class="projectEachJs">
+                                        <div class="jsImageDiv">
+                                            <img src="images/brookside1.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <h2>Brookside College</h2>
+                                        <p>This is a demo university website built with pure HTML, CSS and Javascript</p>
+                                        <p class="srcBtn">
+                                            <a href="https://github.com/Essietasha/Brookside-College">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </p>                                          
+                                    </div>
+
+                                    <div class="projectEachJs">
+                                        <div class="jsImageDiv">
+                                            <img src="images/englishdict.png" class="img-fluid" alt="...">
+                                        </div>
+                                        <h2>English Dictionary</h2>
+                                        <p>An English dictionary web app that retrieves definitions and pronunciation from an API.</p>
+                                        <p class="srcBtn">
+                                            <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/english-dictionary-app">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </p>                                          
+                                    </div>
+
+                                    <div class="projectEachJs">
+                                        <div class="jsImageDiv">
+                                            <img src="images/randomquote.png" class="img-fluid" alt="...">
+                                        </div>
+                                        <h2>Random Quote Generator</h2>
+                                        <p>With a glass morphism design, displays a title and a quote with the author's name from an API.</p>
+                                        <p class="srcBtn">
+                                            <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/random-quote-generator">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </p>                                          
+                                    </div>
+
+                                    <div class="projectEachJs">
+                                        <div class="jsImageDiv">
+                                            <img src="images/mathematical.png" class="img-fluid" alt="...">
+                                        </div>
+                                        <h2>Mathematical Quiz App</h2>
+                                        <p>This multiplication app features a question section, an input section, a submit button, and a score section.</p>
+                                        <p class="srcBtn">
+                                            <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/Mathematical%20Questions%20App">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </p>                                          
+                                    </div>
+
+                                    <div class="projectEachJs">
+                                        <div class="jsImageDiv">
+                                            <img src="images/calendar-mini.png" class="img-fluid" alt="...">
+                                        </div>
+                                        <h2>Mini Calendar app</h2>
+                                        <p>This project involves creating a mini calendar that displays the current date of which it is viewed.</p>
+                                        <p class="srcBtn">
+                                            <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/calendar-app-mini">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </p>                                          
+                                    </div>
 
                                     <div class="projectEachJs">
                                         <div class="jsImageDiv">
@@ -361,255 +549,21 @@
                                         </div>
                                         <h2>Bmi Calculator</h2>
                                         <p>This is a Bmi calculator project that functions as an indicator of body fatness.</p>
-                                        <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/bmi-calculator" target="_blank">Source Code</a>
+                                        <p class="srcBtn">
+                                            <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/bmi-calculator">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                                </svg>
+                                                <span>Source</span>
+                                            </a>
+                                        </p>
                                     </div>
-                
-                                    <div class="projectEachJs">
-                                        <div class="jsImageDiv">
-                                            <img src="images/note.png" class="img-fluid" alt="...">
-                                        </div>
-                                        <h2>Note App</h2>
-                                        <p>Task management app.</p>
-                                        <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/note-app" target="_blank">Source Code</a>
-                                    </div>
-
-                                    <div class="projectEachJs">
-                                        <div class="jsImageDiv">
-                                            <img src="images/stopwatch1.png" class="img-fluid" alt="...">
-                                        </div>
-                                        <h2>Stopwatch Project</h2>
-                                        <p>This is a JavaScript stopwatch to measure time in fractions of seconds.</p>
-                                        <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/stop-watch" target="_blank">Source Code</a>
-                                    </div>  
-
-                                    <div class="projectEachJs">
-                                        <div class="jsImageDiv">
-                                            <img src="images/calc5.jpg" class="img-fluid" alt="...">
-                                        </div>
-                                        <h2>Basic Calculator</h2>
-                                        <p>This is a basic calculator project that carries out mathematical operations.</p>
-                                        <a href="https://github.com/Essietasha/50-PROJECTS-with-JavaScript/tree/main/Projects/calculator" target="_blank">Source Code</a>
-                                    </div>
-                             
                                 </div>
                                 
                                 <div class="viewAllBtn">
                                     <button class="viewAllProjectBtn"><a href="projects.html">VIEW ALL PERSONAL PROJECTS</a></button>
                                 </div> 
                             </div>
-
-
-                            <div class="PythonProjects box">
-                                    <div class="ProjectPython">
-                                        <h3>Lunverra University</h3>
-                                        <div class="slider" data-slider="project5">
-                                            <div class="slide">
-                                                <img src="images/lunv1.jpg" alt="">
-                                            </div>                                                                                    
-                                            <div class="slide">
-                                                <img src="images/lunv2.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv3.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv4.jpg" alt="">
-                                            </div>                                                                                   
-                                            <div class="slide">
-                                                <img src="images/lunv5.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv6.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv7.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv8.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv9.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv10.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv11.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv12.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv13.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv14.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/lunv15.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/lunv16.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv17.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv18.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv19.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/lunv20.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/lunv21.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/lunv22.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/lunv23.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/lunv24.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/lunv25.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/lunv26.jpg" alt="">
-                                            </div>
-                                            <div class="navButtons">
-                                                <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
-                                                <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
-                                            </div>
-                                        </div>
-                                        <div class="projectDetails">
-                                            <h6><a href="projects.html">Project Details</a></h6>
-                                            <p>
-                                                Developed a fully functional university website that streamlines student admissions and academic registration, featuring secure login/logout, 
-                                                unique registration numbers, admin controls, dynamic content, feedback functionality, and data persistence.
-                                            </p>
-                                            <p class="availableOnRequest">Source code available on request.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="ProjectPython">
-                                        <h3>ESL Website: English With Zoey</h3>
-                                        <div class="slider" data-slider="project6">
-                                            <div class="slide">
-                                                <img src="images/ewz10.jpg" alt="">
-                                            </div>                                                                                    
-                                            <div class="slide">
-                                                <img src="images/ewz7.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz8.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz9.jpg" alt="">
-                                            </div>                                                                                   
-                                            <div class="slide">
-                                                <img src="images/ewz11.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz12.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz13.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz21.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz22.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz14.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz15.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz16.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz17.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz20.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/ewz18.jpg" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="images/ewz2.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz23.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz4.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz5.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/ewz19.jpg" alt="">
-                                            </div>
-                                            <div class="navButtons">
-                                                <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
-                                                <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
-                                            </div>
-                                        </div>
-                                        <div class="projectDetails">
-                                            <h6><a href="projects.html">Project Details</a></h6>
-                                            <p>Built a full-stack English learning website for a client, serving as an interactive platform for learners. The website allows students to browse learning topics and resources, book English sessions, submit, update, and delete reviews, and more.</p>
-                                            <p class="availableOnRequest">Fully deployed and live for client.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="ProjectPython">
-                                        <h3>PostPress</h3>
-                                        <div class="slider" data-slider="project8">
-                                            <div class="slide">
-                                                <img src="images/Postpress1.jpg" alt="">
-                                            </div>                                                                                    
-                                            <div class="slide">
-                                                <img src="images/Postpress2.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/Postpress3.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/Postpress4.jpg" alt="">
-                                            </div>                                                                                   
-                                            <div class="slide">
-                                                <img src="images/Postpress5.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/Postpress6.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/Postpress7.jpg" alt="">
-                                            </div>                                          
-                                            <div class="slide">
-                                                <img src="images/Postpress8.jpg" alt="">
-                                            </div>                                          
-                                            <div class="navButtons">
-                                                <div class="prev"><a class="previousBtn" onclick="changeSlide(this, -1)" >&#10094;</a></div>
-                                                <div class="next"><a class="nextBtn" onclick="changeSlide(this, 1)" >&#10095;</a></div>
-                                            </div>
-                                        </div>
-                                        <div class="projectDetails">
-                                            <h6><a href="projects.html">Project Details</a></h6>
-                                            <p>PostPress is a lightweight blog platform built with Flask and SQLAlchemy, designed to make writing, editing, and publishing posts simple and intuitive. It includes features like user authentication, post management, and a clean, minimal UI. The project highlights database design, backend logic, and front-end integration for a smooth publishing experience.</p>
-                                            <p class="availableOnRequest">Source code available on request.</p>
-                                        </div>
-                                    </div>
-                        </div>
                     </section>
             </section>
         </div>
@@ -638,7 +592,7 @@
                 <div class="social"> <a href="https://twitter.com/Olukoyaessie" target="_blank"><i class="fa-brands fa-twitter"></i></a> </div>
                 <div class="social"> <a href="https://github.com/Essietasha" target="_blank"><i class="fa-brands fa-github"></i></a></div>
                 <div class="social"> <a href="https://www.instagram.com/Essietasha1" target="_blank"><i class="fa-brands fa-instagram"></i></a> </div>
-                <div class="social"> <a href="http://linkedin.com/in/esther-olukoya-74b63624b" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </div>
+                <div class="social"> <a href="http://linkedin.com/in/estherolukoyatasha" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </div>
             </div> 
 
             <hr>
