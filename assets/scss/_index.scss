@@ -270,7 +270,7 @@ section.projects{
                 @include gridThree();
                 align-items: center;
                 gap: 1rem;
-                margin: 2rem 2rem 0rem 2rem;
+                margin: 2rem;
 
                 .eachReactProjectGridBox{
                     background: #fff;
@@ -806,7 +806,7 @@ section#contact{
                 .reactProjectGrid{
                     @include gridTwo();
                     gap: 1rem;
-                    margin: 1rem 1rem 0rem 1rem;
+                    margin: 1rem;
 
                     .eachReactProjectGridBox{
                         overflow: hidden;
@@ -1013,7 +1013,7 @@ section#contact{
                 .reactProjectGrid{
                     display: block;
                     gap: 1rem;
-                    margin: 1rem 1rem 0rem 1rem;
+                    margin: 1rem;
 
                     .eachReactProjectGridBox{
                         margin-top: 2rem;
