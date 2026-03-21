@@ -1,5 +1,9 @@
 @import 'variables';
 
+*{
+    font-family: "Poppins", sans-serif;
+}
+
 .container-fluid{
     padding: 0;
 }
@@ -173,7 +177,7 @@ section.intro{
 
     .viewAllBtn{
         @include flexCenter();
-        margin-top: 1rem;
+        margin: 3rem 0rem;
 
         a{
             color: $white;
@@ -263,9 +267,9 @@ section.projects{
             }
 
             .reactProjectGrid{
-                @include gridTwo();
+                @include gridThree();
                 align-items: center;
-                gap: 2rem;
+                gap: 1rem;
                 margin: 2rem 2rem 0rem 2rem;
 
                 .eachReactProjectGridBox{
@@ -274,52 +278,7 @@ section.projects{
                     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
                     border-radius: 24px;
                     overflow: hidden;
-                    height: auto;
-
-                    .projectDetails{
-                        padding: 1.2rem;
-                        
-                        h6{
-                            margin-top: 15px;
-
-                            a{
-                                color: #000000;
-                            }
-                        }
-                        
-                        p:first-of-type {
-                            color: #4b4a4a;
-                        }
-
-                        a{
-                            &:hover{
-                                text-decoration: underline;
-                            }
-                        }
-
-                        .deployed{
-                            color: #006989;
-                        }
-
-                        .techStack {
-                            display: flex;
-                            flex-wrap: wrap;
-                            gap: 0.7rem;
-                            margin-top: auto;
-                            margin-bottom: 0.5rem;
-
-                            span {
-                            display: inline-flex;
-                            align-items: center;
-                            padding: 0.4rem 0.5rem;
-                            background: #f3f3f3;
-                            border-radius: 5px;
-                            font-size: 0.6rem;
-                            font-weight: 700;
-                            color: #111;
-                            }
-                        }
-                    }
+                    height: auto
                 }
             }
         }
@@ -329,10 +288,9 @@ section.projects{
             margin-top: 1rem;
 
             .projectsJsGrid{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                @include gridThree();
                 align-items: center;
-                gap: 2rem;
+                gap: 1rem;
             }
 
             h1{
@@ -373,11 +331,11 @@ section.projects{
                 }
 
                 .jsImageDiv{
-                    height: 60%;
+                    height: auto;
                     width: 100%;
 
                     img{
-                        height: 100%;
+                        height: 200px;
                         width: 100%;
                         border-top-left-radius: 24px;
                         border-top-right-radius: 24px;
@@ -400,7 +358,7 @@ section.projects{
                 width: 100%;
 
                 img{
-                    height: 300px;
+                    height: 200px;
                     width: 100%;
                     border-top-right-radius: 5px;
                     border-top-left-radius: 5px;
@@ -413,6 +371,52 @@ section.projects{
         }
     }
 }
+
+.projectDetails{
+    padding: 1.2rem;
+    
+    h6{
+        margin-top: 15px;
+
+        a{
+            color: #000000;
+        }
+    }
+    
+    p:first-of-type {
+        color: #4b4a4a;
+    }
+
+    a{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .deployed{
+        color: #006989;
+    }
+
+    .techStack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: auto;
+        margin-bottom: 0.5rem;
+
+        span {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.4rem 0.5rem;
+        background: #f3f3f3;
+        border-radius: 5px;
+        font-size: 0.6rem;
+        font-weight: 700;
+        color: #111;
+        }
+    }
+}
+    
 .srcBtn {
 
     a {
@@ -729,6 +733,33 @@ section#contact{
                 }
             }
         }
+
+        .navDownArrow{
+            margin-top: 2.5rem;
+            text-align: center;
+            @include flexCenter();
+
+            .navCircle{
+                @include flexCenter();
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 2px solid $black;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover{
+                    border: 2px solid #345e82;
+                    transition: 0.5s ease-in-out;
+                }
+
+                .fa-angle-down{
+                    text-align: center;
+                    color: $black;
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 
     
@@ -749,7 +780,7 @@ section#contact{
                 .slide{
 
                     img{
-                        height: 250px;
+                        height: 200px;
                         width: 100%;
                     }
                 }
@@ -771,20 +802,14 @@ section#contact{
                 .design{
                     font-size: 1rem;
                 }
+                
                 .reactProjectGrid{
+                    @include gridTwo();
                     gap: 1rem;
                     margin: 1rem 1rem 0rem 1rem;
 
                     .eachReactProjectGridBox{
                         overflow: hidden;
-
-                        .projectDetails{
-                            padding: 1rem;
-                            
-                            h6{
-                                margin-top: 10px;
-                            }
-                        }
                     }
                 }                    
             }
@@ -810,6 +835,14 @@ section#contact{
                     }
                 }
             }
+        }
+    }
+
+    .projectDetails{
+        padding: 1rem;
+        
+        h6{
+            margin-top: 10px;
         }
     }
 
@@ -909,6 +942,38 @@ section#contact{
                 }
             }
         }
+        
+        
+        .skills-section {
+
+            h2{
+                font-size: 1.5rem;
+            }
+
+            .skills-grid {
+                    gap: 10px;
+
+                    
+                .skill-pill {
+                    gap: 8px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    span{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+            
+        .viewAllBtn{
+            margin: 2rem 0rem;
+        }
     }
 
         section.projects{
@@ -952,22 +1017,6 @@ section#contact{
 
                     .eachReactProjectGridBox{
                         margin-top: 2rem;
-
-                        .projectDetails{
-                            padding: 1rem;
-                            
-                            h6{
-                                margin-top: 10px;
-                            }
-                            
-                            p:first-of-type {
-                                color: #4b4a4a;
-                            }
-
-                            .techStack {
-                                gap: 0.5rem;
-                            }
-                        }
                     }
                 }
             }
@@ -993,6 +1042,22 @@ section#contact{
                     }
                 }
             }
+        }
+    }
+
+    .projectDetails{
+        padding: 1rem;
+        
+        h6{
+            margin-top: 10px;
+        }
+        
+        p:first-of-type {
+            color: #4b4a4a;
+        }
+
+        .techStack {
+            gap: 0.5rem;
         }
     }
 
