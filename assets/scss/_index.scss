@@ -629,6 +629,17 @@ section#contact{
     color: #DF6D2D;
 }
 
+.live {
+    pointer-events: none;   
+    cursor: default;        
+    text-decoration: none;
+    
+    &:hover {
+        background-color: inherit;
+        color: inherit;
+    }
+}
+
 @keyframes slideUp{
     from {
         transform: translateY(0.5%);

@@ -588,6 +588,16 @@ section#contact .socials .social:hover {
   color: #DF6D2D;
 }
 
+.live {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+.live:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
 @keyframes slideUp {
   from {
     transform: translateY(0.5%);
@@ -1105,7 +1115,7 @@ section#contact .socials .social:hover {
 }
 .pythonProjects .pythonContainer .pythonProject .pyDetails .pyBtn {
   padding: 12px 25px;
-  background-color: #3776ab;
+  background-color: #006989;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -1114,7 +1124,7 @@ section#contact .socials .social:hover {
   transition: background 0.3s;
 }
 .pythonProjects .pythonContainer .pythonProject .pyDetails .pyBtn:hover {
-  background-color: #2b5b83;
+  background-color: #01475c;
 }
 
 .slideupward {
