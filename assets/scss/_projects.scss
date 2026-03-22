@@ -313,6 +313,16 @@
             .eachReactProject{
                 height: auto;
                 margin-top: 2rem;
+
+                .reactImage{
+                    height: auto;
+                    width: 100%;
+
+                    img{
+                        height: 250px;
+                        width: 100%;
+                    }
+                }
             }
         }
     }
@@ -362,7 +372,7 @@
                     width: 100%;
 
                     img{
-                        height: 250px;
+                        height: 200px;
                         width: 100%;
                     }
                 }
@@ -390,7 +400,7 @@
                     width: 100%;
 
                     img{
-                        height: 250px;
+                        height: 200px;
                         width: 100%;
                     }
                 }

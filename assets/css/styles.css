@@ -1221,6 +1221,14 @@ section#contact .socials .social:hover {
     height: auto;
     margin-top: 2rem;
   }
+  .reactProjects .reactProjectsGrid .eachReactProject .reactImage {
+    height: auto;
+    width: 100%;
+  }
+  .reactProjects .reactProjectsGrid .eachReactProject .reactImage img {
+    height: 250px;
+    width: 100%;
+  }
   .pythonProjects .pythonContainer .pythonProject {
     flex-direction: column !important;
     gap: 2rem;
@@ -1260,7 +1268,7 @@ section#contact .socials .social:hover {
     width: 100%;
   }
   .jsProjects .jsProjectsGrid .eachJsProject .jsImage img {
-    height: 250px;
+    height: 200px;
     width: 100%;
   }
   .reactProjects {
@@ -1282,7 +1290,7 @@ section#contact .socials .social:hover {
     width: 100%;
   }
   .reactProjects .reactProjectsGrid .eachReactProject .reactImage img {
-    height: 250px;
+    height: 200px;
     width: 100%;
   }
   .pythonProjects .pythonContainer .pythonProject {
